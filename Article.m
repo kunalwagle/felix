@@ -43,8 +43,8 @@
     return self.comments;
 }
 
--(NSString*)getCategory {
-    return self.category;
+-(NSString*)getSection {
+    return self.section;
 }
 
 -(Image*)getImage {

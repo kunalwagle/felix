@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 #include "Image.h"
+#include "Section.h"
 
 @interface Article : NSObject
 
@@ -19,7 +20,7 @@
 -(NSString*)getUrl;
 -(NSMutableArray*)getAuthors;
 -(NSMutableArray*)getComments;
--(NSString*)getCategory;
+-(Section*)getSection;
 -(Image*)getImage;
 -(int)getDate;
 -(int)getPublished;
@@ -29,7 +30,7 @@
 @property NSString *title;
 @property NSString *teaser;
 @property NSMutableArray *authors;
-@property NSString *category;
+@property Section *section;
 @property int date;
 @property int published;
 @property NSString *content;

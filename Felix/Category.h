@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 #include "Article.h"
+#include "Section.h"
 
 @interface Category : NSObject
 
