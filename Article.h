@@ -13,9 +13,17 @@
 -(int)getId;
 -(NSString*)getTitle;
 -(NSString*)getTeaser;
--(NSString*)
+-(NSString*)getContent;
+-(NSString*)getUrl;
+-(NSMutableArray*)getAuthors;
+-(NSMutableArray*)getComments;
+-(Category*)getCategory;
+-(Image*)getImage;
+-(int)getDate;
+-(int)getPublished;
+-(int)getCommentCount;
 
-@property int id;
+@property int aid;
 @property NSString *title;
 @property NSString *teaser;
 @property NSMutableArray *authors;
