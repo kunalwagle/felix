@@ -57,4 +57,36 @@
     return self.image;
 }
 
+- (void)encodeWithCoder:(NSCoder *)coder {
+    [coder encodeObject:self.title forKey:@"title"];
+    [coder encodeObject:self.fileName forKey:@"fileName"];
+    [coder encodeInt:self.iid forKey:@"iid"];
+    [coder encodeInt:self.width forKey:@"width"];
+    [coder encodeInt:self.height forKey:@"height"];
+    [coder encodeInt:self.timeStamp forKey:@"timeStamp"];
+    [coder encodeObject:self.desc forKey:@"desc"];
+    [coder encodeObject:self.caption forKey:@"caption"];
+    [coder encodeObject:self.attribution forKey:@"attribution"];
+    [coder encodeObject:self.attr_link forKey:@"attr_link"];
+    [coder encodeObject:self.url forKey:@"url"];
+    [coder encodeObject:self.image forKey:@"image"];
+}
+
+- (id)initWithCoder:(NSCoder *)coder {
+    self = [self init];
+    self.title = [coder decodeObjectForKey:@"title"];
+    self.fileName = [coder decodeObjectForKey:@"fileName"];
+    self.iid = [coder decodeIntForKey:@"iid"];
+    self.width = [coder decodeIntForKey:@"width"];
+    self.height = [coder decodeIntForKey:@"height"];
+    self.timeStamp = [coder decodeIntForKey:@"timeStamp"];
+    self.desc = [coder decodeObjectForKey:@"desc"];
+    self.caption = [coder decodeObjectForKey:@"caption"];
+    self.attribution = [coder decodeObjectForKey:@"attribution"];
+    self.attr_link = [coder decodeObjectForKey:@"attr_link"];
+    self.url = [coder decodeObjectForKey:@"url"];
+    self.image = [coder decodeObjectForKey:@"image"];
+    return self;
+}
+
 @end
