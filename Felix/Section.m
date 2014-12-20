@@ -10,6 +10,15 @@
 
 @implementation Section
 
+-(Section *)initFull: (int)sid label:(NSString*)label cat:(NSString*)cat email:(NSString*)email twitter:(NSString*)twitter {
+    self.sid = sid;
+    self.label = label;
+    self.cat = cat;
+    self.email = email;
+    self.twitter = twitter;
+    return self;
+}
+
 -(int)getId {
     return self.sid;
 }

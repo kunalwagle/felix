@@ -10,6 +10,20 @@
 
 @implementation User
 
+-(User *)initFull: (NSString*)user name:(NSString*)name info:(NSString*)info email:(NSString*)email twitter:(NSString*)twitter desc:(NSString*)desc facebook:(NSString*)facebook websitename:(NSString*)websitename websiteurl:(NSString*)websiteurl img:(Image*)img {
+    self.user = user;
+    self.name = name;
+    self.info = info;
+    self.email = email;
+    self.twitter = twitter;
+    self.desc = desc;
+    self.facebook = facebook;
+    self.websitename = websitename;
+    self.websiteurl = websiteurl;
+    self.img = img;
+    return self;
+}
+
 -(NSString*)getUser {
     return self.user;
 }

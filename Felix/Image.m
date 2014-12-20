@@ -10,6 +10,22 @@
 
 @implementation Image
 
+-(Image *)initFull: (int)iid title:(NSString*)title url:(NSString*)url fileName:(NSString*)fileName desc:(NSString*)desc timeStamp:(int)timeStamp caption:(NSString*)caption attribution:(NSString*)attribution attr_link:(NSString*)attr_link width:(int)width height:(int)height image:(UIImage*)image {
+    self.iid = iid;
+    self.title = title;
+    self.url = url;
+    self.fileName = fileName;
+    self.desc = desc;
+    self.timeStamp = timeStamp;
+    self.caption = caption;
+    self.attribution = attribution;
+    self.attr_link = attr_link;
+    self.width = width;
+    self.height = height;
+    self.image = image;
+    return self;
+}
+
 -(int)getId {
     return self.iid;
 }
