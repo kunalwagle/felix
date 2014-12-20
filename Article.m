@@ -85,4 +85,36 @@
     return finalContent;
 }
 
+- (void)encodeWithCoder:(NSCoder *)coder {
+    [coder encodeObject:self.title forKey:@"title"];
+    [coder encodeObject:self.teaser forKey:@"teaser"];
+    [coder encodeInt:self.aid forKey:@"aid"];
+    [coder encodeInt:self.date forKey:@"date"];
+    [coder encodeInt:self.published forKey:@"published"];
+    [coder encodeInt:self.comment_count forKey:@"comment_count"];
+    [coder encodeObject:self.section forKey:@"section"];
+    [coder encodeObject:self.authors forKey:@"authors"];
+    [coder encodeObject:self.comments forKey:@"comments"];
+    [coder encodeObject:self.image forKey:@"image"];
+    [coder encodeObject:self.url forKey:@"url"];
+    [coder encodeObject:self.content forKey:@"content"];
+}
+
+- (id)initWithCoder:(NSCoder *)coder {
+    self = [self init];
+    self.title = [coder decodeObjectForKey:@"title"];
+    self.teaser = [coder decodeObjectForKey:@"teaser"];
+    self.aid = [coder decodeIntForKey:@"aid"];
+    self.date = [coder decodeIntForKey:@"date"];
+    self.published = [coder decodeIntForKey:@"published"];
+    self.comment_count = [coder decodeIntForKey:@"comment_count"];
+    self.section = [coder decodeObjectForKey:@"section"];
+    self.authors = [coder decodeObjectForKey:@"authors"];
+    self.comments = [coder decodeObjectForKey:@"comments"];
+    self.image = [coder decodeObjectForKey:@"image"];
+    self.url = [coder decodeObjectForKey:@"url"];
+    self.content = [coder decodeObjectForKey:@"content"];
+    return self;
+}
+
 @end
