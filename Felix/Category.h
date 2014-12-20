@@ -13,7 +13,9 @@
 @interface Category : NSObject
 
 -(NSMutableArray*) getArticles;
+-(Section*) getSection;
 
+@property Section *section;
 @property NSMutableArray *articles;
 
 @end

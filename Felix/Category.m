@@ -14,4 +14,8 @@
     return self.getArticles;
 }
 
+-(Section*)getSection {
+    return self.section;
+}
+
 @end
