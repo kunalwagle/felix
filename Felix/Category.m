@@ -18,4 +18,16 @@
     return self.section;
 }
 
+- (void)encodeWithCoder:(NSCoder *)coder {
+    [coder encodeObject:self.section forKey:@"section"];
+    [coder encodeObject:self.articles forKey:@"articles"];
+}
+
+- (id)initWithCoder:(NSCoder *)coder {
+    self = [self init];
+    self.section = [coder decodeObjectForKey:@"section"];
+    self.articles = [coder decodeObjectForKey:@"articles"];
+    return self;
+}
+
 @end
