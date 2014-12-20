@@ -10,6 +10,12 @@
 
 @implementation Category
 
+-(Category *)initFull: (Section*)section articles:(NSMutableArray*)articles {
+    self.section = section;
+    self.articles = articles;
+    return self;
+}
+
 -(NSMutableArray*)getArticles {
     return self.getArticles;
 }

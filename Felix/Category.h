@@ -13,6 +13,7 @@
 
 @interface Category : NSObject
 
+-(Category *)initFull: (Section*)section articles:(NSMutableArray*)articles;
 -(NSMutableArray*) getArticles;
 -(Section*) getSection;
 
