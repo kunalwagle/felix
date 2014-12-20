@@ -30,4 +30,23 @@
     return self.twitter;
 }
 
+- (void)encodeWithCoder:(NSCoder *)coder {
+    [coder encodeInt:self.sid forKey:@"sid"];
+    [coder encodeObject:self.label forKey:@"label"];
+    [coder encodeObject:self.cat forKey:@"cat"];
+    [coder encodeObject:self.twitter forKey:@"twitter"];
+    [coder encodeObject:self.email forKey:@"email"];
+
+}
+
+- (id)initWithCoder:(NSCoder *)coder {
+    self = [self init];
+    self.email = [coder decodeObjectForKey:@"email"];
+    self.sid = [coder decodeIntForKey:@"sid"];
+    self.twitter = [coder decodeObjectForKey:@"twitter"];
+    self.label = [coder decodeObjectForKey:@"label"];
+    self.cat = [coder decodeObjectForKey:@"cat"];
+    return self;
+}
+
 @end
