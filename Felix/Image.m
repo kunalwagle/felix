@@ -53,4 +53,8 @@
     return self.height;
 }
 
+-(UIImage*)getImage {
+    return self.image;
+}
+
 @end

@@ -21,6 +21,7 @@
 -(int)getTimeStamp;
 -(int)getWidth;
 -(int)getHeight;
+-(UIImage*)getImage;
 
 @property int iid;
 @property NSString *title;
@@ -33,5 +34,6 @@
 @property NSString *attr_link;
 @property int width;
 @property int height;
+@property UIImage *image;
 
 @end
