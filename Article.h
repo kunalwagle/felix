@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#include "Image.h"
+
 @interface Article : NSObject
 
 -(int)getId;
@@ -17,7 +19,7 @@
 -(NSString*)getUrl;
 -(NSMutableArray*)getAuthors;
 -(NSMutableArray*)getComments;
--(Category*)getCategory;
+-(NSString*)getCategory;
 -(Image*)getImage;
 -(int)getDate;
 -(int)getPublished;
@@ -27,7 +29,7 @@
 @property NSString *title;
 @property NSString *teaser;
 @property NSMutableArray *authors;
-@property Category *category;
+@property NSString *category;
 @property int date;
 @property int published;
 @property NSString *content;

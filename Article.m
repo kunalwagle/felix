@@ -43,7 +43,7 @@
     return self.comments;
 }
 
--(Category*)getCategory {
+-(NSString*)getCategory {
     return self.category;
 }
 
