@@ -10,6 +10,11 @@
 
 @interface Article : NSObject
 
+-(int)getId;
+-(NSString*)getTitle;
+-(NSString*)getTeaser;
+-(NSString*)
+
 @property int id;
 @property NSString *title;
 @property NSString *teaser;
