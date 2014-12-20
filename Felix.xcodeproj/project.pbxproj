@@ -1,0 +1,1391 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C087C2819DA114B00F350BC /* Final Felix Logo HQ with line.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C087C2719DA114B00F350BC /* Final Felix Logo HQ with line.png */; };
+		0C087C2A19DA11D300F350BC /* facebook banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C087C2919DA11D300F350BC /* facebook banner.png */; };
+		0C087C2E19DA14FD00F350BC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C087C2B19DA14FD00F350BC /* Default.png */; };
+		0C087C2F19DA14FD00F350BC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C087C2C19DA14FD00F350BC /* Default-568h@2x.png */; };
+		0C087C3019DA14FD00F350BC /* Default~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C087C2D19DA14FD00F350BC /* Default~iphone.png */; };
+		0C087C3419DA16AC00F350BC /* 57 x 57.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C087C3119DA16AC00F350BC /* 57 x 57.png */; };
+		0C087C3519DA16AC00F350BC /* 114 x 114.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C087C3219DA16AC00F350BC /* 114 x 114.png */; };
+		0C087C3619DA16AC00F350BC /* 120 x 120.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C087C3319DA16AC00F350BC /* 120 x 120.png */; };
+		0C4F617E18442815000726EA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4F617D18442815000726EA /* UIKit.framework */; };
+		0C4F618018442815000726EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4F617F18442815000726EA /* Foundation.framework */; };
+		0C4F618218442815000726EA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4F618118442815000726EA /* CoreGraphics.framework */; };
+		0C4F618818442815000726EA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F618618442815000726EA /* InfoPlist.strings */; };
+		0C4F618A18442815000726EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4F618918442815000726EA /* main.m */; };
+		0C4F618E18442815000726EA /* FLXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4F618D18442815000726EA /* FLXAppDelegate.m */; };
+		0C4F619018442815000726EA /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F618F18442815000726EA /* Default.png */; };
+		0C4F619218442815000726EA /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F619118442815000726EA /* Default@2x.png */; };
+		0C4F619418442815000726EA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F619318442815000726EA /* Default-568h@2x.png */; };
+		0C4F619718442815000726EA /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F619518442815000726EA /* MainStoryboard_iPhone.storyboard */; };
+		0C4F619A18442815000726EA /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F619818442815000726EA /* MainStoryboard_iPad.storyboard */; };
+		0C4F619D18442815000726EA /* FLXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4F619C18442815000726EA /* FLXViewController.m */; };
+		0C4F628C18442867000726EA /* correctSound.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61A518442866000726EA /* correctSound.aif */; };
+		0C4F628D18442867000726EA /* ScringoLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61A618442866000726EA /* ScringoLocalizable.strings */; };
+		0C4F628E18442867000726EA /* iPad_ScringoActivationRibonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61AC18442866000726EA /* iPad_ScringoActivationRibonView.xib */; };
+		0C4F628F18442867000726EA /* iPad_ScringoActivationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61AD18442866000726EA /* iPad_ScringoActivationView.xib */; };
+		0C4F629018442867000726EA /* iPad_ScringoAppBannerFullScreenPopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61AE18442866000726EA /* iPad_ScringoAppBannerFullScreenPopupView.xib */; };
+		0C4F629118442867000726EA /* iPad_ScringoAppBannerPopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61AF18442866000726EA /* iPad_ScringoAppBannerPopupView.xib */; };
+		0C4F629218442867000726EA /* iPad_ScringoChangePasswordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61B018442866000726EA /* iPad_ScringoChangePasswordView.xib */; };
+		0C4F629318442867000726EA /* iPad_ScringoChatRoomsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61B118442866000726EA /* iPad_ScringoChatRoomsCell.xib */; };
+		0C4F629418442867000726EA /* iPad_ScringoChatRoomsCommentsFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61B218442866000726EA /* iPad_ScringoChatRoomsCommentsFooterView.xib */; };
+		0C4F629518442867000726EA /* iPad_ScringoChatRoomsList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61B318442866000726EA /* iPad_ScringoChatRoomsList.xib */; };
+		0C4F629618442867000726EA /* iPad_ScringoChatRoomsTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61B418442866000726EA /* iPad_ScringoChatRoomsTopicCell.xib */; };
+		0C4F629718442867000726EA /* iPad_ScringoChatRoomsTopicHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61B518442866000726EA /* iPad_ScringoChatRoomsTopicHeaderView.xib */; };
+		0C4F629818442867000726EA /* iPad_ScringoChatRoomsTopicImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61B618442866000726EA /* iPad_ScringoChatRoomsTopicImageCell.xib */; };
+		0C4F629918442867000726EA /* iPad_ScringoChatRoomsTopicList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61B718442866000726EA /* iPad_ScringoChatRoomsTopicList.xib */; };
+		0C4F629A18442867000726EA /* iPad_ScringoChatRoomsTopicNativeAppAdCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61B818442866000726EA /* iPad_ScringoChatRoomsTopicNativeAppAdCell.xib */; };
+		0C4F629B18442867000726EA /* iPad_ScringoChatRoomsTopicStickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61B918442866000726EA /* iPad_ScringoChatRoomsTopicStickerCell.xib */; };
+		0C4F629C18442867000726EA /* iPad_ScringoCommentButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61BA18442866000726EA /* iPad_ScringoCommentButton.xib */; };
+		0C4F629D18442867000726EA /* iPad_ScringoDefaultNotificationPopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61BB18442866000726EA /* iPad_ScringoDefaultNotificationPopup.xib */; };
+		0C4F629E18442867000726EA /* iPad_ScringoEditAboutPopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61BC18442866000726EA /* iPad_ScringoEditAboutPopupView.xib */; };
+		0C4F629F18442867000726EA /* iPad_ScringoEmailLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61BD18442866000726EA /* iPad_ScringoEmailLoginView.xib */; };
+		0C4F62A018442867000726EA /* iPad_ScringoEmailSignUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61BE18442866000726EA /* iPad_ScringoEmailSignUpView.xib */; };
+		0C4F62A118442867000726EA /* iPad_ScringoFeedActivityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61BF18442866000726EA /* iPad_ScringoFeedActivityCell.xib */; };
+		0C4F62A218442867000726EA /* iPad_ScringoFeedbackPopupClose.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61C018442866000726EA /* iPad_ScringoFeedbackPopupClose.xib */; };
+		0C4F62A318442867000726EA /* iPad_ScringoFeedbackPopupWithRateUs.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61C118442866000726EA /* iPad_ScringoFeedbackPopupWithRateUs.xib */; };
+		0C4F62A418442867000726EA /* iPad_ScringoFeedbackTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61C218442866000726EA /* iPad_ScringoFeedbackTableCell.xib */; };
+		0C4F62A518442867000726EA /* iPad_ScringoFeedbackTableCellBig.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61C318442866000726EA /* iPad_ScringoFeedbackTableCellBig.xib */; };
+		0C4F62A618442867000726EA /* iPad_ScringoFeedbackTalkToUs.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61C418442866000726EA /* iPad_ScringoFeedbackTalkToUs.xib */; };
+		0C4F62A718442867000726EA /* iPad_ScringoFeedbackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61C518442866000726EA /* iPad_ScringoFeedbackView.xib */; };
+		0C4F62A818442867000726EA /* iPad_ScringoFeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61C618442866000726EA /* iPad_ScringoFeedCell.xib */; };
+		0C4F62A918442867000726EA /* iPad_ScringoFeedLikeActivityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61C718442866000726EA /* iPad_ScringoFeedLikeActivityCell.xib */; };
+		0C4F62AA18442867000726EA /* iPad_ScringoFeedLikeImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61C818442866000726EA /* iPad_ScringoFeedLikeImageCell.xib */; };
+		0C4F62AB18442867000726EA /* iPad_ScringoFeedLikeTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61C918442866000726EA /* iPad_ScringoFeedLikeTopicCell.xib */; };
+		0C4F62AC18442867000726EA /* iPad_ScringoFeedLikeTopicCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61CA18442866000726EA /* iPad_ScringoFeedLikeTopicCommentCell.xib */; };
+		0C4F62AD18442867000726EA /* iPad_ScringoFeedLikeTopicImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61CB18442866000726EA /* iPad_ScringoFeedLikeTopicImageCell.xib */; };
+		0C4F62AE18442867000726EA /* iPad_ScringoFeedList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61CC18442866000726EA /* iPad_ScringoFeedList.xib */; };
+		0C4F62AF18442867000726EA /* iPad_ScringoFeedSimpleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61CD18442866000726EA /* iPad_ScringoFeedSimpleCell.xib */; };
+		0C4F62B018442867000726EA /* iPad_ScringoFindFriendsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61CE18442866000726EA /* iPad_ScringoFindFriendsCell.xib */; };
+		0C4F62B118442867000726EA /* iPad_ScringoFindFriendsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61CF18442866000726EA /* iPad_ScringoFindFriendsView.xib */; };
+		0C4F62B218442867000726EA /* iPad_ScringoForgotPasswordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61D018442866000726EA /* iPad_ScringoForgotPasswordView.xib */; };
+		0C4F62B318442867000726EA /* iPad_ScringoFullScreenImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61D118442866000726EA /* iPad_ScringoFullScreenImageView.xib */; };
+		0C4F62B418442867000726EA /* iPad_ScringoGeneralSystemMessageList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61D218442866000726EA /* iPad_ScringoGeneralSystemMessageList.xib */; };
+		0C4F62B518442867000726EA /* iPad_ScringoGeneralWebView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61D318442866000726EA /* iPad_ScringoGeneralWebView.xib */; };
+		0C4F62B618442867000726EA /* iPad_ScringoInboxCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61D418442866000726EA /* iPad_ScringoInboxCell.xib */; };
+		0C4F62B718442867000726EA /* iPad_ScringoInboxList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61D518442866000726EA /* iPad_ScringoInboxList.xib */; };
+		0C4F62B818442867000726EA /* iPad_ScringoInviteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61D618442866000726EA /* iPad_ScringoInviteCell.xib */; };
+		0C4F62B918442867000726EA /* iPad_ScringoInviteContactCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61D718442866000726EA /* iPad_ScringoInviteContactCell.xib */; };
+		0C4F62BA18442867000726EA /* iPad_ScringoInviteFriendsList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61D818442866000726EA /* iPad_ScringoInviteFriendsList.xib */; };
+		0C4F62BB18442867000726EA /* iPad_ScringoInviteHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61D918442866000726EA /* iPad_ScringoInviteHeaderView.xib */; };
+		0C4F62BC18442867000726EA /* iPad_ScringoInviteSocialCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61DA18442866000726EA /* iPad_ScringoInviteSocialCell.xib */; };
+		0C4F62BD18442867000726EA /* iPad_ScringoInviteSocialView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61DB18442866000726EA /* iPad_ScringoInviteSocialView.xib */; };
+		0C4F62BE18442867000726EA /* iPad_ScringoKeyboardStickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61DC18442866000726EA /* iPad_ScringoKeyboardStickerView.xib */; };
+		0C4F62BF18442867000726EA /* iPad_ScringoLeaderboardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61DD18442866000726EA /* iPad_ScringoLeaderboardCell.xib */; };
+		0C4F62C018442867000726EA /* iPad_ScringoLeaderboardList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61DE18442866000726EA /* iPad_ScringoLeaderboardList.xib */; };
+		0C4F62C118442867000726EA /* iPad_ScringoLikeButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61DF18442866000726EA /* iPad_ScringoLikeButton.xib */; };
+		0C4F62C218442867000726EA /* iPad_ScringoLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61E018442866000726EA /* iPad_ScringoLoginView.xib */; };
+		0C4F62C318442867000726EA /* iPad_ScringoMainMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61E118442866000726EA /* iPad_ScringoMainMenuView.xib */; };
+		0C4F62C418442867000726EA /* iPad_ScringoMapAnnotationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61E218442866000726EA /* iPad_ScringoMapAnnotationView.xib */; };
+		0C4F62C518442867000726EA /* iPad_ScringoNewMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61E318442866000726EA /* iPad_ScringoNewMessageCell.xib */; };
+		0C4F62C618442867000726EA /* iPad_ScringoNewMessagePopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61E418442866000726EA /* iPad_ScringoNewMessagePopupView.xib */; };
+		0C4F62C718442867000726EA /* iPad_ScringoNewMessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61E518442866000726EA /* iPad_ScringoNewMessageView.xib */; };
+		0C4F62C818442867000726EA /* iPad_ScringoOKCancelPopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61E618442866000726EA /* iPad_ScringoOKCancelPopupView.xib */; };
+		0C4F62C918442867000726EA /* iPad_ScringoOKPopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61E718442866000726EA /* iPad_ScringoOKPopupView.xib */; };
+		0C4F62CA18442867000726EA /* iPad_ScringoOneChatHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61E818442866000726EA /* iPad_ScringoOneChatHeaderView.xib */; };
+		0C4F62CB18442867000726EA /* iPad_ScringoOneChatImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61E918442866000726EA /* iPad_ScringoOneChatImageCell.xib */; };
+		0C4F62CC18442867000726EA /* iPad_ScringoOneChatList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61EA18442866000726EA /* iPad_ScringoOneChatList.xib */; };
+		0C4F62CD18442867000726EA /* iPad_ScringoOneChatMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61EB18442866000726EA /* iPad_ScringoOneChatMessageCell.xib */; };
+		0C4F62CE18442867000726EA /* iPad_ScringoOneChatStickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61EC18442866000726EA /* iPad_ScringoOneChatStickerCell.xib */; };
+		0C4F62CF18442867000726EA /* iPad_ScringoOneChatTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61ED18442866000726EA /* iPad_ScringoOneChatTableHeaderView.xib */; };
+		0C4F62D018442867000726EA /* iPad_ScringoOtherUserProfile.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61EE18442866000726EA /* iPad_ScringoOtherUserProfile.xib */; };
+		0C4F62D118442867000726EA /* iPad_ScringoPanelAppDealsTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61EF18442866000726EA /* iPad_ScringoPanelAppDealsTableCell.xib */; };
+		0C4F62D218442867000726EA /* iPad_ScringoPanelNewProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61F018442866000726EA /* iPad_ScringoPanelNewProfileView.xib */; };
+		0C4F62D318442867000726EA /* iPad_ScringoPanelTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61F118442866000726EA /* iPad_ScringoPanelTableCell.xib */; };
+		0C4F62D418442867000726EA /* iPad_ScringoQuizCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61F218442866000726EA /* iPad_ScringoQuizCell.xib */; };
+		0C4F62D518442867000726EA /* iPad_ScringoQuizEndTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61F318442866000726EA /* iPad_ScringoQuizEndTableCell.xib */; };
+		0C4F62D618442867000726EA /* iPad_ScringoQuizPlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61F418442866000726EA /* iPad_ScringoQuizPlayView.xib */; };
+		0C4F62D718442867000726EA /* iPad_ScringoQuizProfileTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61F518442866000726EA /* iPad_ScringoQuizProfileTableCell.xib */; };
+		0C4F62D818442867000726EA /* iPad_ScringoQuizProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61F618442866000726EA /* iPad_ScringoQuizProfileView.xib */; };
+		0C4F62D918442867000726EA /* iPad_ScringoQuizPurchaseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61F718442866000726EA /* iPad_ScringoQuizPurchaseView.xib */; };
+		0C4F62DA18442867000726EA /* iPad_ScringoQuizScrollScoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61F818442867000726EA /* iPad_ScringoQuizScrollScoreView.xib */; };
+		0C4F62DB18442867000726EA /* iPad_ScringoQuizSuggestQuestionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61F918442867000726EA /* iPad_ScringoQuizSuggestQuestionView.xib */; };
+		0C4F62DC18442867000726EA /* iPad_ScringoQuizTimeBonusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61FA18442867000726EA /* iPad_ScringoQuizTimeBonusView.xib */; };
+		0C4F62DD18442867000726EA /* iPad_ScringoQuizUnlockPopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61FB18442867000726EA /* iPad_ScringoQuizUnlockPopup.xib */; };
+		0C4F62DE18442867000726EA /* iPad_ScringoQuizzesList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61FC18442867000726EA /* iPad_ScringoQuizzesList.xib */; };
+		0C4F62DF18442867000726EA /* iPad_ScringoRadarListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61FD18442867000726EA /* iPad_ScringoRadarListCell.xib */; };
+		0C4F62E018442867000726EA /* iPad_ScringoRadarListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61FE18442867000726EA /* iPad_ScringoRadarListView.xib */; };
+		0C4F62E118442867000726EA /* iPad_ScringoRadarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F61FF18442867000726EA /* iPad_ScringoRadarView.xib */; };
+		0C4F62E218442867000726EA /* iPad_ScringoRefreshTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F620018442867000726EA /* iPad_ScringoRefreshTableHeaderView.xib */; };
+		0C4F62E318442867000726EA /* iPad_ScringoSignInPopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F620118442867000726EA /* iPad_ScringoSignInPopup.xib */; };
+		0C4F62E418442867000726EA /* iPad_ScringoSignUpPopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F620218442867000726EA /* iPad_ScringoSignUpPopup.xib */; };
+		0C4F62E518442867000726EA /* iPad_ScringoSignUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F620318442867000726EA /* iPad_ScringoSignUpView.xib */; };
+		0C4F62E618442867000726EA /* iPad_ScringoStickerPack.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F620418442867000726EA /* iPad_ScringoStickerPack.xib */; };
+		0C4F62E718442867000726EA /* iPad_ScringoStickerPackCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F620518442867000726EA /* iPad_ScringoStickerPackCell.xib */; };
+		0C4F62E818442867000726EA /* iPad_ScringoStickersKeyboardLandscapeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F620618442867000726EA /* iPad_ScringoStickersKeyboardLandscapeView.xib */; };
+		0C4F62E918442867000726EA /* iPad_ScringoStickersKeyboardToolbarItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F620718442867000726EA /* iPad_ScringoStickersKeyboardToolbarItem.xib */; };
+		0C4F62EA18442867000726EA /* iPad_ScringoStickersKeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F620818442867000726EA /* iPad_ScringoStickersKeyboardView.xib */; };
+		0C4F62EB18442867000726EA /* iPad_ScringoStickerStore.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F620918442867000726EA /* iPad_ScringoStickerStore.xib */; };
+		0C4F62EC18442867000726EA /* iPad_ScringoStickerStoreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F620A18442867000726EA /* iPad_ScringoStickerStoreCell.xib */; };
+		0C4F62ED18442867000726EA /* iPad_ScringoStretchableBadgeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F620B18442867000726EA /* iPad_ScringoStretchableBadgeView.xib */; };
+		0C4F62EE18442867000726EA /* iPad_ScringoSuggestedAppDealView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F620C18442867000726EA /* iPad_ScringoSuggestedAppDealView.xib */; };
+		0C4F62EF18442867000726EA /* iPad_ScringoSuggestedPersonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F620D18442867000726EA /* iPad_ScringoSuggestedPersonView.xib */; };
+		0C4F62F018442867000726EA /* iPad_ScringoSuggestedUsersList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F620E18442867000726EA /* iPad_ScringoSuggestedUsersList.xib */; };
+		0C4F62F118442867000726EA /* iPad_ScringoUploadImageKeyboardLandscapeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F620F18442867000726EA /* iPad_ScringoUploadImageKeyboardLandscapeView.xib */; };
+		0C4F62F218442867000726EA /* iPad_ScringoUploadImageKeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F621018442867000726EA /* iPad_ScringoUploadImageKeyboardView.xib */; };
+		0C4F62F318442867000726EA /* iPad_ScringoUserListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F621118442867000726EA /* iPad_ScringoUserListCell.xib */; };
+		0C4F62F418442867000726EA /* iPad_ScringoUserListSuggestionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F621218442867000726EA /* iPad_ScringoUserListSuggestionCell.xib */; };
+		0C4F62F518442867000726EA /* iPad_ScringoUserProfile.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F621318442867000726EA /* iPad_ScringoUserProfile.xib */; };
+		0C4F62F618442867000726EA /* iPad_ScringoUserSettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F621418442867000726EA /* iPad_ScringoUserSettingsView.xib */; };
+		0C4F62F718442867000726EA /* iPad_ScringoUsersListSearch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F621518442867000726EA /* iPad_ScringoUsersListSearch.xib */; };
+		0C4F62F818442867000726EA /* iPad_ScringoWelcomeFingerImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F621618442867000726EA /* iPad_ScringoWelcomeFingerImageView.xib */; };
+		0C4F62F918442867000726EA /* iPad_ScringoWelcomeFingerImageViewLandscape.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F621718442867000726EA /* iPad_ScringoWelcomeFingerImageViewLandscape.xib */; };
+		0C4F62FA18442867000726EA /* iPad_ScringoWelcomePopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F621818442867000726EA /* iPad_ScringoWelcomePopupView.xib */; };
+		0C4F62FB18442867000726EA /* ScringoActivationRibonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F621D18442867000726EA /* ScringoActivationRibonView.xib */; };
+		0C4F62FC18442867000726EA /* ScringoActivationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F621E18442867000726EA /* ScringoActivationView.xib */; };
+		0C4F62FD18442867000726EA /* ScringoAppBannerFullScreenPopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F621F18442867000726EA /* ScringoAppBannerFullScreenPopupView.xib */; };
+		0C4F62FE18442867000726EA /* ScringoAppBannerPopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F622018442867000726EA /* ScringoAppBannerPopupView.xib */; };
+		0C4F62FF18442867000726EA /* ScringoChangePasswordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F622118442867000726EA /* ScringoChangePasswordView.xib */; };
+		0C4F630018442867000726EA /* ScringoChatRoomsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F622218442867000726EA /* ScringoChatRoomsCell.xib */; };
+		0C4F630118442867000726EA /* ScringoChatRoomsCommentsFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F622318442867000726EA /* ScringoChatRoomsCommentsFooterView.xib */; };
+		0C4F630218442867000726EA /* ScringoChatRoomsList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F622418442867000726EA /* ScringoChatRoomsList.xib */; };
+		0C4F630318442867000726EA /* ScringoChatRoomsTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F622518442867000726EA /* ScringoChatRoomsTopicCell.xib */; };
+		0C4F630418442867000726EA /* ScringoChatRoomsTopicHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F622618442867000726EA /* ScringoChatRoomsTopicHeaderView.xib */; };
+		0C4F630518442867000726EA /* ScringoChatRoomsTopicImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F622718442867000726EA /* ScringoChatRoomsTopicImageCell.xib */; };
+		0C4F630618442867000726EA /* ScringoChatRoomsTopicList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F622818442867000726EA /* ScringoChatRoomsTopicList.xib */; };
+		0C4F630718442867000726EA /* ScringoChatRoomsTopicNativeAppAdCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F622918442867000726EA /* ScringoChatRoomsTopicNativeAppAdCell.xib */; };
+		0C4F630818442867000726EA /* ScringoChatRoomsTopicStickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F622A18442867000726EA /* ScringoChatRoomsTopicStickerCell.xib */; };
+		0C4F630918442867000726EA /* ScringoCommentButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F622B18442867000726EA /* ScringoCommentButton.xib */; };
+		0C4F630A18442867000726EA /* ScringoDefaultNotificationPopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F622C18442867000726EA /* ScringoDefaultNotificationPopup.xib */; };
+		0C4F630B18442867000726EA /* ScringoEditAboutPopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F622D18442867000726EA /* ScringoEditAboutPopupView.xib */; };
+		0C4F630C18442867000726EA /* ScringoEmailLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F622E18442867000726EA /* ScringoEmailLoginView.xib */; };
+		0C4F630D18442867000726EA /* ScringoEmailSignUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F622F18442867000726EA /* ScringoEmailSignUpView.xib */; };
+		0C4F630E18442867000726EA /* ScringoFeedActivityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F623018442867000726EA /* ScringoFeedActivityCell.xib */; };
+		0C4F630F18442867000726EA /* ScringoFeedbackPopupClose.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F623118442867000726EA /* ScringoFeedbackPopupClose.xib */; };
+		0C4F631018442867000726EA /* ScringoFeedbackPopupWithRateUs.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F623218442867000726EA /* ScringoFeedbackPopupWithRateUs.xib */; };
+		0C4F631118442867000726EA /* ScringoFeedbackTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F623318442867000726EA /* ScringoFeedbackTableCell.xib */; };
+		0C4F631218442867000726EA /* ScringoFeedbackTableCellBig.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F623418442867000726EA /* ScringoFeedbackTableCellBig.xib */; };
+		0C4F631318442867000726EA /* ScringoFeedbackTalkToUs.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F623518442867000726EA /* ScringoFeedbackTalkToUs.xib */; };
+		0C4F631418442867000726EA /* ScringoFeedbackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F623618442867000726EA /* ScringoFeedbackView.xib */; };
+		0C4F631518442867000726EA /* ScringoFeedLikeActivityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F623718442867000726EA /* ScringoFeedLikeActivityCell.xib */; };
+		0C4F631618442867000726EA /* ScringoFeedLikeImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F623818442867000726EA /* ScringoFeedLikeImageCell.xib */; };
+		0C4F631718442867000726EA /* ScringoFeedLikeTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F623918442867000726EA /* ScringoFeedLikeTopicCell.xib */; };
+		0C4F631818442867000726EA /* ScringoFeedLikeTopicCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F623A18442867000726EA /* ScringoFeedLikeTopicCommentCell.xib */; };
+		0C4F631918442867000726EA /* ScringoFeedLikeTopicImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F623B18442867000726EA /* ScringoFeedLikeTopicImageCell.xib */; };
+		0C4F631A18442867000726EA /* ScringoFeedList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F623C18442867000726EA /* ScringoFeedList.xib */; };
+		0C4F631B18442867000726EA /* ScringoFeedSimpleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F623D18442867000726EA /* ScringoFeedSimpleCell.xib */; };
+		0C4F631C18442867000726EA /* ScringoFindFriendsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F623E18442867000726EA /* ScringoFindFriendsCell.xib */; };
+		0C4F631D18442867000726EA /* ScringoFindFriendsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F623F18442867000726EA /* ScringoFindFriendsView.xib */; };
+		0C4F631E18442867000726EA /* ScringoForgotPasswordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F624018442867000726EA /* ScringoForgotPasswordView.xib */; };
+		0C4F631F18442867000726EA /* ScringoFullScreenImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F624118442867000726EA /* ScringoFullScreenImageView.xib */; };
+		0C4F632018442867000726EA /* ScringoGeneralSystemMessageList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F624218442867000726EA /* ScringoGeneralSystemMessageList.xib */; };
+		0C4F632118442867000726EA /* ScringoGeneralWebView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F624318442867000726EA /* ScringoGeneralWebView.xib */; };
+		0C4F632218442867000726EA /* ScringoInboxCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F624418442867000726EA /* ScringoInboxCell.xib */; };
+		0C4F632318442867000726EA /* ScringoInboxList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F624518442867000726EA /* ScringoInboxList.xib */; };
+		0C4F632418442867000726EA /* ScringoInviteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F624618442867000726EA /* ScringoInviteCell.xib */; };
+		0C4F632518442867000726EA /* ScringoInviteContactCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F624718442867000726EA /* ScringoInviteContactCell.xib */; };
+		0C4F632618442867000726EA /* ScringoInviteFriendsList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F624818442867000726EA /* ScringoInviteFriendsList.xib */; };
+		0C4F632718442867000726EA /* ScringoInviteHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F624918442867000726EA /* ScringoInviteHeaderView.xib */; };
+		0C4F632818442867000726EA /* ScringoInviteSocialCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F624A18442867000726EA /* ScringoInviteSocialCell.xib */; };
+		0C4F632918442867000726EA /* ScringoInviteSocialView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F624B18442867000726EA /* ScringoInviteSocialView.xib */; };
+		0C4F632A18442867000726EA /* ScringoKeyboardStickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F624C18442867000726EA /* ScringoKeyboardStickerView.xib */; };
+		0C4F632B18442867000726EA /* ScringoLeaderboardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F624D18442867000726EA /* ScringoLeaderboardCell.xib */; };
+		0C4F632C18442867000726EA /* ScringoLeaderboardList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F624E18442867000726EA /* ScringoLeaderboardList.xib */; };
+		0C4F632D18442867000726EA /* ScringoLikeButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F624F18442867000726EA /* ScringoLikeButton.xib */; };
+		0C4F632E18442867000726EA /* ScringoLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F625018442867000726EA /* ScringoLoginView.xib */; };
+		0C4F632F18442867000726EA /* ScringoMainMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F625118442867000726EA /* ScringoMainMenuView.xib */; };
+		0C4F633018442867000726EA /* ScringoMapAnnotationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F625218442867000726EA /* ScringoMapAnnotationView.xib */; };
+		0C4F633118442867000726EA /* ScringoNewMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F625318442867000726EA /* ScringoNewMessageCell.xib */; };
+		0C4F633218442867000726EA /* ScringoNewMessagePopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F625418442867000726EA /* ScringoNewMessagePopupView.xib */; };
+		0C4F633318442867000726EA /* ScringoNewMessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F625518442867000726EA /* ScringoNewMessageView.xib */; };
+		0C4F633418442867000726EA /* ScringoOKCancelPopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F625618442867000726EA /* ScringoOKCancelPopupView.xib */; };
+		0C4F633518442867000726EA /* ScringoOKPopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F625718442867000726EA /* ScringoOKPopupView.xib */; };
+		0C4F633618442867000726EA /* ScringoOneChatHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F625818442867000726EA /* ScringoOneChatHeaderView.xib */; };
+		0C4F633718442867000726EA /* ScringoOneChatImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F625918442867000726EA /* ScringoOneChatImageCell.xib */; };
+		0C4F633818442867000726EA /* ScringoOneChatList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F625A18442867000726EA /* ScringoOneChatList.xib */; };
+		0C4F633918442867000726EA /* ScringoOneChatMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F625B18442867000726EA /* ScringoOneChatMessageCell.xib */; };
+		0C4F633A18442867000726EA /* ScringoOneChatStickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F625C18442867000726EA /* ScringoOneChatStickerCell.xib */; };
+		0C4F633B18442867000726EA /* ScringoOneChatTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F625D18442867000726EA /* ScringoOneChatTableHeaderView.xib */; };
+		0C4F633C18442867000726EA /* ScringoOtherUserProfile.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F625E18442867000726EA /* ScringoOtherUserProfile.xib */; };
+		0C4F633D18442867000726EA /* ScringoPanelAppDealsTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F625F18442867000726EA /* ScringoPanelAppDealsTableCell.xib */; };
+		0C4F633E18442867000726EA /* ScringoPanelNewProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F626018442867000726EA /* ScringoPanelNewProfileView.xib */; };
+		0C4F633F18442867000726EA /* ScringoPanelTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F626118442867000726EA /* ScringoPanelTableCell.xib */; };
+		0C4F634018442867000726EA /* ScringoQuizCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F626218442867000726EA /* ScringoQuizCell.xib */; };
+		0C4F634118442867000726EA /* ScringoQuizEndTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F626318442867000726EA /* ScringoQuizEndTableCell.xib */; };
+		0C4F634218442867000726EA /* ScringoQuizPlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F626418442867000726EA /* ScringoQuizPlayView.xib */; };
+		0C4F634318442867000726EA /* ScringoQuizProfileTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F626518442867000726EA /* ScringoQuizProfileTableCell.xib */; };
+		0C4F634418442867000726EA /* ScringoQuizProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F626618442867000726EA /* ScringoQuizProfileView.xib */; };
+		0C4F634518442867000726EA /* ScringoQuizPurchaseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F626718442867000726EA /* ScringoQuizPurchaseView.xib */; };
+		0C4F634618442867000726EA /* ScringoQuizScrollScoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F626818442867000726EA /* ScringoQuizScrollScoreView.xib */; };
+		0C4F634718442867000726EA /* ScringoQuizSuggestQuestionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F626918442867000726EA /* ScringoQuizSuggestQuestionView.xib */; };
+		0C4F634818442867000726EA /* ScringoQuizTimeBonusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F626A18442867000726EA /* ScringoQuizTimeBonusView.xib */; };
+		0C4F634918442867000726EA /* ScringoQuizUnlockPopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F626B18442867000726EA /* ScringoQuizUnlockPopup.xib */; };
+		0C4F634A18442867000726EA /* ScringoQuizzesList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F626C18442867000726EA /* ScringoQuizzesList.xib */; };
+		0C4F634B18442867000726EA /* ScringoRadarListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F626D18442867000726EA /* ScringoRadarListCell.xib */; };
+		0C4F634C18442867000726EA /* ScringoRadarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F626E18442867000726EA /* ScringoRadarView.xib */; };
+		0C4F634D18442867000726EA /* ScringoRefreshTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F626F18442867000726EA /* ScringoRefreshTableHeaderView.xib */; };
+		0C4F634E18442867000726EA /* ScringoSignInPopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F627018442867000726EA /* ScringoSignInPopup.xib */; };
+		0C4F634F18442867000726EA /* ScringoSignUpPopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F627118442867000726EA /* ScringoSignUpPopup.xib */; };
+		0C4F635018442867000726EA /* ScringoSignUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F627218442867000726EA /* ScringoSignUpView.xib */; };
+		0C4F635118442867000726EA /* ScringoStickerPack.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F627318442867000726EA /* ScringoStickerPack.xib */; };
+		0C4F635218442867000726EA /* ScringoStickerPackCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F627418442867000726EA /* ScringoStickerPackCell.xib */; };
+		0C4F635318442867000726EA /* ScringoStickersKeyboardLandscapeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F627518442867000726EA /* ScringoStickersKeyboardLandscapeView.xib */; };
+		0C4F635418442867000726EA /* ScringoStickersKeyboardToolbarItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F627618442867000726EA /* ScringoStickersKeyboardToolbarItem.xib */; };
+		0C4F635518442867000726EA /* ScringoStickersKeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F627718442867000726EA /* ScringoStickersKeyboardView.xib */; };
+		0C4F635618442867000726EA /* ScringoStickerStore.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F627818442867000726EA /* ScringoStickerStore.xib */; };
+		0C4F635718442867000726EA /* ScringoStickerStoreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F627918442867000726EA /* ScringoStickerStoreCell.xib */; };
+		0C4F635818442867000726EA /* ScringoStretchableBadgeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F627A18442867000726EA /* ScringoStretchableBadgeView.xib */; };
+		0C4F635918442867000726EA /* ScringoSuggestedAppDealView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F627B18442867000726EA /* ScringoSuggestedAppDealView.xib */; };
+		0C4F635A18442867000726EA /* ScringoSuggestedPersonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F627C18442867000726EA /* ScringoSuggestedPersonView.xib */; };
+		0C4F635B18442867000726EA /* ScringoSuggestedUsersList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F627D18442867000726EA /* ScringoSuggestedUsersList.xib */; };
+		0C4F635C18442867000726EA /* ScringoUploadImageKeyboardLandscapeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F627E18442867000726EA /* ScringoUploadImageKeyboardLandscapeView.xib */; };
+		0C4F635D18442867000726EA /* ScringoUploadImageKeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F627F18442867000726EA /* ScringoUploadImageKeyboardView.xib */; };
+		0C4F635E18442867000726EA /* ScringoUserListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F628018442867000726EA /* ScringoUserListCell.xib */; };
+		0C4F635F18442867000726EA /* ScringoUserListSuggestionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F628118442867000726EA /* ScringoUserListSuggestionCell.xib */; };
+		0C4F636018442867000726EA /* ScringoUserProfile.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F628218442867000726EA /* ScringoUserProfile.xib */; };
+		0C4F636118442867000726EA /* ScringoUserSettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F628318442867000726EA /* ScringoUserSettingsView.xib */; };
+		0C4F636218442867000726EA /* ScringoUsersListSearch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F628418442867000726EA /* ScringoUsersListSearch.xib */; };
+		0C4F636318442867000726EA /* ScringoWelcomeFingerImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F628518442867000726EA /* ScringoWelcomeFingerImageView.xib */; };
+		0C4F636418442867000726EA /* ScringoWelcomeFingerImageViewLandscape.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F628618442867000726EA /* ScringoWelcomeFingerImageViewLandscape.xib */; };
+		0C4F636518442867000726EA /* ScringoWelcomePopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F628718442867000726EA /* ScringoWelcomePopupView.xib */; };
+		0C4F636618442867000726EA /* temp_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F628818442867000726EA /* temp_btn.png */; };
+		0C4F636718442867000726EA /* wrongSound.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F628918442867000726EA /* wrongSound.aif */; };
+		0C4F636818442867000726EA /* Scringo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F628A18442867000726EA /* Scringo.bundle */; };
+		0C4F636918442867000726EA /* Scringo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4F628B18442867000726EA /* Scringo.framework */; };
+		0C4F636B18442899000726EA /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4F636A18442899000726EA /* FacebookSDK.framework */; };
+		0C4F636D184428CA000726EA /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4F636C184428CA000726EA /* CoreText.framework */; };
+		0C4F636F184428D4000726EA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4F636E184428D4000726EA /* MapKit.framework */; };
+		0C6D727F1844CF8400BFF89C /* felix_cat-small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D727E1844CF8400BFF89C /* felix_cat-small.jpg */; };
+		0C6D7282184555BA00BFF89C /* ArticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6D7281184555BA00BFF89C /* ArticleViewController.m */; };
+		0C7206091A45B80A00B2A968 /* Article.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7206081A45B80A00B2A968 /* Article.m */; };
+		0C774BDB19C8C3CB00A265A4 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C774BDA19C8C3CB00A265A4 /* WebViewController.m */; };
+		0C774BDD19C8F37000A265A4 /* home-5-2561.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0C774BDC19C8F37000A265A4 /* home-5-2561.gif */; };
+		0C774BDF19C8F59100A265A4 /* bigimage copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C774BDE19C8F59100A265A4 /* bigimage copy.png */; };
+		0CD00423184564720032A736 /* title-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CD00422184564720032A736 /* title-small.png */; };
+		0CF4CF8E1846540600C789BE /* SplashScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF4CF8D1846540600C789BE /* SplashScreenViewController.m */; };
+		0CF4CF9018465F8700C789BE /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CF4CF8F18465F8700C789BE /* icon.png */; };
+		0CF4CF931846600A00C789BE /* 57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CF4CF911846600A00C789BE /* 57x57.png */; };
+		0CF4CF941846600A00C789BE /* 114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CF4CF921846600A00C789BE /* 114x114.png */; };
+		0CF4CF9E184663BA00C789BE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF4CF9D184663BA00C789BE /* SystemConfiguration.framework */; };
+		0CF4CFA1184663CF00C789BE /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF4CFA0184663CF00C789BE /* Reachability.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C087C2719DA114B00F350BC /* Final Felix Logo HQ with line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Final Felix Logo HQ with line.png"; sourceTree = "<group>"; };
+		0C087C2919DA11D300F350BC /* facebook banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook banner.png"; sourceTree = "<group>"; };
+		0C087C2B19DA14FD00F350BC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		0C087C2C19DA14FD00F350BC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		0C087C2D19DA14FD00F350BC /* Default~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default~iphone.png"; sourceTree = "<group>"; };
+		0C087C3119DA16AC00F350BC /* 57 x 57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "57 x 57.png"; sourceTree = "<group>"; };
+		0C087C3219DA16AC00F350BC /* 114 x 114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "114 x 114.png"; sourceTree = "<group>"; };
+		0C087C3319DA16AC00F350BC /* 120 x 120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "120 x 120.png"; sourceTree = "<group>"; };
+		0C4F617A18442815000726EA /* Felix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Felix.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C4F617D18442815000726EA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0C4F617F18442815000726EA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0C4F618118442815000726EA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0C4F618518442815000726EA /* Felix-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Felix-Info.plist"; sourceTree = "<group>"; };
+		0C4F618718442815000726EA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0C4F618918442815000726EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0C4F618B18442815000726EA /* Felix-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Felix-Prefix.pch"; sourceTree = "<group>"; };
+		0C4F618C18442815000726EA /* FLXAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLXAppDelegate.h; sourceTree = "<group>"; };
+		0C4F618D18442815000726EA /* FLXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLXAppDelegate.m; sourceTree = "<group>"; };
+		0C4F618F18442815000726EA /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		0C4F619118442815000726EA /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		0C4F619318442815000726EA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		0C4F619618442815000726EA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		0C4F619918442815000726EA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		0C4F619B18442815000726EA /* FLXViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLXViewController.h; sourceTree = "<group>"; };
+		0C4F619C18442815000726EA /* FLXViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLXViewController.m; sourceTree = "<group>"; };
+		0C4F61A518442866000726EA /* correctSound.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = correctSound.aif; sourceTree = "<group>"; };
+		0C4F61A718442866000726EA /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/ScringoLocalizable.strings; sourceTree = "<group>"; };
+		0C4F61A818442866000726EA /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/ScringoLocalizable.strings; sourceTree = "<group>"; };
+		0C4F61A918442866000726EA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ScringoLocalizable.strings; sourceTree = "<group>"; };
+		0C4F61AA18442866000726EA /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/ScringoLocalizable.strings; sourceTree = "<group>"; };
+		0C4F61AC18442866000726EA /* iPad_ScringoActivationRibonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoActivationRibonView.xib; sourceTree = "<group>"; };
+		0C4F61AD18442866000726EA /* iPad_ScringoActivationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoActivationView.xib; sourceTree = "<group>"; };
+		0C4F61AE18442866000726EA /* iPad_ScringoAppBannerFullScreenPopupView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoAppBannerFullScreenPopupView.xib; sourceTree = "<group>"; };
+		0C4F61AF18442866000726EA /* iPad_ScringoAppBannerPopupView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoAppBannerPopupView.xib; sourceTree = "<group>"; };
+		0C4F61B018442866000726EA /* iPad_ScringoChangePasswordView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoChangePasswordView.xib; sourceTree = "<group>"; };
+		0C4F61B118442866000726EA /* iPad_ScringoChatRoomsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoChatRoomsCell.xib; sourceTree = "<group>"; };
+		0C4F61B218442866000726EA /* iPad_ScringoChatRoomsCommentsFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoChatRoomsCommentsFooterView.xib; sourceTree = "<group>"; };
+		0C4F61B318442866000726EA /* iPad_ScringoChatRoomsList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoChatRoomsList.xib; sourceTree = "<group>"; };
+		0C4F61B418442866000726EA /* iPad_ScringoChatRoomsTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoChatRoomsTopicCell.xib; sourceTree = "<group>"; };
+		0C4F61B518442866000726EA /* iPad_ScringoChatRoomsTopicHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoChatRoomsTopicHeaderView.xib; sourceTree = "<group>"; };
+		0C4F61B618442866000726EA /* iPad_ScringoChatRoomsTopicImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoChatRoomsTopicImageCell.xib; sourceTree = "<group>"; };
+		0C4F61B718442866000726EA /* iPad_ScringoChatRoomsTopicList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoChatRoomsTopicList.xib; sourceTree = "<group>"; };
+		0C4F61B818442866000726EA /* iPad_ScringoChatRoomsTopicNativeAppAdCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoChatRoomsTopicNativeAppAdCell.xib; sourceTree = "<group>"; };
+		0C4F61B918442866000726EA /* iPad_ScringoChatRoomsTopicStickerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoChatRoomsTopicStickerCell.xib; sourceTree = "<group>"; };
+		0C4F61BA18442866000726EA /* iPad_ScringoCommentButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoCommentButton.xib; sourceTree = "<group>"; };
+		0C4F61BB18442866000726EA /* iPad_ScringoDefaultNotificationPopup.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoDefaultNotificationPopup.xib; sourceTree = "<group>"; };
+		0C4F61BC18442866000726EA /* iPad_ScringoEditAboutPopupView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoEditAboutPopupView.xib; sourceTree = "<group>"; };
+		0C4F61BD18442866000726EA /* iPad_ScringoEmailLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoEmailLoginView.xib; sourceTree = "<group>"; };
+		0C4F61BE18442866000726EA /* iPad_ScringoEmailSignUpView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoEmailSignUpView.xib; sourceTree = "<group>"; };
+		0C4F61BF18442866000726EA /* iPad_ScringoFeedActivityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoFeedActivityCell.xib; sourceTree = "<group>"; };
+		0C4F61C018442866000726EA /* iPad_ScringoFeedbackPopupClose.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoFeedbackPopupClose.xib; sourceTree = "<group>"; };
+		0C4F61C118442866000726EA /* iPad_ScringoFeedbackPopupWithRateUs.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoFeedbackPopupWithRateUs.xib; sourceTree = "<group>"; };
+		0C4F61C218442866000726EA /* iPad_ScringoFeedbackTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoFeedbackTableCell.xib; sourceTree = "<group>"; };
+		0C4F61C318442866000726EA /* iPad_ScringoFeedbackTableCellBig.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoFeedbackTableCellBig.xib; sourceTree = "<group>"; };
+		0C4F61C418442866000726EA /* iPad_ScringoFeedbackTalkToUs.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoFeedbackTalkToUs.xib; sourceTree = "<group>"; };
+		0C4F61C518442866000726EA /* iPad_ScringoFeedbackView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoFeedbackView.xib; sourceTree = "<group>"; };
+		0C4F61C618442866000726EA /* iPad_ScringoFeedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoFeedCell.xib; sourceTree = "<group>"; };
+		0C4F61C718442866000726EA /* iPad_ScringoFeedLikeActivityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoFeedLikeActivityCell.xib; sourceTree = "<group>"; };
+		0C4F61C818442866000726EA /* iPad_ScringoFeedLikeImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoFeedLikeImageCell.xib; sourceTree = "<group>"; };
+		0C4F61C918442866000726EA /* iPad_ScringoFeedLikeTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoFeedLikeTopicCell.xib; sourceTree = "<group>"; };
+		0C4F61CA18442866000726EA /* iPad_ScringoFeedLikeTopicCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoFeedLikeTopicCommentCell.xib; sourceTree = "<group>"; };
+		0C4F61CB18442866000726EA /* iPad_ScringoFeedLikeTopicImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoFeedLikeTopicImageCell.xib; sourceTree = "<group>"; };
+		0C4F61CC18442866000726EA /* iPad_ScringoFeedList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoFeedList.xib; sourceTree = "<group>"; };
+		0C4F61CD18442866000726EA /* iPad_ScringoFeedSimpleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoFeedSimpleCell.xib; sourceTree = "<group>"; };
+		0C4F61CE18442866000726EA /* iPad_ScringoFindFriendsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoFindFriendsCell.xib; sourceTree = "<group>"; };
+		0C4F61CF18442866000726EA /* iPad_ScringoFindFriendsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoFindFriendsView.xib; sourceTree = "<group>"; };
+		0C4F61D018442866000726EA /* iPad_ScringoForgotPasswordView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoForgotPasswordView.xib; sourceTree = "<group>"; };
+		0C4F61D118442866000726EA /* iPad_ScringoFullScreenImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoFullScreenImageView.xib; sourceTree = "<group>"; };
+		0C4F61D218442866000726EA /* iPad_ScringoGeneralSystemMessageList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoGeneralSystemMessageList.xib; sourceTree = "<group>"; };
+		0C4F61D318442866000726EA /* iPad_ScringoGeneralWebView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoGeneralWebView.xib; sourceTree = "<group>"; };
+		0C4F61D418442866000726EA /* iPad_ScringoInboxCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoInboxCell.xib; sourceTree = "<group>"; };
+		0C4F61D518442866000726EA /* iPad_ScringoInboxList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoInboxList.xib; sourceTree = "<group>"; };
+		0C4F61D618442866000726EA /* iPad_ScringoInviteCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoInviteCell.xib; sourceTree = "<group>"; };
+		0C4F61D718442866000726EA /* iPad_ScringoInviteContactCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoInviteContactCell.xib; sourceTree = "<group>"; };
+		0C4F61D818442866000726EA /* iPad_ScringoInviteFriendsList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoInviteFriendsList.xib; sourceTree = "<group>"; };
+		0C4F61D918442866000726EA /* iPad_ScringoInviteHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoInviteHeaderView.xib; sourceTree = "<group>"; };
+		0C4F61DA18442866000726EA /* iPad_ScringoInviteSocialCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoInviteSocialCell.xib; sourceTree = "<group>"; };
+		0C4F61DB18442866000726EA /* iPad_ScringoInviteSocialView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoInviteSocialView.xib; sourceTree = "<group>"; };
+		0C4F61DC18442866000726EA /* iPad_ScringoKeyboardStickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoKeyboardStickerView.xib; sourceTree = "<group>"; };
+		0C4F61DD18442866000726EA /* iPad_ScringoLeaderboardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoLeaderboardCell.xib; sourceTree = "<group>"; };
+		0C4F61DE18442866000726EA /* iPad_ScringoLeaderboardList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoLeaderboardList.xib; sourceTree = "<group>"; };
+		0C4F61DF18442866000726EA /* iPad_ScringoLikeButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoLikeButton.xib; sourceTree = "<group>"; };
+		0C4F61E018442866000726EA /* iPad_ScringoLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoLoginView.xib; sourceTree = "<group>"; };
+		0C4F61E118442866000726EA /* iPad_ScringoMainMenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoMainMenuView.xib; sourceTree = "<group>"; };
+		0C4F61E218442866000726EA /* iPad_ScringoMapAnnotationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoMapAnnotationView.xib; sourceTree = "<group>"; };
+		0C4F61E318442866000726EA /* iPad_ScringoNewMessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoNewMessageCell.xib; sourceTree = "<group>"; };
+		0C4F61E418442866000726EA /* iPad_ScringoNewMessagePopupView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoNewMessagePopupView.xib; sourceTree = "<group>"; };
+		0C4F61E518442866000726EA /* iPad_ScringoNewMessageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoNewMessageView.xib; sourceTree = "<group>"; };
+		0C4F61E618442866000726EA /* iPad_ScringoOKCancelPopupView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoOKCancelPopupView.xib; sourceTree = "<group>"; };
+		0C4F61E718442866000726EA /* iPad_ScringoOKPopupView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoOKPopupView.xib; sourceTree = "<group>"; };
+		0C4F61E818442866000726EA /* iPad_ScringoOneChatHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoOneChatHeaderView.xib; sourceTree = "<group>"; };
+		0C4F61E918442866000726EA /* iPad_ScringoOneChatImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoOneChatImageCell.xib; sourceTree = "<group>"; };
+		0C4F61EA18442866000726EA /* iPad_ScringoOneChatList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoOneChatList.xib; sourceTree = "<group>"; };
+		0C4F61EB18442866000726EA /* iPad_ScringoOneChatMessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoOneChatMessageCell.xib; sourceTree = "<group>"; };
+		0C4F61EC18442866000726EA /* iPad_ScringoOneChatStickerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoOneChatStickerCell.xib; sourceTree = "<group>"; };
+		0C4F61ED18442866000726EA /* iPad_ScringoOneChatTableHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoOneChatTableHeaderView.xib; sourceTree = "<group>"; };
+		0C4F61EE18442866000726EA /* iPad_ScringoOtherUserProfile.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoOtherUserProfile.xib; sourceTree = "<group>"; };
+		0C4F61EF18442866000726EA /* iPad_ScringoPanelAppDealsTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoPanelAppDealsTableCell.xib; sourceTree = "<group>"; };
+		0C4F61F018442866000726EA /* iPad_ScringoPanelNewProfileView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoPanelNewProfileView.xib; sourceTree = "<group>"; };
+		0C4F61F118442866000726EA /* iPad_ScringoPanelTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoPanelTableCell.xib; sourceTree = "<group>"; };
+		0C4F61F218442866000726EA /* iPad_ScringoQuizCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoQuizCell.xib; sourceTree = "<group>"; };
+		0C4F61F318442866000726EA /* iPad_ScringoQuizEndTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoQuizEndTableCell.xib; sourceTree = "<group>"; };
+		0C4F61F418442866000726EA /* iPad_ScringoQuizPlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoQuizPlayView.xib; sourceTree = "<group>"; };
+		0C4F61F518442866000726EA /* iPad_ScringoQuizProfileTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoQuizProfileTableCell.xib; sourceTree = "<group>"; };
+		0C4F61F618442866000726EA /* iPad_ScringoQuizProfileView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoQuizProfileView.xib; sourceTree = "<group>"; };
+		0C4F61F718442866000726EA /* iPad_ScringoQuizPurchaseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoQuizPurchaseView.xib; sourceTree = "<group>"; };
+		0C4F61F818442867000726EA /* iPad_ScringoQuizScrollScoreView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoQuizScrollScoreView.xib; sourceTree = "<group>"; };
+		0C4F61F918442867000726EA /* iPad_ScringoQuizSuggestQuestionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoQuizSuggestQuestionView.xib; sourceTree = "<group>"; };
+		0C4F61FA18442867000726EA /* iPad_ScringoQuizTimeBonusView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoQuizTimeBonusView.xib; sourceTree = "<group>"; };
+		0C4F61FB18442867000726EA /* iPad_ScringoQuizUnlockPopup.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoQuizUnlockPopup.xib; sourceTree = "<group>"; };
+		0C4F61FC18442867000726EA /* iPad_ScringoQuizzesList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoQuizzesList.xib; sourceTree = "<group>"; };
+		0C4F61FD18442867000726EA /* iPad_ScringoRadarListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoRadarListCell.xib; sourceTree = "<group>"; };
+		0C4F61FE18442867000726EA /* iPad_ScringoRadarListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoRadarListView.xib; sourceTree = "<group>"; };
+		0C4F61FF18442867000726EA /* iPad_ScringoRadarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoRadarView.xib; sourceTree = "<group>"; };
+		0C4F620018442867000726EA /* iPad_ScringoRefreshTableHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoRefreshTableHeaderView.xib; sourceTree = "<group>"; };
+		0C4F620118442867000726EA /* iPad_ScringoSignInPopup.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoSignInPopup.xib; sourceTree = "<group>"; };
+		0C4F620218442867000726EA /* iPad_ScringoSignUpPopup.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoSignUpPopup.xib; sourceTree = "<group>"; };
+		0C4F620318442867000726EA /* iPad_ScringoSignUpView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoSignUpView.xib; sourceTree = "<group>"; };
+		0C4F620418442867000726EA /* iPad_ScringoStickerPack.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoStickerPack.xib; sourceTree = "<group>"; };
+		0C4F620518442867000726EA /* iPad_ScringoStickerPackCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoStickerPackCell.xib; sourceTree = "<group>"; };
+		0C4F620618442867000726EA /* iPad_ScringoStickersKeyboardLandscapeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoStickersKeyboardLandscapeView.xib; sourceTree = "<group>"; };
+		0C4F620718442867000726EA /* iPad_ScringoStickersKeyboardToolbarItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoStickersKeyboardToolbarItem.xib; sourceTree = "<group>"; };
+		0C4F620818442867000726EA /* iPad_ScringoStickersKeyboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoStickersKeyboardView.xib; sourceTree = "<group>"; };
+		0C4F620918442867000726EA /* iPad_ScringoStickerStore.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoStickerStore.xib; sourceTree = "<group>"; };
+		0C4F620A18442867000726EA /* iPad_ScringoStickerStoreCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoStickerStoreCell.xib; sourceTree = "<group>"; };
+		0C4F620B18442867000726EA /* iPad_ScringoStretchableBadgeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoStretchableBadgeView.xib; sourceTree = "<group>"; };
+		0C4F620C18442867000726EA /* iPad_ScringoSuggestedAppDealView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoSuggestedAppDealView.xib; sourceTree = "<group>"; };
+		0C4F620D18442867000726EA /* iPad_ScringoSuggestedPersonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoSuggestedPersonView.xib; sourceTree = "<group>"; };
+		0C4F620E18442867000726EA /* iPad_ScringoSuggestedUsersList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoSuggestedUsersList.xib; sourceTree = "<group>"; };
+		0C4F620F18442867000726EA /* iPad_ScringoUploadImageKeyboardLandscapeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoUploadImageKeyboardLandscapeView.xib; sourceTree = "<group>"; };
+		0C4F621018442867000726EA /* iPad_ScringoUploadImageKeyboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoUploadImageKeyboardView.xib; sourceTree = "<group>"; };
+		0C4F621118442867000726EA /* iPad_ScringoUserListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoUserListCell.xib; sourceTree = "<group>"; };
+		0C4F621218442867000726EA /* iPad_ScringoUserListSuggestionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoUserListSuggestionCell.xib; sourceTree = "<group>"; };
+		0C4F621318442867000726EA /* iPad_ScringoUserProfile.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoUserProfile.xib; sourceTree = "<group>"; };
+		0C4F621418442867000726EA /* iPad_ScringoUserSettingsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoUserSettingsView.xib; sourceTree = "<group>"; };
+		0C4F621518442867000726EA /* iPad_ScringoUsersListSearch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoUsersListSearch.xib; sourceTree = "<group>"; };
+		0C4F621618442867000726EA /* iPad_ScringoWelcomeFingerImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoWelcomeFingerImageView.xib; sourceTree = "<group>"; };
+		0C4F621718442867000726EA /* iPad_ScringoWelcomeFingerImageViewLandscape.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoWelcomeFingerImageViewLandscape.xib; sourceTree = "<group>"; };
+		0C4F621818442867000726EA /* iPad_ScringoWelcomePopupView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPad_ScringoWelcomePopupView.xib; sourceTree = "<group>"; };
+		0C4F621918442867000726EA /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/ScringoLocalizable.strings; sourceTree = "<group>"; };
+		0C4F621A18442867000726EA /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/ScringoLocalizable.strings; sourceTree = "<group>"; };
+		0C4F621B18442867000726EA /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/ScringoLocalizable.strings"; sourceTree = "<group>"; };
+		0C4F621C18442867000726EA /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/ScringoLocalizable.strings; sourceTree = "<group>"; };
+		0C4F621D18442867000726EA /* ScringoActivationRibonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoActivationRibonView.xib; sourceTree = "<group>"; };
+		0C4F621E18442867000726EA /* ScringoActivationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoActivationView.xib; sourceTree = "<group>"; };
+		0C4F621F18442867000726EA /* ScringoAppBannerFullScreenPopupView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoAppBannerFullScreenPopupView.xib; sourceTree = "<group>"; };
+		0C4F622018442867000726EA /* ScringoAppBannerPopupView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoAppBannerPopupView.xib; sourceTree = "<group>"; };
+		0C4F622118442867000726EA /* ScringoChangePasswordView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoChangePasswordView.xib; sourceTree = "<group>"; };
+		0C4F622218442867000726EA /* ScringoChatRoomsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoChatRoomsCell.xib; sourceTree = "<group>"; };
+		0C4F622318442867000726EA /* ScringoChatRoomsCommentsFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoChatRoomsCommentsFooterView.xib; sourceTree = "<group>"; };
+		0C4F622418442867000726EA /* ScringoChatRoomsList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoChatRoomsList.xib; sourceTree = "<group>"; };
+		0C4F622518442867000726EA /* ScringoChatRoomsTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoChatRoomsTopicCell.xib; sourceTree = "<group>"; };
+		0C4F622618442867000726EA /* ScringoChatRoomsTopicHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoChatRoomsTopicHeaderView.xib; sourceTree = "<group>"; };
+		0C4F622718442867000726EA /* ScringoChatRoomsTopicImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoChatRoomsTopicImageCell.xib; sourceTree = "<group>"; };
+		0C4F622818442867000726EA /* ScringoChatRoomsTopicList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoChatRoomsTopicList.xib; sourceTree = "<group>"; };
+		0C4F622918442867000726EA /* ScringoChatRoomsTopicNativeAppAdCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoChatRoomsTopicNativeAppAdCell.xib; sourceTree = "<group>"; };
+		0C4F622A18442867000726EA /* ScringoChatRoomsTopicStickerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoChatRoomsTopicStickerCell.xib; sourceTree = "<group>"; };
+		0C4F622B18442867000726EA /* ScringoCommentButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoCommentButton.xib; sourceTree = "<group>"; };
+		0C4F622C18442867000726EA /* ScringoDefaultNotificationPopup.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoDefaultNotificationPopup.xib; sourceTree = "<group>"; };
+		0C4F622D18442867000726EA /* ScringoEditAboutPopupView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoEditAboutPopupView.xib; sourceTree = "<group>"; };
+		0C4F622E18442867000726EA /* ScringoEmailLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoEmailLoginView.xib; sourceTree = "<group>"; };
+		0C4F622F18442867000726EA /* ScringoEmailSignUpView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoEmailSignUpView.xib; sourceTree = "<group>"; };
+		0C4F623018442867000726EA /* ScringoFeedActivityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoFeedActivityCell.xib; sourceTree = "<group>"; };
+		0C4F623118442867000726EA /* ScringoFeedbackPopupClose.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoFeedbackPopupClose.xib; sourceTree = "<group>"; };
+		0C4F623218442867000726EA /* ScringoFeedbackPopupWithRateUs.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoFeedbackPopupWithRateUs.xib; sourceTree = "<group>"; };
+		0C4F623318442867000726EA /* ScringoFeedbackTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoFeedbackTableCell.xib; sourceTree = "<group>"; };
+		0C4F623418442867000726EA /* ScringoFeedbackTableCellBig.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoFeedbackTableCellBig.xib; sourceTree = "<group>"; };
+		0C4F623518442867000726EA /* ScringoFeedbackTalkToUs.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoFeedbackTalkToUs.xib; sourceTree = "<group>"; };
+		0C4F623618442867000726EA /* ScringoFeedbackView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoFeedbackView.xib; sourceTree = "<group>"; };
+		0C4F623718442867000726EA /* ScringoFeedLikeActivityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoFeedLikeActivityCell.xib; sourceTree = "<group>"; };
+		0C4F623818442867000726EA /* ScringoFeedLikeImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoFeedLikeImageCell.xib; sourceTree = "<group>"; };
+		0C4F623918442867000726EA /* ScringoFeedLikeTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoFeedLikeTopicCell.xib; sourceTree = "<group>"; };
+		0C4F623A18442867000726EA /* ScringoFeedLikeTopicCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoFeedLikeTopicCommentCell.xib; sourceTree = "<group>"; };
+		0C4F623B18442867000726EA /* ScringoFeedLikeTopicImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoFeedLikeTopicImageCell.xib; sourceTree = "<group>"; };
+		0C4F623C18442867000726EA /* ScringoFeedList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoFeedList.xib; sourceTree = "<group>"; };
+		0C4F623D18442867000726EA /* ScringoFeedSimpleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoFeedSimpleCell.xib; sourceTree = "<group>"; };
+		0C4F623E18442867000726EA /* ScringoFindFriendsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoFindFriendsCell.xib; sourceTree = "<group>"; };
+		0C4F623F18442867000726EA /* ScringoFindFriendsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoFindFriendsView.xib; sourceTree = "<group>"; };
+		0C4F624018442867000726EA /* ScringoForgotPasswordView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoForgotPasswordView.xib; sourceTree = "<group>"; };
+		0C4F624118442867000726EA /* ScringoFullScreenImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoFullScreenImageView.xib; sourceTree = "<group>"; };
+		0C4F624218442867000726EA /* ScringoGeneralSystemMessageList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoGeneralSystemMessageList.xib; sourceTree = "<group>"; };
+		0C4F624318442867000726EA /* ScringoGeneralWebView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoGeneralWebView.xib; sourceTree = "<group>"; };
+		0C4F624418442867000726EA /* ScringoInboxCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoInboxCell.xib; sourceTree = "<group>"; };
+		0C4F624518442867000726EA /* ScringoInboxList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoInboxList.xib; sourceTree = "<group>"; };
+		0C4F624618442867000726EA /* ScringoInviteCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoInviteCell.xib; sourceTree = "<group>"; };
+		0C4F624718442867000726EA /* ScringoInviteContactCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoInviteContactCell.xib; sourceTree = "<group>"; };
+		0C4F624818442867000726EA /* ScringoInviteFriendsList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoInviteFriendsList.xib; sourceTree = "<group>"; };
+		0C4F624918442867000726EA /* ScringoInviteHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoInviteHeaderView.xib; sourceTree = "<group>"; };
+		0C4F624A18442867000726EA /* ScringoInviteSocialCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoInviteSocialCell.xib; sourceTree = "<group>"; };
+		0C4F624B18442867000726EA /* ScringoInviteSocialView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoInviteSocialView.xib; sourceTree = "<group>"; };
+		0C4F624C18442867000726EA /* ScringoKeyboardStickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoKeyboardStickerView.xib; sourceTree = "<group>"; };
+		0C4F624D18442867000726EA /* ScringoLeaderboardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoLeaderboardCell.xib; sourceTree = "<group>"; };
+		0C4F624E18442867000726EA /* ScringoLeaderboardList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoLeaderboardList.xib; sourceTree = "<group>"; };
+		0C4F624F18442867000726EA /* ScringoLikeButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoLikeButton.xib; sourceTree = "<group>"; };
+		0C4F625018442867000726EA /* ScringoLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoLoginView.xib; sourceTree = "<group>"; };
+		0C4F625118442867000726EA /* ScringoMainMenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoMainMenuView.xib; sourceTree = "<group>"; };
+		0C4F625218442867000726EA /* ScringoMapAnnotationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoMapAnnotationView.xib; sourceTree = "<group>"; };
+		0C4F625318442867000726EA /* ScringoNewMessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoNewMessageCell.xib; sourceTree = "<group>"; };
+		0C4F625418442867000726EA /* ScringoNewMessagePopupView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoNewMessagePopupView.xib; sourceTree = "<group>"; };
+		0C4F625518442867000726EA /* ScringoNewMessageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoNewMessageView.xib; sourceTree = "<group>"; };
+		0C4F625618442867000726EA /* ScringoOKCancelPopupView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoOKCancelPopupView.xib; sourceTree = "<group>"; };
+		0C4F625718442867000726EA /* ScringoOKPopupView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoOKPopupView.xib; sourceTree = "<group>"; };
+		0C4F625818442867000726EA /* ScringoOneChatHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoOneChatHeaderView.xib; sourceTree = "<group>"; };
+		0C4F625918442867000726EA /* ScringoOneChatImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoOneChatImageCell.xib; sourceTree = "<group>"; };
+		0C4F625A18442867000726EA /* ScringoOneChatList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoOneChatList.xib; sourceTree = "<group>"; };
+		0C4F625B18442867000726EA /* ScringoOneChatMessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoOneChatMessageCell.xib; sourceTree = "<group>"; };
+		0C4F625C18442867000726EA /* ScringoOneChatStickerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoOneChatStickerCell.xib; sourceTree = "<group>"; };
+		0C4F625D18442867000726EA /* ScringoOneChatTableHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoOneChatTableHeaderView.xib; sourceTree = "<group>"; };
+		0C4F625E18442867000726EA /* ScringoOtherUserProfile.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoOtherUserProfile.xib; sourceTree = "<group>"; };
+		0C4F625F18442867000726EA /* ScringoPanelAppDealsTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoPanelAppDealsTableCell.xib; sourceTree = "<group>"; };
+		0C4F626018442867000726EA /* ScringoPanelNewProfileView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoPanelNewProfileView.xib; sourceTree = "<group>"; };
+		0C4F626118442867000726EA /* ScringoPanelTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoPanelTableCell.xib; sourceTree = "<group>"; };
+		0C4F626218442867000726EA /* ScringoQuizCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoQuizCell.xib; sourceTree = "<group>"; };
+		0C4F626318442867000726EA /* ScringoQuizEndTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoQuizEndTableCell.xib; sourceTree = "<group>"; };
+		0C4F626418442867000726EA /* ScringoQuizPlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoQuizPlayView.xib; sourceTree = "<group>"; };
+		0C4F626518442867000726EA /* ScringoQuizProfileTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoQuizProfileTableCell.xib; sourceTree = "<group>"; };
+		0C4F626618442867000726EA /* ScringoQuizProfileView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoQuizProfileView.xib; sourceTree = "<group>"; };
+		0C4F626718442867000726EA /* ScringoQuizPurchaseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoQuizPurchaseView.xib; sourceTree = "<group>"; };
+		0C4F626818442867000726EA /* ScringoQuizScrollScoreView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoQuizScrollScoreView.xib; sourceTree = "<group>"; };
+		0C4F626918442867000726EA /* ScringoQuizSuggestQuestionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoQuizSuggestQuestionView.xib; sourceTree = "<group>"; };
+		0C4F626A18442867000726EA /* ScringoQuizTimeBonusView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoQuizTimeBonusView.xib; sourceTree = "<group>"; };
+		0C4F626B18442867000726EA /* ScringoQuizUnlockPopup.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoQuizUnlockPopup.xib; sourceTree = "<group>"; };
+		0C4F626C18442867000726EA /* ScringoQuizzesList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoQuizzesList.xib; sourceTree = "<group>"; };
+		0C4F626D18442867000726EA /* ScringoRadarListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoRadarListCell.xib; sourceTree = "<group>"; };
+		0C4F626E18442867000726EA /* ScringoRadarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoRadarView.xib; sourceTree = "<group>"; };
+		0C4F626F18442867000726EA /* ScringoRefreshTableHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoRefreshTableHeaderView.xib; sourceTree = "<group>"; };
+		0C4F627018442867000726EA /* ScringoSignInPopup.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoSignInPopup.xib; sourceTree = "<group>"; };
+		0C4F627118442867000726EA /* ScringoSignUpPopup.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoSignUpPopup.xib; sourceTree = "<group>"; };
+		0C4F627218442867000726EA /* ScringoSignUpView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoSignUpView.xib; sourceTree = "<group>"; };
+		0C4F627318442867000726EA /* ScringoStickerPack.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoStickerPack.xib; sourceTree = "<group>"; };
+		0C4F627418442867000726EA /* ScringoStickerPackCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoStickerPackCell.xib; sourceTree = "<group>"; };
+		0C4F627518442867000726EA /* ScringoStickersKeyboardLandscapeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoStickersKeyboardLandscapeView.xib; sourceTree = "<group>"; };
+		0C4F627618442867000726EA /* ScringoStickersKeyboardToolbarItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoStickersKeyboardToolbarItem.xib; sourceTree = "<group>"; };
+		0C4F627718442867000726EA /* ScringoStickersKeyboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoStickersKeyboardView.xib; sourceTree = "<group>"; };
+		0C4F627818442867000726EA /* ScringoStickerStore.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoStickerStore.xib; sourceTree = "<group>"; };
+		0C4F627918442867000726EA /* ScringoStickerStoreCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoStickerStoreCell.xib; sourceTree = "<group>"; };
+		0C4F627A18442867000726EA /* ScringoStretchableBadgeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoStretchableBadgeView.xib; sourceTree = "<group>"; };
+		0C4F627B18442867000726EA /* ScringoSuggestedAppDealView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoSuggestedAppDealView.xib; sourceTree = "<group>"; };
+		0C4F627C18442867000726EA /* ScringoSuggestedPersonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoSuggestedPersonView.xib; sourceTree = "<group>"; };
+		0C4F627D18442867000726EA /* ScringoSuggestedUsersList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoSuggestedUsersList.xib; sourceTree = "<group>"; };
+		0C4F627E18442867000726EA /* ScringoUploadImageKeyboardLandscapeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoUploadImageKeyboardLandscapeView.xib; sourceTree = "<group>"; };
+		0C4F627F18442867000726EA /* ScringoUploadImageKeyboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoUploadImageKeyboardView.xib; sourceTree = "<group>"; };
+		0C4F628018442867000726EA /* ScringoUserListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoUserListCell.xib; sourceTree = "<group>"; };
+		0C4F628118442867000726EA /* ScringoUserListSuggestionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoUserListSuggestionCell.xib; sourceTree = "<group>"; };
+		0C4F628218442867000726EA /* ScringoUserProfile.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoUserProfile.xib; sourceTree = "<group>"; };
+		0C4F628318442867000726EA /* ScringoUserSettingsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoUserSettingsView.xib; sourceTree = "<group>"; };
+		0C4F628418442867000726EA /* ScringoUsersListSearch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoUsersListSearch.xib; sourceTree = "<group>"; };
+		0C4F628518442867000726EA /* ScringoWelcomeFingerImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoWelcomeFingerImageView.xib; sourceTree = "<group>"; };
+		0C4F628618442867000726EA /* ScringoWelcomeFingerImageViewLandscape.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoWelcomeFingerImageViewLandscape.xib; sourceTree = "<group>"; };
+		0C4F628718442867000726EA /* ScringoWelcomePopupView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScringoWelcomePopupView.xib; sourceTree = "<group>"; };
+		0C4F628818442867000726EA /* temp_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = temp_btn.png; sourceTree = "<group>"; };
+		0C4F628918442867000726EA /* wrongSound.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = wrongSound.aif; sourceTree = "<group>"; };
+		0C4F628A18442867000726EA /* Scringo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Scringo.bundle; sourceTree = "<group>"; };
+		0C4F628B18442867000726EA /* Scringo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Scringo.framework; path = Scringo/Scringo.framework; sourceTree = "<group>"; };
+		0C4F636A18442899000726EA /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		0C4F636C184428CA000726EA /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		0C4F636E184428D4000726EA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		0C6D727E1844CF8400BFF89C /* felix_cat-small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "felix_cat-small.jpg"; sourceTree = "<group>"; };
+		0C6D7280184555BA00BFF89C /* ArticleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleViewController.h; sourceTree = "<group>"; };
+		0C6D7281184555BA00BFF89C /* ArticleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleViewController.m; sourceTree = "<group>"; };
+		0C7206071A45B80A00B2A968 /* Article.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Article.h; path = ../Article.h; sourceTree = "<group>"; };
+		0C7206081A45B80A00B2A968 /* Article.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Article.m; path = ../Article.m; sourceTree = "<group>"; };
+		0C774BD919C8C3CB00A265A4 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		0C774BDA19C8C3CB00A265A4 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		0C774BDC19C8F37000A265A4 /* home-5-2561.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "home-5-2561.gif"; sourceTree = "<group>"; };
+		0C774BDE19C8F59100A265A4 /* bigimage copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bigimage copy.png"; sourceTree = "<group>"; };
+		0CD00422184564720032A736 /* title-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "title-small.png"; path = "Felix/title-small.png"; sourceTree = "<group>"; };
+		0CF4CF8C1846540600C789BE /* SplashScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashScreenViewController.h; sourceTree = "<group>"; };
+		0CF4CF8D1846540600C789BE /* SplashScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashScreenViewController.m; sourceTree = "<group>"; };
+		0CF4CF8F18465F8700C789BE /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		0CF4CF911846600A00C789BE /* 57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 57x57.png; path = Felix/57x57.png; sourceTree = "<group>"; };
+		0CF4CF921846600A00C789BE /* 114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 114x114.png; path = Felix/114x114.png; sourceTree = "<group>"; };
+		0CF4CF9D184663BA00C789BE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0CF4CF9F184663CF00C789BE /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = ../Reachability.h; sourceTree = "<group>"; };
+		0CF4CFA0184663CF00C789BE /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = ../Reachability.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C4F617718442815000726EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CF4CF9E184663BA00C789BE /* SystemConfiguration.framework in Frameworks */,
+				0C4F636F184428D4000726EA /* MapKit.framework in Frameworks */,
+				0C4F636D184428CA000726EA /* CoreText.framework in Frameworks */,
+				0C4F636B18442899000726EA /* FacebookSDK.framework in Frameworks */,
+				0C4F617E18442815000726EA /* UIKit.framework in Frameworks */,
+				0C4F618018442815000726EA /* Foundation.framework in Frameworks */,
+				0C4F618218442815000726EA /* CoreGraphics.framework in Frameworks */,
+				0C4F636918442867000726EA /* Scringo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C4F617118442815000726EA = {
+			isa = PBXGroup;
+			children = (
+				0C087C3119DA16AC00F350BC /* 57 x 57.png */,
+				0C087C3219DA16AC00F350BC /* 114 x 114.png */,
+				0C087C3319DA16AC00F350BC /* 120 x 120.png */,
+				0C087C2B19DA14FD00F350BC /* Default.png */,
+				0C087C2C19DA14FD00F350BC /* Default-568h@2x.png */,
+				0C087C2D19DA14FD00F350BC /* Default~iphone.png */,
+				0CF4CF911846600A00C789BE /* 57x57.png */,
+				0CF4CF921846600A00C789BE /* 114x114.png */,
+				0CD00422184564720032A736 /* title-small.png */,
+				0C4F61A318442866000726EA /* Scringo */,
+				0C4F618318442815000726EA /* Felix */,
+				0C4F617C18442815000726EA /* Frameworks */,
+				0C4F617B18442815000726EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0C4F617B18442815000726EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C4F617A18442815000726EA /* Felix.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0C4F617C18442815000726EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CF4CF9D184663BA00C789BE /* SystemConfiguration.framework */,
+				0C4F636E184428D4000726EA /* MapKit.framework */,
+				0C4F636C184428CA000726EA /* CoreText.framework */,
+				0C4F628B18442867000726EA /* Scringo.framework */,
+				0C4F636A18442899000726EA /* FacebookSDK.framework */,
+				0C4F617D18442815000726EA /* UIKit.framework */,
+				0C4F617F18442815000726EA /* Foundation.framework */,
+				0C4F618118442815000726EA /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0C4F618318442815000726EA /* Felix */ = {
+			isa = PBXGroup;
+			children = (
+				0C7206071A45B80A00B2A968 /* Article.h */,
+				0C7206081A45B80A00B2A968 /* Article.m */,
+				0CF4CF9F184663CF00C789BE /* Reachability.h */,
+				0CF4CFA0184663CF00C789BE /* Reachability.m */,
+				0C4F618C18442815000726EA /* FLXAppDelegate.h */,
+				0C4F618D18442815000726EA /* FLXAppDelegate.m */,
+				0C4F619518442815000726EA /* MainStoryboard_iPhone.storyboard */,
+				0C087C2919DA11D300F350BC /* facebook banner.png */,
+				0C774BDE19C8F59100A265A4 /* bigimage copy.png */,
+				0C774BDC19C8F37000A265A4 /* home-5-2561.gif */,
+				0C774BD919C8C3CB00A265A4 /* WebViewController.h */,
+				0C774BDA19C8C3CB00A265A4 /* WebViewController.m */,
+				0CF4CF8F18465F8700C789BE /* icon.png */,
+				0CF4CF8C1846540600C789BE /* SplashScreenViewController.h */,
+				0CF4CF8D1846540600C789BE /* SplashScreenViewController.m */,
+				0C087C2719DA114B00F350BC /* Final Felix Logo HQ with line.png */,
+				0C6D7280184555BA00BFF89C /* ArticleViewController.h */,
+				0C6D7281184555BA00BFF89C /* ArticleViewController.m */,
+				0C6D727E1844CF8400BFF89C /* felix_cat-small.jpg */,
+				0C4F619818442815000726EA /* MainStoryboard_iPad.storyboard */,
+				0C4F619B18442815000726EA /* FLXViewController.h */,
+				0C4F619C18442815000726EA /* FLXViewController.m */,
+				0C4F618418442815000726EA /* Supporting Files */,
+			);
+			path = Felix;
+			sourceTree = "<group>";
+		};
+		0C4F618418442815000726EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0C4F618518442815000726EA /* Felix-Info.plist */,
+				0C4F618618442815000726EA /* InfoPlist.strings */,
+				0C4F618918442815000726EA /* main.m */,
+				0C4F618B18442815000726EA /* Felix-Prefix.pch */,
+				0C4F618F18442815000726EA /* Default.png */,
+				0C4F619118442815000726EA /* Default@2x.png */,
+				0C4F619318442815000726EA /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0C4F61A318442866000726EA /* Scringo */ = {
+			isa = PBXGroup;
+			children = (
+				0C4F61A418442866000726EA /* Resources */,
+				0C4F628A18442867000726EA /* Scringo.bundle */,
+			);
+			path = Scringo;
+			sourceTree = "<group>";
+		};
+		0C4F61A418442866000726EA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0C4F61A518442866000726EA /* correctSound.aif */,
+				0C4F61A618442866000726EA /* ScringoLocalizable.strings */,
+				0C4F61AB18442866000726EA /* iPad */,
+				0C4F621D18442867000726EA /* ScringoActivationRibonView.xib */,
+				0C4F621E18442867000726EA /* ScringoActivationView.xib */,
+				0C4F621F18442867000726EA /* ScringoAppBannerFullScreenPopupView.xib */,
+				0C4F622018442867000726EA /* ScringoAppBannerPopupView.xib */,
+				0C4F622118442867000726EA /* ScringoChangePasswordView.xib */,
+				0C4F622218442867000726EA /* ScringoChatRoomsCell.xib */,
+				0C4F622318442867000726EA /* ScringoChatRoomsCommentsFooterView.xib */,
+				0C4F622418442867000726EA /* ScringoChatRoomsList.xib */,
+				0C4F622518442867000726EA /* ScringoChatRoomsTopicCell.xib */,
+				0C4F622618442867000726EA /* ScringoChatRoomsTopicHeaderView.xib */,
+				0C4F622718442867000726EA /* ScringoChatRoomsTopicImageCell.xib */,
+				0C4F622818442867000726EA /* ScringoChatRoomsTopicList.xib */,
+				0C4F622918442867000726EA /* ScringoChatRoomsTopicNativeAppAdCell.xib */,
+				0C4F622A18442867000726EA /* ScringoChatRoomsTopicStickerCell.xib */,
+				0C4F622B18442867000726EA /* ScringoCommentButton.xib */,
+				0C4F622C18442867000726EA /* ScringoDefaultNotificationPopup.xib */,
+				0C4F622D18442867000726EA /* ScringoEditAboutPopupView.xib */,
+				0C4F622E18442867000726EA /* ScringoEmailLoginView.xib */,
+				0C4F622F18442867000726EA /* ScringoEmailSignUpView.xib */,
+				0C4F623018442867000726EA /* ScringoFeedActivityCell.xib */,
+				0C4F623118442867000726EA /* ScringoFeedbackPopupClose.xib */,
+				0C4F623218442867000726EA /* ScringoFeedbackPopupWithRateUs.xib */,
+				0C4F623318442867000726EA /* ScringoFeedbackTableCell.xib */,
+				0C4F623418442867000726EA /* ScringoFeedbackTableCellBig.xib */,
+				0C4F623518442867000726EA /* ScringoFeedbackTalkToUs.xib */,
+				0C4F623618442867000726EA /* ScringoFeedbackView.xib */,
+				0C4F623718442867000726EA /* ScringoFeedLikeActivityCell.xib */,
+				0C4F623818442867000726EA /* ScringoFeedLikeImageCell.xib */,
+				0C4F623918442867000726EA /* ScringoFeedLikeTopicCell.xib */,
+				0C4F623A18442867000726EA /* ScringoFeedLikeTopicCommentCell.xib */,
+				0C4F623B18442867000726EA /* ScringoFeedLikeTopicImageCell.xib */,
+				0C4F623C18442867000726EA /* ScringoFeedList.xib */,
+				0C4F623D18442867000726EA /* ScringoFeedSimpleCell.xib */,
+				0C4F623E18442867000726EA /* ScringoFindFriendsCell.xib */,
+				0C4F623F18442867000726EA /* ScringoFindFriendsView.xib */,
+				0C4F624018442867000726EA /* ScringoForgotPasswordView.xib */,
+				0C4F624118442867000726EA /* ScringoFullScreenImageView.xib */,
+				0C4F624218442867000726EA /* ScringoGeneralSystemMessageList.xib */,
+				0C4F624318442867000726EA /* ScringoGeneralWebView.xib */,
+				0C4F624418442867000726EA /* ScringoInboxCell.xib */,
+				0C4F624518442867000726EA /* ScringoInboxList.xib */,
+				0C4F624618442867000726EA /* ScringoInviteCell.xib */,
+				0C4F624718442867000726EA /* ScringoInviteContactCell.xib */,
+				0C4F624818442867000726EA /* ScringoInviteFriendsList.xib */,
+				0C4F624918442867000726EA /* ScringoInviteHeaderView.xib */,
+				0C4F624A18442867000726EA /* ScringoInviteSocialCell.xib */,
+				0C4F624B18442867000726EA /* ScringoInviteSocialView.xib */,
+				0C4F624C18442867000726EA /* ScringoKeyboardStickerView.xib */,
+				0C4F624D18442867000726EA /* ScringoLeaderboardCell.xib */,
+				0C4F624E18442867000726EA /* ScringoLeaderboardList.xib */,
+				0C4F624F18442867000726EA /* ScringoLikeButton.xib */,
+				0C4F625018442867000726EA /* ScringoLoginView.xib */,
+				0C4F625118442867000726EA /* ScringoMainMenuView.xib */,
+				0C4F625218442867000726EA /* ScringoMapAnnotationView.xib */,
+				0C4F625318442867000726EA /* ScringoNewMessageCell.xib */,
+				0C4F625418442867000726EA /* ScringoNewMessagePopupView.xib */,
+				0C4F625518442867000726EA /* ScringoNewMessageView.xib */,
+				0C4F625618442867000726EA /* ScringoOKCancelPopupView.xib */,
+				0C4F625718442867000726EA /* ScringoOKPopupView.xib */,
+				0C4F625818442867000726EA /* ScringoOneChatHeaderView.xib */,
+				0C4F625918442867000726EA /* ScringoOneChatImageCell.xib */,
+				0C4F625A18442867000726EA /* ScringoOneChatList.xib */,
+				0C4F625B18442867000726EA /* ScringoOneChatMessageCell.xib */,
+				0C4F625C18442867000726EA /* ScringoOneChatStickerCell.xib */,
+				0C4F625D18442867000726EA /* ScringoOneChatTableHeaderView.xib */,
+				0C4F625E18442867000726EA /* ScringoOtherUserProfile.xib */,
+				0C4F625F18442867000726EA /* ScringoPanelAppDealsTableCell.xib */,
+				0C4F626018442867000726EA /* ScringoPanelNewProfileView.xib */,
+				0C4F626118442867000726EA /* ScringoPanelTableCell.xib */,
+				0C4F626218442867000726EA /* ScringoQuizCell.xib */,
+				0C4F626318442867000726EA /* ScringoQuizEndTableCell.xib */,
+				0C4F626418442867000726EA /* ScringoQuizPlayView.xib */,
+				0C4F626518442867000726EA /* ScringoQuizProfileTableCell.xib */,
+				0C4F626618442867000726EA /* ScringoQuizProfileView.xib */,
+				0C4F626718442867000726EA /* ScringoQuizPurchaseView.xib */,
+				0C4F626818442867000726EA /* ScringoQuizScrollScoreView.xib */,
+				0C4F626918442867000726EA /* ScringoQuizSuggestQuestionView.xib */,
+				0C4F626A18442867000726EA /* ScringoQuizTimeBonusView.xib */,
+				0C4F626B18442867000726EA /* ScringoQuizUnlockPopup.xib */,
+				0C4F626C18442867000726EA /* ScringoQuizzesList.xib */,
+				0C4F626D18442867000726EA /* ScringoRadarListCell.xib */,
+				0C4F626E18442867000726EA /* ScringoRadarView.xib */,
+				0C4F626F18442867000726EA /* ScringoRefreshTableHeaderView.xib */,
+				0C4F627018442867000726EA /* ScringoSignInPopup.xib */,
+				0C4F627118442867000726EA /* ScringoSignUpPopup.xib */,
+				0C4F627218442867000726EA /* ScringoSignUpView.xib */,
+				0C4F627318442867000726EA /* ScringoStickerPack.xib */,
+				0C4F627418442867000726EA /* ScringoStickerPackCell.xib */,
+				0C4F627518442867000726EA /* ScringoStickersKeyboardLandscapeView.xib */,
+				0C4F627618442867000726EA /* ScringoStickersKeyboardToolbarItem.xib */,
+				0C4F627718442867000726EA /* ScringoStickersKeyboardView.xib */,
+				0C4F627818442867000726EA /* ScringoStickerStore.xib */,
+				0C4F627918442867000726EA /* ScringoStickerStoreCell.xib */,
+				0C4F627A18442867000726EA /* ScringoStretchableBadgeView.xib */,
+				0C4F627B18442867000726EA /* ScringoSuggestedAppDealView.xib */,
+				0C4F627C18442867000726EA /* ScringoSuggestedPersonView.xib */,
+				0C4F627D18442867000726EA /* ScringoSuggestedUsersList.xib */,
+				0C4F627E18442867000726EA /* ScringoUploadImageKeyboardLandscapeView.xib */,
+				0C4F627F18442867000726EA /* ScringoUploadImageKeyboardView.xib */,
+				0C4F628018442867000726EA /* ScringoUserListCell.xib */,
+				0C4F628118442867000726EA /* ScringoUserListSuggestionCell.xib */,
+				0C4F628218442867000726EA /* ScringoUserProfile.xib */,
+				0C4F628318442867000726EA /* ScringoUserSettingsView.xib */,
+				0C4F628418442867000726EA /* ScringoUsersListSearch.xib */,
+				0C4F628518442867000726EA /* ScringoWelcomeFingerImageView.xib */,
+				0C4F628618442867000726EA /* ScringoWelcomeFingerImageViewLandscape.xib */,
+				0C4F628718442867000726EA /* ScringoWelcomePopupView.xib */,
+				0C4F628818442867000726EA /* temp_btn.png */,
+				0C4F628918442867000726EA /* wrongSound.aif */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0C4F61AB18442866000726EA /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				0C4F61AC18442866000726EA /* iPad_ScringoActivationRibonView.xib */,
+				0C4F61AD18442866000726EA /* iPad_ScringoActivationView.xib */,
+				0C4F61AE18442866000726EA /* iPad_ScringoAppBannerFullScreenPopupView.xib */,
+				0C4F61AF18442866000726EA /* iPad_ScringoAppBannerPopupView.xib */,
+				0C4F61B018442866000726EA /* iPad_ScringoChangePasswordView.xib */,
+				0C4F61B118442866000726EA /* iPad_ScringoChatRoomsCell.xib */,
+				0C4F61B218442866000726EA /* iPad_ScringoChatRoomsCommentsFooterView.xib */,
+				0C4F61B318442866000726EA /* iPad_ScringoChatRoomsList.xib */,
+				0C4F61B418442866000726EA /* iPad_ScringoChatRoomsTopicCell.xib */,
+				0C4F61B518442866000726EA /* iPad_ScringoChatRoomsTopicHeaderView.xib */,
+				0C4F61B618442866000726EA /* iPad_ScringoChatRoomsTopicImageCell.xib */,
+				0C4F61B718442866000726EA /* iPad_ScringoChatRoomsTopicList.xib */,
+				0C4F61B818442866000726EA /* iPad_ScringoChatRoomsTopicNativeAppAdCell.xib */,
+				0C4F61B918442866000726EA /* iPad_ScringoChatRoomsTopicStickerCell.xib */,
+				0C4F61BA18442866000726EA /* iPad_ScringoCommentButton.xib */,
+				0C4F61BB18442866000726EA /* iPad_ScringoDefaultNotificationPopup.xib */,
+				0C4F61BC18442866000726EA /* iPad_ScringoEditAboutPopupView.xib */,
+				0C4F61BD18442866000726EA /* iPad_ScringoEmailLoginView.xib */,
+				0C4F61BE18442866000726EA /* iPad_ScringoEmailSignUpView.xib */,
+				0C4F61BF18442866000726EA /* iPad_ScringoFeedActivityCell.xib */,
+				0C4F61C018442866000726EA /* iPad_ScringoFeedbackPopupClose.xib */,
+				0C4F61C118442866000726EA /* iPad_ScringoFeedbackPopupWithRateUs.xib */,
+				0C4F61C218442866000726EA /* iPad_ScringoFeedbackTableCell.xib */,
+				0C4F61C318442866000726EA /* iPad_ScringoFeedbackTableCellBig.xib */,
+				0C4F61C418442866000726EA /* iPad_ScringoFeedbackTalkToUs.xib */,
+				0C4F61C518442866000726EA /* iPad_ScringoFeedbackView.xib */,
+				0C4F61C618442866000726EA /* iPad_ScringoFeedCell.xib */,
+				0C4F61C718442866000726EA /* iPad_ScringoFeedLikeActivityCell.xib */,
+				0C4F61C818442866000726EA /* iPad_ScringoFeedLikeImageCell.xib */,
+				0C4F61C918442866000726EA /* iPad_ScringoFeedLikeTopicCell.xib */,
+				0C4F61CA18442866000726EA /* iPad_ScringoFeedLikeTopicCommentCell.xib */,
+				0C4F61CB18442866000726EA /* iPad_ScringoFeedLikeTopicImageCell.xib */,
+				0C4F61CC18442866000726EA /* iPad_ScringoFeedList.xib */,
+				0C4F61CD18442866000726EA /* iPad_ScringoFeedSimpleCell.xib */,
+				0C4F61CE18442866000726EA /* iPad_ScringoFindFriendsCell.xib */,
+				0C4F61CF18442866000726EA /* iPad_ScringoFindFriendsView.xib */,
+				0C4F61D018442866000726EA /* iPad_ScringoForgotPasswordView.xib */,
+				0C4F61D118442866000726EA /* iPad_ScringoFullScreenImageView.xib */,
+				0C4F61D218442866000726EA /* iPad_ScringoGeneralSystemMessageList.xib */,
+				0C4F61D318442866000726EA /* iPad_ScringoGeneralWebView.xib */,
+				0C4F61D418442866000726EA /* iPad_ScringoInboxCell.xib */,
+				0C4F61D518442866000726EA /* iPad_ScringoInboxList.xib */,
+				0C4F61D618442866000726EA /* iPad_ScringoInviteCell.xib */,
+				0C4F61D718442866000726EA /* iPad_ScringoInviteContactCell.xib */,
+				0C4F61D818442866000726EA /* iPad_ScringoInviteFriendsList.xib */,
+				0C4F61D918442866000726EA /* iPad_ScringoInviteHeaderView.xib */,
+				0C4F61DA18442866000726EA /* iPad_ScringoInviteSocialCell.xib */,
+				0C4F61DB18442866000726EA /* iPad_ScringoInviteSocialView.xib */,
+				0C4F61DC18442866000726EA /* iPad_ScringoKeyboardStickerView.xib */,
+				0C4F61DD18442866000726EA /* iPad_ScringoLeaderboardCell.xib */,
+				0C4F61DE18442866000726EA /* iPad_ScringoLeaderboardList.xib */,
+				0C4F61DF18442866000726EA /* iPad_ScringoLikeButton.xib */,
+				0C4F61E018442866000726EA /* iPad_ScringoLoginView.xib */,
+				0C4F61E118442866000726EA /* iPad_ScringoMainMenuView.xib */,
+				0C4F61E218442866000726EA /* iPad_ScringoMapAnnotationView.xib */,
+				0C4F61E318442866000726EA /* iPad_ScringoNewMessageCell.xib */,
+				0C4F61E418442866000726EA /* iPad_ScringoNewMessagePopupView.xib */,
+				0C4F61E518442866000726EA /* iPad_ScringoNewMessageView.xib */,
+				0C4F61E618442866000726EA /* iPad_ScringoOKCancelPopupView.xib */,
+				0C4F61E718442866000726EA /* iPad_ScringoOKPopupView.xib */,
+				0C4F61E818442866000726EA /* iPad_ScringoOneChatHeaderView.xib */,
+				0C4F61E918442866000726EA /* iPad_ScringoOneChatImageCell.xib */,
+				0C4F61EA18442866000726EA /* iPad_ScringoOneChatList.xib */,
+				0C4F61EB18442866000726EA /* iPad_ScringoOneChatMessageCell.xib */,
+				0C4F61EC18442866000726EA /* iPad_ScringoOneChatStickerCell.xib */,
+				0C4F61ED18442866000726EA /* iPad_ScringoOneChatTableHeaderView.xib */,
+				0C4F61EE18442866000726EA /* iPad_ScringoOtherUserProfile.xib */,
+				0C4F61EF18442866000726EA /* iPad_ScringoPanelAppDealsTableCell.xib */,
+				0C4F61F018442866000726EA /* iPad_ScringoPanelNewProfileView.xib */,
+				0C4F61F118442866000726EA /* iPad_ScringoPanelTableCell.xib */,
+				0C4F61F218442866000726EA /* iPad_ScringoQuizCell.xib */,
+				0C4F61F318442866000726EA /* iPad_ScringoQuizEndTableCell.xib */,
+				0C4F61F418442866000726EA /* iPad_ScringoQuizPlayView.xib */,
+				0C4F61F518442866000726EA /* iPad_ScringoQuizProfileTableCell.xib */,
+				0C4F61F618442866000726EA /* iPad_ScringoQuizProfileView.xib */,
+				0C4F61F718442866000726EA /* iPad_ScringoQuizPurchaseView.xib */,
+				0C4F61F818442867000726EA /* iPad_ScringoQuizScrollScoreView.xib */,
+				0C4F61F918442867000726EA /* iPad_ScringoQuizSuggestQuestionView.xib */,
+				0C4F61FA18442867000726EA /* iPad_ScringoQuizTimeBonusView.xib */,
+				0C4F61FB18442867000726EA /* iPad_ScringoQuizUnlockPopup.xib */,
+				0C4F61FC18442867000726EA /* iPad_ScringoQuizzesList.xib */,
+				0C4F61FD18442867000726EA /* iPad_ScringoRadarListCell.xib */,
+				0C4F61FE18442867000726EA /* iPad_ScringoRadarListView.xib */,
+				0C4F61FF18442867000726EA /* iPad_ScringoRadarView.xib */,
+				0C4F620018442867000726EA /* iPad_ScringoRefreshTableHeaderView.xib */,
+				0C4F620118442867000726EA /* iPad_ScringoSignInPopup.xib */,
+				0C4F620218442867000726EA /* iPad_ScringoSignUpPopup.xib */,
+				0C4F620318442867000726EA /* iPad_ScringoSignUpView.xib */,
+				0C4F620418442867000726EA /* iPad_ScringoStickerPack.xib */,
+				0C4F620518442867000726EA /* iPad_ScringoStickerPackCell.xib */,
+				0C4F620618442867000726EA /* iPad_ScringoStickersKeyboardLandscapeView.xib */,
+				0C4F620718442867000726EA /* iPad_ScringoStickersKeyboardToolbarItem.xib */,
+				0C4F620818442867000726EA /* iPad_ScringoStickersKeyboardView.xib */,
+				0C4F620918442867000726EA /* iPad_ScringoStickerStore.xib */,
+				0C4F620A18442867000726EA /* iPad_ScringoStickerStoreCell.xib */,
+				0C4F620B18442867000726EA /* iPad_ScringoStretchableBadgeView.xib */,
+				0C4F620C18442867000726EA /* iPad_ScringoSuggestedAppDealView.xib */,
+				0C4F620D18442867000726EA /* iPad_ScringoSuggestedPersonView.xib */,
+				0C4F620E18442867000726EA /* iPad_ScringoSuggestedUsersList.xib */,
+				0C4F620F18442867000726EA /* iPad_ScringoUploadImageKeyboardLandscapeView.xib */,
+				0C4F621018442867000726EA /* iPad_ScringoUploadImageKeyboardView.xib */,
+				0C4F621118442867000726EA /* iPad_ScringoUserListCell.xib */,
+				0C4F621218442867000726EA /* iPad_ScringoUserListSuggestionCell.xib */,
+				0C4F621318442867000726EA /* iPad_ScringoUserProfile.xib */,
+				0C4F621418442867000726EA /* iPad_ScringoUserSettingsView.xib */,
+				0C4F621518442867000726EA /* iPad_ScringoUsersListSearch.xib */,
+				0C4F621618442867000726EA /* iPad_ScringoWelcomeFingerImageView.xib */,
+				0C4F621718442867000726EA /* iPad_ScringoWelcomeFingerImageViewLandscape.xib */,
+				0C4F621818442867000726EA /* iPad_ScringoWelcomePopupView.xib */,
+			);
+			path = iPad;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0C4F617918442815000726EA /* Felix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C4F61A018442815000726EA /* Build configuration list for PBXNativeTarget "Felix" */;
+			buildPhases = (
+				0C4F617618442815000726EA /* Sources */,
+				0C4F617718442815000726EA /* Frameworks */,
+				0C4F617818442815000726EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Felix;
+			productName = Felix;
+			productReference = 0C4F617A18442815000726EA /* Felix.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0C4F617218442815000726EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FLX;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Felix;
+				TargetAttributes = {
+					0C4F617918442815000726EA = {
+						DevelopmentTeam = VNK5G843Y9;
+					};
+				};
+			};
+			buildConfigurationList = 0C4F617518442815000726EA /* Build configuration list for PBXProject "Felix" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				de,
+				el,
+				es,
+				it,
+				nl,
+				"pt-BR",
+				pt,
+			);
+			mainGroup = 0C4F617118442815000726EA;
+			productRefGroup = 0C4F617B18442815000726EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0C4F617918442815000726EA /* Felix */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C4F617818442815000726EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C4F618818442815000726EA /* InfoPlist.strings in Resources */,
+				0C4F619018442815000726EA /* Default.png in Resources */,
+				0C4F619218442815000726EA /* Default@2x.png in Resources */,
+				0C4F619418442815000726EA /* Default-568h@2x.png in Resources */,
+				0C4F619718442815000726EA /* MainStoryboard_iPhone.storyboard in Resources */,
+				0C4F619A18442815000726EA /* MainStoryboard_iPad.storyboard in Resources */,
+				0C4F628C18442867000726EA /* correctSound.aif in Resources */,
+				0C4F628D18442867000726EA /* ScringoLocalizable.strings in Resources */,
+				0C4F628E18442867000726EA /* iPad_ScringoActivationRibonView.xib in Resources */,
+				0C4F628F18442867000726EA /* iPad_ScringoActivationView.xib in Resources */,
+				0C4F629018442867000726EA /* iPad_ScringoAppBannerFullScreenPopupView.xib in Resources */,
+				0C4F629118442867000726EA /* iPad_ScringoAppBannerPopupView.xib in Resources */,
+				0C4F629218442867000726EA /* iPad_ScringoChangePasswordView.xib in Resources */,
+				0C4F629318442867000726EA /* iPad_ScringoChatRoomsCell.xib in Resources */,
+				0C4F629418442867000726EA /* iPad_ScringoChatRoomsCommentsFooterView.xib in Resources */,
+				0C4F629518442867000726EA /* iPad_ScringoChatRoomsList.xib in Resources */,
+				0C4F629618442867000726EA /* iPad_ScringoChatRoomsTopicCell.xib in Resources */,
+				0C4F629718442867000726EA /* iPad_ScringoChatRoomsTopicHeaderView.xib in Resources */,
+				0C4F629818442867000726EA /* iPad_ScringoChatRoomsTopicImageCell.xib in Resources */,
+				0C4F629918442867000726EA /* iPad_ScringoChatRoomsTopicList.xib in Resources */,
+				0CF4CF931846600A00C789BE /* 57x57.png in Resources */,
+				0C4F629A18442867000726EA /* iPad_ScringoChatRoomsTopicNativeAppAdCell.xib in Resources */,
+				0C4F629B18442867000726EA /* iPad_ScringoChatRoomsTopicStickerCell.xib in Resources */,
+				0C4F629C18442867000726EA /* iPad_ScringoCommentButton.xib in Resources */,
+				0C4F629D18442867000726EA /* iPad_ScringoDefaultNotificationPopup.xib in Resources */,
+				0C4F629E18442867000726EA /* iPad_ScringoEditAboutPopupView.xib in Resources */,
+				0C4F629F18442867000726EA /* iPad_ScringoEmailLoginView.xib in Resources */,
+				0C4F62A018442867000726EA /* iPad_ScringoEmailSignUpView.xib in Resources */,
+				0C4F62A118442867000726EA /* iPad_ScringoFeedActivityCell.xib in Resources */,
+				0C4F62A218442867000726EA /* iPad_ScringoFeedbackPopupClose.xib in Resources */,
+				0C087C2819DA114B00F350BC /* Final Felix Logo HQ with line.png in Resources */,
+				0C4F62A318442867000726EA /* iPad_ScringoFeedbackPopupWithRateUs.xib in Resources */,
+				0C4F62A418442867000726EA /* iPad_ScringoFeedbackTableCell.xib in Resources */,
+				0C4F62A518442867000726EA /* iPad_ScringoFeedbackTableCellBig.xib in Resources */,
+				0C4F62A618442867000726EA /* iPad_ScringoFeedbackTalkToUs.xib in Resources */,
+				0C4F62A718442867000726EA /* iPad_ScringoFeedbackView.xib in Resources */,
+				0C4F62A818442867000726EA /* iPad_ScringoFeedCell.xib in Resources */,
+				0C4F62A918442867000726EA /* iPad_ScringoFeedLikeActivityCell.xib in Resources */,
+				0C4F62AA18442867000726EA /* iPad_ScringoFeedLikeImageCell.xib in Resources */,
+				0C087C3619DA16AC00F350BC /* 120 x 120.png in Resources */,
+				0C4F62AB18442867000726EA /* iPad_ScringoFeedLikeTopicCell.xib in Resources */,
+				0C4F62AC18442867000726EA /* iPad_ScringoFeedLikeTopicCommentCell.xib in Resources */,
+				0C4F62AD18442867000726EA /* iPad_ScringoFeedLikeTopicImageCell.xib in Resources */,
+				0C4F62AE18442867000726EA /* iPad_ScringoFeedList.xib in Resources */,
+				0C4F62AF18442867000726EA /* iPad_ScringoFeedSimpleCell.xib in Resources */,
+				0C4F62B018442867000726EA /* iPad_ScringoFindFriendsCell.xib in Resources */,
+				0C4F62B118442867000726EA /* iPad_ScringoFindFriendsView.xib in Resources */,
+				0C4F62B218442867000726EA /* iPad_ScringoForgotPasswordView.xib in Resources */,
+				0C4F62B318442867000726EA /* iPad_ScringoFullScreenImageView.xib in Resources */,
+				0C4F62B418442867000726EA /* iPad_ScringoGeneralSystemMessageList.xib in Resources */,
+				0C4F62B518442867000726EA /* iPad_ScringoGeneralWebView.xib in Resources */,
+				0C4F62B618442867000726EA /* iPad_ScringoInboxCell.xib in Resources */,
+				0C4F62B718442867000726EA /* iPad_ScringoInboxList.xib in Resources */,
+				0CF4CF9018465F8700C789BE /* icon.png in Resources */,
+				0C4F62B818442867000726EA /* iPad_ScringoInviteCell.xib in Resources */,
+				0C4F62B918442867000726EA /* iPad_ScringoInviteContactCell.xib in Resources */,
+				0C4F62BA18442867000726EA /* iPad_ScringoInviteFriendsList.xib in Resources */,
+				0C4F62BB18442867000726EA /* iPad_ScringoInviteHeaderView.xib in Resources */,
+				0C087C2E19DA14FD00F350BC /* Default.png in Resources */,
+				0C4F62BC18442867000726EA /* iPad_ScringoInviteSocialCell.xib in Resources */,
+				0C4F62BD18442867000726EA /* iPad_ScringoInviteSocialView.xib in Resources */,
+				0C4F62BE18442867000726EA /* iPad_ScringoKeyboardStickerView.xib in Resources */,
+				0C4F62BF18442867000726EA /* iPad_ScringoLeaderboardCell.xib in Resources */,
+				0C4F62C018442867000726EA /* iPad_ScringoLeaderboardList.xib in Resources */,
+				0C4F62C118442867000726EA /* iPad_ScringoLikeButton.xib in Resources */,
+				0C087C2F19DA14FD00F350BC /* Default-568h@2x.png in Resources */,
+				0C4F62C218442867000726EA /* iPad_ScringoLoginView.xib in Resources */,
+				0C4F62C318442867000726EA /* iPad_ScringoMainMenuView.xib in Resources */,
+				0C4F62C418442867000726EA /* iPad_ScringoMapAnnotationView.xib in Resources */,
+				0C4F62C518442867000726EA /* iPad_ScringoNewMessageCell.xib in Resources */,
+				0C4F62C618442867000726EA /* iPad_ScringoNewMessagePopupView.xib in Resources */,
+				0C4F62C718442867000726EA /* iPad_ScringoNewMessageView.xib in Resources */,
+				0C4F62C818442867000726EA /* iPad_ScringoOKCancelPopupView.xib in Resources */,
+				0C4F62C918442867000726EA /* iPad_ScringoOKPopupView.xib in Resources */,
+				0C4F62CA18442867000726EA /* iPad_ScringoOneChatHeaderView.xib in Resources */,
+				0C4F62CB18442867000726EA /* iPad_ScringoOneChatImageCell.xib in Resources */,
+				0C4F62CC18442867000726EA /* iPad_ScringoOneChatList.xib in Resources */,
+				0C4F62CD18442867000726EA /* iPad_ScringoOneChatMessageCell.xib in Resources */,
+				0C4F62CE18442867000726EA /* iPad_ScringoOneChatStickerCell.xib in Resources */,
+				0C4F62CF18442867000726EA /* iPad_ScringoOneChatTableHeaderView.xib in Resources */,
+				0C4F62D018442867000726EA /* iPad_ScringoOtherUserProfile.xib in Resources */,
+				0C4F62D118442867000726EA /* iPad_ScringoPanelAppDealsTableCell.xib in Resources */,
+				0C087C3019DA14FD00F350BC /* Default~iphone.png in Resources */,
+				0C4F62D218442867000726EA /* iPad_ScringoPanelNewProfileView.xib in Resources */,
+				0C4F62D318442867000726EA /* iPad_ScringoPanelTableCell.xib in Resources */,
+				0C4F62D418442867000726EA /* iPad_ScringoQuizCell.xib in Resources */,
+				0C4F62D518442867000726EA /* iPad_ScringoQuizEndTableCell.xib in Resources */,
+				0C087C2A19DA11D300F350BC /* facebook banner.png in Resources */,
+				0C4F62D618442867000726EA /* iPad_ScringoQuizPlayView.xib in Resources */,
+				0C4F62D718442867000726EA /* iPad_ScringoQuizProfileTableCell.xib in Resources */,
+				0CF4CF941846600A00C789BE /* 114x114.png in Resources */,
+				0C4F62D818442867000726EA /* iPad_ScringoQuizProfileView.xib in Resources */,
+				0C4F62D918442867000726EA /* iPad_ScringoQuizPurchaseView.xib in Resources */,
+				0C4F62DA18442867000726EA /* iPad_ScringoQuizScrollScoreView.xib in Resources */,
+				0C4F62DB18442867000726EA /* iPad_ScringoQuizSuggestQuestionView.xib in Resources */,
+				0C4F62DC18442867000726EA /* iPad_ScringoQuizTimeBonusView.xib in Resources */,
+				0C4F62DD18442867000726EA /* iPad_ScringoQuizUnlockPopup.xib in Resources */,
+				0C4F62DE18442867000726EA /* iPad_ScringoQuizzesList.xib in Resources */,
+				0C4F62DF18442867000726EA /* iPad_ScringoRadarListCell.xib in Resources */,
+				0C4F62E018442867000726EA /* iPad_ScringoRadarListView.xib in Resources */,
+				0C4F62E118442867000726EA /* iPad_ScringoRadarView.xib in Resources */,
+				0C4F62E218442867000726EA /* iPad_ScringoRefreshTableHeaderView.xib in Resources */,
+				0C4F62E318442867000726EA /* iPad_ScringoSignInPopup.xib in Resources */,
+				0C4F62E418442867000726EA /* iPad_ScringoSignUpPopup.xib in Resources */,
+				0C4F62E518442867000726EA /* iPad_ScringoSignUpView.xib in Resources */,
+				0C4F62E618442867000726EA /* iPad_ScringoStickerPack.xib in Resources */,
+				0C4F62E718442867000726EA /* iPad_ScringoStickerPackCell.xib in Resources */,
+				0C4F62E818442867000726EA /* iPad_ScringoStickersKeyboardLandscapeView.xib in Resources */,
+				0C4F62E918442867000726EA /* iPad_ScringoStickersKeyboardToolbarItem.xib in Resources */,
+				0C4F62EA18442867000726EA /* iPad_ScringoStickersKeyboardView.xib in Resources */,
+				0C4F62EB18442867000726EA /* iPad_ScringoStickerStore.xib in Resources */,
+				0C4F62EC18442867000726EA /* iPad_ScringoStickerStoreCell.xib in Resources */,
+				0C4F62ED18442867000726EA /* iPad_ScringoStretchableBadgeView.xib in Resources */,
+				0C4F62EE18442867000726EA /* iPad_ScringoSuggestedAppDealView.xib in Resources */,
+				0C4F62EF18442867000726EA /* iPad_ScringoSuggestedPersonView.xib in Resources */,
+				0C4F62F018442867000726EA /* iPad_ScringoSuggestedUsersList.xib in Resources */,
+				0C4F62F118442867000726EA /* iPad_ScringoUploadImageKeyboardLandscapeView.xib in Resources */,
+				0C4F62F218442867000726EA /* iPad_ScringoUploadImageKeyboardView.xib in Resources */,
+				0C4F62F318442867000726EA /* iPad_ScringoUserListCell.xib in Resources */,
+				0C4F62F418442867000726EA /* iPad_ScringoUserListSuggestionCell.xib in Resources */,
+				0C4F62F518442867000726EA /* iPad_ScringoUserProfile.xib in Resources */,
+				0C4F62F618442867000726EA /* iPad_ScringoUserSettingsView.xib in Resources */,
+				0C6D727F1844CF8400BFF89C /* felix_cat-small.jpg in Resources */,
+				0C4F62F718442867000726EA /* iPad_ScringoUsersListSearch.xib in Resources */,
+				0C4F62F818442867000726EA /* iPad_ScringoWelcomeFingerImageView.xib in Resources */,
+				0C4F62F918442867000726EA /* iPad_ScringoWelcomeFingerImageViewLandscape.xib in Resources */,
+				0C4F62FA18442867000726EA /* iPad_ScringoWelcomePopupView.xib in Resources */,
+				0C4F62FB18442867000726EA /* ScringoActivationRibonView.xib in Resources */,
+				0C4F62FC18442867000726EA /* ScringoActivationView.xib in Resources */,
+				0C4F62FD18442867000726EA /* ScringoAppBannerFullScreenPopupView.xib in Resources */,
+				0C4F62FE18442867000726EA /* ScringoAppBannerPopupView.xib in Resources */,
+				0C4F62FF18442867000726EA /* ScringoChangePasswordView.xib in Resources */,
+				0C4F630018442867000726EA /* ScringoChatRoomsCell.xib in Resources */,
+				0C4F630118442867000726EA /* ScringoChatRoomsCommentsFooterView.xib in Resources */,
+				0C4F630218442867000726EA /* ScringoChatRoomsList.xib in Resources */,
+				0C4F630318442867000726EA /* ScringoChatRoomsTopicCell.xib in Resources */,
+				0C4F630418442867000726EA /* ScringoChatRoomsTopicHeaderView.xib in Resources */,
+				0C4F630518442867000726EA /* ScringoChatRoomsTopicImageCell.xib in Resources */,
+				0C4F630618442867000726EA /* ScringoChatRoomsTopicList.xib in Resources */,
+				0C4F630718442867000726EA /* ScringoChatRoomsTopicNativeAppAdCell.xib in Resources */,
+				0C4F630818442867000726EA /* ScringoChatRoomsTopicStickerCell.xib in Resources */,
+				0C4F630918442867000726EA /* ScringoCommentButton.xib in Resources */,
+				0C4F630A18442867000726EA /* ScringoDefaultNotificationPopup.xib in Resources */,
+				0C4F630B18442867000726EA /* ScringoEditAboutPopupView.xib in Resources */,
+				0C4F630C18442867000726EA /* ScringoEmailLoginView.xib in Resources */,
+				0C4F630D18442867000726EA /* ScringoEmailSignUpView.xib in Resources */,
+				0C4F630E18442867000726EA /* ScringoFeedActivityCell.xib in Resources */,
+				0C4F630F18442867000726EA /* ScringoFeedbackPopupClose.xib in Resources */,
+				0C4F631018442867000726EA /* ScringoFeedbackPopupWithRateUs.xib in Resources */,
+				0C4F631118442867000726EA /* ScringoFeedbackTableCell.xib in Resources */,
+				0C4F631218442867000726EA /* ScringoFeedbackTableCellBig.xib in Resources */,
+				0C4F631318442867000726EA /* ScringoFeedbackTalkToUs.xib in Resources */,
+				0C4F631418442867000726EA /* ScringoFeedbackView.xib in Resources */,
+				0C4F631518442867000726EA /* ScringoFeedLikeActivityCell.xib in Resources */,
+				0C4F631618442867000726EA /* ScringoFeedLikeImageCell.xib in Resources */,
+				0C4F631718442867000726EA /* ScringoFeedLikeTopicCell.xib in Resources */,
+				0C4F631818442867000726EA /* ScringoFeedLikeTopicCommentCell.xib in Resources */,
+				0C774BDD19C8F37000A265A4 /* home-5-2561.gif in Resources */,
+				0C4F631918442867000726EA /* ScringoFeedLikeTopicImageCell.xib in Resources */,
+				0C4F631A18442867000726EA /* ScringoFeedList.xib in Resources */,
+				0C4F631B18442867000726EA /* ScringoFeedSimpleCell.xib in Resources */,
+				0C4F631C18442867000726EA /* ScringoFindFriendsCell.xib in Resources */,
+				0C4F631D18442867000726EA /* ScringoFindFriendsView.xib in Resources */,
+				0C4F631E18442867000726EA /* ScringoForgotPasswordView.xib in Resources */,
+				0C4F631F18442867000726EA /* ScringoFullScreenImageView.xib in Resources */,
+				0C4F632018442867000726EA /* ScringoGeneralSystemMessageList.xib in Resources */,
+				0C4F632118442867000726EA /* ScringoGeneralWebView.xib in Resources */,
+				0C4F632218442867000726EA /* ScringoInboxCell.xib in Resources */,
+				0C4F632318442867000726EA /* ScringoInboxList.xib in Resources */,
+				0C4F632418442867000726EA /* ScringoInviteCell.xib in Resources */,
+				0C4F632518442867000726EA /* ScringoInviteContactCell.xib in Resources */,
+				0C4F632618442867000726EA /* ScringoInviteFriendsList.xib in Resources */,
+				0C4F632718442867000726EA /* ScringoInviteHeaderView.xib in Resources */,
+				0C4F632818442867000726EA /* ScringoInviteSocialCell.xib in Resources */,
+				0C4F632918442867000726EA /* ScringoInviteSocialView.xib in Resources */,
+				0C4F632A18442867000726EA /* ScringoKeyboardStickerView.xib in Resources */,
+				0C4F632B18442867000726EA /* ScringoLeaderboardCell.xib in Resources */,
+				0C087C3419DA16AC00F350BC /* 57 x 57.png in Resources */,
+				0C4F632C18442867000726EA /* ScringoLeaderboardList.xib in Resources */,
+				0C4F632D18442867000726EA /* ScringoLikeButton.xib in Resources */,
+				0CD00423184564720032A736 /* title-small.png in Resources */,
+				0C4F632E18442867000726EA /* ScringoLoginView.xib in Resources */,
+				0C4F632F18442867000726EA /* ScringoMainMenuView.xib in Resources */,
+				0C4F633018442867000726EA /* ScringoMapAnnotationView.xib in Resources */,
+				0C4F633118442867000726EA /* ScringoNewMessageCell.xib in Resources */,
+				0C4F633218442867000726EA /* ScringoNewMessagePopupView.xib in Resources */,
+				0C087C3519DA16AC00F350BC /* 114 x 114.png in Resources */,
+				0C4F633318442867000726EA /* ScringoNewMessageView.xib in Resources */,
+				0C4F633418442867000726EA /* ScringoOKCancelPopupView.xib in Resources */,
+				0C4F633518442867000726EA /* ScringoOKPopupView.xib in Resources */,
+				0C774BDF19C8F59100A265A4 /* bigimage copy.png in Resources */,
+				0C4F633618442867000726EA /* ScringoOneChatHeaderView.xib in Resources */,
+				0C4F633718442867000726EA /* ScringoOneChatImageCell.xib in Resources */,
+				0C4F633818442867000726EA /* ScringoOneChatList.xib in Resources */,
+				0C4F633918442867000726EA /* ScringoOneChatMessageCell.xib in Resources */,
+				0C4F633A18442867000726EA /* ScringoOneChatStickerCell.xib in Resources */,
+				0C4F633B18442867000726EA /* ScringoOneChatTableHeaderView.xib in Resources */,
+				0C4F633C18442867000726EA /* ScringoOtherUserProfile.xib in Resources */,
+				0C4F633D18442867000726EA /* ScringoPanelAppDealsTableCell.xib in Resources */,
+				0C4F633E18442867000726EA /* ScringoPanelNewProfileView.xib in Resources */,
+				0C4F633F18442867000726EA /* ScringoPanelTableCell.xib in Resources */,
+				0C4F634018442867000726EA /* ScringoQuizCell.xib in Resources */,
+				0C4F634118442867000726EA /* ScringoQuizEndTableCell.xib in Resources */,
+				0C4F634218442867000726EA /* ScringoQuizPlayView.xib in Resources */,
+				0C4F634318442867000726EA /* ScringoQuizProfileTableCell.xib in Resources */,
+				0C4F634418442867000726EA /* ScringoQuizProfileView.xib in Resources */,
+				0C4F634518442867000726EA /* ScringoQuizPurchaseView.xib in Resources */,
+				0C4F634618442867000726EA /* ScringoQuizScrollScoreView.xib in Resources */,
+				0C4F634718442867000726EA /* ScringoQuizSuggestQuestionView.xib in Resources */,
+				0C4F634818442867000726EA /* ScringoQuizTimeBonusView.xib in Resources */,
+				0C4F634918442867000726EA /* ScringoQuizUnlockPopup.xib in Resources */,
+				0C4F634A18442867000726EA /* ScringoQuizzesList.xib in Resources */,
+				0C4F634B18442867000726EA /* ScringoRadarListCell.xib in Resources */,
+				0C4F634C18442867000726EA /* ScringoRadarView.xib in Resources */,
+				0C4F634D18442867000726EA /* ScringoRefreshTableHeaderView.xib in Resources */,
+				0C4F634E18442867000726EA /* ScringoSignInPopup.xib in Resources */,
+				0C4F634F18442867000726EA /* ScringoSignUpPopup.xib in Resources */,
+				0C4F635018442867000726EA /* ScringoSignUpView.xib in Resources */,
+				0C4F635118442867000726EA /* ScringoStickerPack.xib in Resources */,
+				0C4F635218442867000726EA /* ScringoStickerPackCell.xib in Resources */,
+				0C4F635318442867000726EA /* ScringoStickersKeyboardLandscapeView.xib in Resources */,
+				0C4F635418442867000726EA /* ScringoStickersKeyboardToolbarItem.xib in Resources */,
+				0C4F635518442867000726EA /* ScringoStickersKeyboardView.xib in Resources */,
+				0C4F635618442867000726EA /* ScringoStickerStore.xib in Resources */,
+				0C4F635718442867000726EA /* ScringoStickerStoreCell.xib in Resources */,
+				0C4F635818442867000726EA /* ScringoStretchableBadgeView.xib in Resources */,
+				0C4F635918442867000726EA /* ScringoSuggestedAppDealView.xib in Resources */,
+				0C4F635A18442867000726EA /* ScringoSuggestedPersonView.xib in Resources */,
+				0C4F635B18442867000726EA /* ScringoSuggestedUsersList.xib in Resources */,
+				0C4F635C18442867000726EA /* ScringoUploadImageKeyboardLandscapeView.xib in Resources */,
+				0C4F635D18442867000726EA /* ScringoUploadImageKeyboardView.xib in Resources */,
+				0C4F635E18442867000726EA /* ScringoUserListCell.xib in Resources */,
+				0C4F635F18442867000726EA /* ScringoUserListSuggestionCell.xib in Resources */,
+				0C4F636018442867000726EA /* ScringoUserProfile.xib in Resources */,
+				0C4F636118442867000726EA /* ScringoUserSettingsView.xib in Resources */,
+				0C4F636218442867000726EA /* ScringoUsersListSearch.xib in Resources */,
+				0C4F636318442867000726EA /* ScringoWelcomeFingerImageView.xib in Resources */,
+				0C4F636418442867000726EA /* ScringoWelcomeFingerImageViewLandscape.xib in Resources */,
+				0C4F636518442867000726EA /* ScringoWelcomePopupView.xib in Resources */,
+				0C4F636618442867000726EA /* temp_btn.png in Resources */,
+				0C4F636718442867000726EA /* wrongSound.aif in Resources */,
+				0C4F636818442867000726EA /* Scringo.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C4F617618442815000726EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C7206091A45B80A00B2A968 /* Article.m in Sources */,
+				0C4F618A18442815000726EA /* main.m in Sources */,
+				0C774BDB19C8C3CB00A265A4 /* WebViewController.m in Sources */,
+				0C6D7282184555BA00BFF89C /* ArticleViewController.m in Sources */,
+				0CF4CF8E1846540600C789BE /* SplashScreenViewController.m in Sources */,
+				0C4F618E18442815000726EA /* FLXAppDelegate.m in Sources */,
+				0CF4CFA1184663CF00C789BE /* Reachability.m in Sources */,
+				0C4F619D18442815000726EA /* FLXViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0C4F618618442815000726EA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C4F618718442815000726EA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0C4F619518442815000726EA /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C4F619618442815000726EA /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		0C4F619818442815000726EA /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C4F619918442815000726EA /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		0C4F61A618442866000726EA /* ScringoLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C4F61A718442866000726EA /* de */,
+				0C4F61A818442866000726EA /* el */,
+				0C4F61A918442866000726EA /* en */,
+				0C4F61AA18442866000726EA /* es */,
+				0C4F621918442867000726EA /* it */,
+				0C4F621A18442867000726EA /* nl */,
+				0C4F621B18442867000726EA /* pt-BR */,
+				0C4F621C18442867000726EA /* pt */,
+			);
+			name = ScringoLocalizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0C4F619E18442815000726EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0C4F619F18442815000726EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0C4F61A118442815000726EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Scringo\"",
+					"\"$(SRCROOT)/../../../../FacebookSDK\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Felix/Felix-Prefix.pch";
+				INFOPLIST_FILE = "Felix/Felix-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9d45a8dd-b09e-4ade-ba25-d14f5de771cc";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0C4F61A218442815000726EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: K Wagle (VNK5G843Y9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: K Wagle (VNK5G843Y9)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Scringo\"",
+					"\"$(SRCROOT)/../../../../FacebookSDK\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Felix/Felix-Prefix.pch";
+				INFOPLIST_FILE = "Felix/Felix-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "397c12e2-9930-4c45-a60a-b817dd59df75";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C4F617518442815000726EA /* Build configuration list for PBXProject "Felix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C4F619E18442815000726EA /* Debug */,
+				0C4F619F18442815000726EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C4F61A018442815000726EA /* Build configuration list for PBXNativeTarget "Felix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C4F61A118442815000726EA /* Debug */,
+				0C4F61A218442815000726EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0C4F617218442815000726EA /* Project object */;
+}
