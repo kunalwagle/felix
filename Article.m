@@ -16,6 +16,22 @@
 
 @implementation Article
 
+-(Article*)initFull: (int)aid title:(NSString*)title teaser:(NSString*)teaser content:(NSString*)content url:(NSString*)url authors:(NSMutableArray*)authors comments:(NSMutableArray*)comments section:(Section*)section image:(Image*)image date:(int)date published:(int)published comment_count:(int)comment_count {
+    self.aid = aid;
+    self.title = title;
+    self.teaser = teaser;
+    self.content = content;
+    self.url = url;
+    self.authors = authors;
+    self.comments = comments;
+    self.section = section;
+    self.image = image;
+    self.date = date;
+    self.published = published;
+    self.comment_count = comment_count;
+    return self;
+}
+
 -(NSMutableArray*)getAuthors {
     return self.authors;
 }

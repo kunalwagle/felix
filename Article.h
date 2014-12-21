@@ -13,6 +13,7 @@
 
 @interface Article : NSObject
 
+-(Article*)initFull: (int)aid title:(NSString*)title teaser:(NSString*)teaser content:(NSString*)content url:(NSString*)url authors:(NSMutableArray*)authors comments:(NSMutableArray*)comments section:(Section*)section image:(Image*)image date:(int)date published:(int)published comment_count:(int)comment_count;
 -(int)getId;
 -(NSString*)getTitle;
 -(NSString*)getTeaser;
