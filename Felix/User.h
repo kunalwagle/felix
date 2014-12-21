@@ -10,7 +10,7 @@
 
 #import "Image.h"
 
-@interface User : NSObject
+@interface User : NSObject <NSCoding>
 
 -(User *)initFull: (NSString*)user name:(NSString*)name info:(NSString*)info email:(NSString*)email twitter:(NSString*)twitter desc:(NSString*)desc facebook:(NSString*)facebook websitename:(NSString*)websitename websiteurl:(NSString*)websiteurl img:(Image*)img;
 -(NSString*)getUser;

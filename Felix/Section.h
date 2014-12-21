@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Section : NSObject
+@interface Section : NSObject <NSCoding>
 
 -(Section *)initFull: (int)sid label:(NSString*)label cat:(NSString*)cat email:(NSString*)email twitter:(NSString*)twitter;
 -(int)getId;

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Image : NSObject
+@interface Image : NSObject <NSCoding>
 
 -(Image *)initFull: (int)iid title:(NSString*)title url:(NSString*)url fileName:(NSString*)fileName desc:(NSString*)desc timeStamp:(int)timeStamp caption:(NSString*)caption attribution:(NSString*)attribution attr_link:(NSString*)attr_link width:(int)width height:(int)height image:(UIImage*)image;
 -(int)getId;

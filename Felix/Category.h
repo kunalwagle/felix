@@ -11,7 +11,7 @@
 #import "Article.h"
 #import "Section.h"
 
-@interface Category : NSObject
+@interface Category : NSObject <NSCoding>
 
 -(Category *)initFull: (Section*)section articles:(NSMutableArray*)articles;
 -(NSMutableArray*) getArticles;
