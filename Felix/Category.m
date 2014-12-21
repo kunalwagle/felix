@@ -8,6 +8,13 @@
 
 #import "Category.h"
 
+@interface Category ()
+
+@property Section *section;
+@property NSMutableArray *articles;
+
+@end
+
 @implementation Category
 
 -(Category *)initFull: (Section*)section articles:(NSMutableArray*)articles {

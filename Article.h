@@ -27,18 +27,7 @@
 -(int)getPublished;
 -(int)getCommentCount;
 
-@property int aid;
-@property NSString *title;
-@property NSString *teaser;
-@property NSMutableArray *authors;
-@property Section *section;
-@property int date;
-@property int published;
-@property NSString *content;
-@property Image *image;
-@property NSString *url;
-@property NSMutableArray *comments;
-@property int comment_count;
+
 
 
 @end

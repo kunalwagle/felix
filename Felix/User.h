@@ -24,16 +24,7 @@
 -(NSString*)getWebsiteurl;
 -(Image*)getImage;
 
-@property NSString *user;
-@property NSString *name;
-@property NSString *info;
-@property NSString *desc;
-@property NSString *email;
-@property NSString *facebook;
-@property NSString *twitter;
-@property NSString *websitename;
-@property NSString *websiteurl;
-@property Image *img;
+
 
 
 @end

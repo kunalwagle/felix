@@ -24,17 +24,6 @@
 -(int)getHeight;
 -(UIImage*)getImage;
 
-@property int iid;
-@property NSString *title;
-@property NSString *url;
-@property NSString *fileName;
-@property NSString *desc;
-@property int timeStamp;
-@property NSString *caption;
-@property NSString *attribution;
-@property NSString *attr_link;
-@property int width;
-@property int height;
-@property UIImage *image;
+
 
 @end

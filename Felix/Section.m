@@ -8,6 +8,16 @@
 
 #import "Section.h"
 
+@interface Section ()
+
+@property int sid;
+@property NSString *label;
+@property NSString *cat;
+@property NSString *email;
+@property NSString *twitter;
+
+@end
+
 @implementation Section
 
 -(Section *)initFull: (int)sid label:(NSString*)label cat:(NSString*)cat email:(NSString*)email twitter:(NSString*)twitter {

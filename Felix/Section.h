@@ -17,10 +17,5 @@
 -(NSString*)getEmail;
 -(NSString*)getTwitter;
 
-@property int sid;
-@property NSString *label;
-@property NSString *cat;
-@property NSString *email;
-@property NSString *twitter;
 
 @end

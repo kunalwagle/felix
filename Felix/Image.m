@@ -8,6 +8,23 @@
 
 #import "Image.h"
 
+@interface Image ()
+
+@property int iid;
+@property NSString *title;
+@property NSString *url;
+@property NSString *fileName;
+@property NSString *desc;
+@property int timeStamp;
+@property NSString *caption;
+@property NSString *attribution;
+@property NSString *attr_link;
+@property int width;
+@property int height;
+@property UIImage *image;
+
+@end
+
 @implementation Image
 
 -(Image *)initFull: (int)iid title:(NSString*)title url:(NSString*)url fileName:(NSString*)fileName desc:(NSString*)desc timeStamp:(int)timeStamp caption:(NSString*)caption attribution:(NSString*)attribution attr_link:(NSString*)attr_link width:(int)width height:(int)height image:(UIImage*)image {
