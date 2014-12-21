@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-#include "Article.h"
-#include "Section.h"
+#import "Article.h"
+#import "Section.h"
 
 @interface Category : NSObject
 
