@@ -19,6 +19,10 @@
     
     self.image.image = [UIImage imageNamed:self.imageName];
     self.headline.text = self.contentTitle;
+    [self.headline.layoutManager ensureLayoutForTextContainer:self.headline.textContainer];
+    self.headline.textColor = [UIColor whiteColor];
+    self.headline.contentOffset = CGPointMake(0, 1);
+    self.headline.contentOffset = CGPointMake(0, 0);
     
 }
 
