@@ -13,5 +13,4 @@
 @property (weak, nonatomic) IBOutlet UIImageView *articleImage;
 @property (weak, nonatomic) IBOutlet UITextView *articleHeadline;
 
-
 @end

@@ -18,8 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _articleTitles = @[@"Over 200 Tips and Tricks", @"Discover Hidden Features", @"Bookmark Favorite Tip"];
-    _articleImages = @[@"FelixLogo.png", @"felix_cat-small.png", @"Final Felix Logo HQ with line.png"];
+    _articleTitles = @[@"Over 200 Tips and Tricks", @"Discover Hidden Features", @"Bookmark Favorite Tip", @"Over 200 Tips and Tricks", @"Discover Hidden Features", @"Bookmark Favorite Tip"];
+    _articleImages = @[@"FelixLogo.png", @"felix_cat-small.png", @"Final Felix Logo HQ with line.png",@"FelixLogo.png", @"felix_cat-small.png", @"Final Felix Logo HQ with line.png"];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -52,11 +52,17 @@
     if (cell == nil) {
         cell = [[ArticleViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
-    cell.articleHeadline = [self.articleTitles objectAtIndex:[indexPath row]];
+    cell.articleHeadline.text = [self.articleTitles objectAtIndex:[indexPath row]];
     cell.articleImage.image = [UIImage imageNamed:[self.articleImages objectAtIndex:[indexPath row]]];
     return cell;
     
 }
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+
 
 
 /*
