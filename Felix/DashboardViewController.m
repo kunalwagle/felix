@@ -8,6 +8,8 @@
 
 #import "DashboardViewController.h"
 
+#import "SWRevealViewController.h"
+
 @interface DashboardViewController ()
 
 @end
@@ -17,7 +19,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    // Change button color
+    _sidebarButton.tintColor = [UIColor colorWithWhite:0.96f alpha:0.2f];
     
+    // Set the side bar button action. When it's tapped, it'll show up the sidebar.
+    [_sidebarButton addTarget:self.revealViewController action:@selector(revealToggle:) forControlEvents:UIControlEventTouchUpInside];
+    
+    // Set the gesture
+    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -29,6 +38,8 @@
 {
     return YES;
 }
+
+
 
 
 /*

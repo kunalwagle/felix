@@ -11,5 +11,6 @@
 @interface DashboardViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIView *container;
+@property (weak, nonatomic) IBOutlet UIButton *sidebarButton;
 
 @end

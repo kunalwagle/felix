@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="DI7-Nu-lhv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="cr1-A8-LRN">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
@@ -71,7 +71,68 @@
             </objects>
             <point key="canvasLocation" x="-1618" y="816"/>
         </scene>
-        <!--Dashboard View Controller-->
+        <!--Reveal View Controller-->
+        <scene sceneID="Tbk-nc-w7f">
+            <objects>
+                <viewController id="cr1-A8-LRN" customClass="SWRevealViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LiA-dg-JUU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="dSA-yf-aoB" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="v8H-q6-KNH"/>
+                        <segue destination="Ddi-2f-VVM" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="0jH-c6-kcc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RcH-sc-7e1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2277" y="-90"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="uIm-7d-it1">
+            <objects>
+                <tableViewController id="dSA-yf-aoB" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="7wh-Z0-hFq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Mzh-Hv-6xz">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Mzh-Hv-6xz" id="YHh-ld-5T8">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="dSA-yf-aoB" id="Lmk-tV-nCs"/>
+                            <outlet property="delegate" destination="dSA-yf-aoB" id="PJw-55-aFf"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="6dx-J7-foI"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1uM-6u-RjB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1857" y="-90"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uDU-mx-In7">
+            <objects>
+                <navigationController id="Ddi-2f-VVM" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9px-UB-jsy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="DI7-Nu-lhv" kind="relationship" relationship="rootViewController" id="y8L-bh-TUi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qYU-hh-paO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2291" y="586"/>
+        </scene>
+        <!--News-->
         <scene sceneID="dsQ-CK-fxQ">
             <objects>
                 <viewController id="DI7-Nu-lhv" customClass="DashboardViewController" sceneMemberID="viewController">
@@ -79,6 +140,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" id="V4p-9F-BST">
+                                <rect key="frame" x="0.0" y="84" width="320" height="200"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="zM3-yd-3U4" kind="embed" id="2zV-uy-4Yd"/>
+                                </connections>
+                            </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" id="KpW-7G-o2P">
                                 <rect key="frame" x="0.0" y="321" width="320" height="247"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -86,6 +154,13 @@
                                     <segue destination="hoZ-28-mKa" kind="embed" id="awq-wu-65h"/>
                                 </connections>
                             </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Stories" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VWE-bP-fw5">
+                                <rect key="frame" x="7" y="51" width="103" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Other Stories" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ztK-gg-jfO">
                                 <rect key="frame" x="7" y="297" width="110" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -100,29 +175,29 @@
                                     <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="25"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="News" id="IV0-wT-Sps"/>
+                                    <navigationItem title="News" id="J6G-aW-Ghm"/>
                                 </items>
                             </navigationBar>
-                            <containerView opaque="NO" contentMode="scaleToFill" id="V4p-9F-BST">
-                                <rect key="frame" x="0.0" y="84" width="320" height="200"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <connections>
-                                    <segue destination="zM3-yd-3U4" kind="embed" id="2zV-uy-4Yd"/>
-                                </connections>
-                            </containerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Stories" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VWE-bP-fw5">
-                                <rect key="frame" x="7" y="51" width="103" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.99215692281723022" green="0.88627457618713379" blue="0.94509810209274292" alpha="1" colorSpace="deviceRGB"/>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="News" id="WBr-Z1-lGV">
+                        <barButtonItem key="leftBarButtonItem" title="Sidebar" style="plain" id="30e-GQ-8Iz">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Hcz-cg-TZ0">
+                                <rect key="frame" x="103" y="253" width="60" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="ios-7-ui-small.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="container" destination="V4p-9F-BST" id="MLU-lS-bwr"/>
+                        <outlet property="sidebarButton" destination="Hcz-cg-TZ0" id="G9G-SE-WpS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aar-9X-FLf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -208,7 +283,7 @@
                             <progressView hidden="YES" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" id="m0J-Op-hW2">
                                 <rect key="frame" x="85" y="445" width="150" height="3"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="trackTintColor" patternImage="CC27195E-50E6-40F2-B3D8-1604E125A68D" colorSpace="pattern"/>
+                                <color key="trackTintColor" patternImage="AB600A8D-158B-4742-9B57-8BFFC7D8DD65" colorSpace="pattern"/>
                             </progressView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="UMR-br-GRv">
                                 <rect key="frame" x="119" y="234" width="83" height="84"/>
@@ -672,7 +747,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="CC27195E-50E6-40F2-B3D8-1604E125A68D" width="320" height="460">
+        <image name="AB600A8D-158B-4742-9B57-8BFFC7D8DD65" width="320" height="460">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
@@ -10563,6 +10638,7 @@ AAAAAAAAAAAJCvs
         <image name="bigimage copy.png" width="44" height="44"/>
         <image name="facebook banner.png" width="851" height="314"/>
         <image name="felix_cat-small.jpg" width="120" height="120"/>
+        <image name="ios-7-ui-small.png" width="60" height="41"/>
         <image name="menu_icon_20x20.png" width="20" height="20"/>
         <image name="title-small.png" width="270" height="70"/>
     </resources>
