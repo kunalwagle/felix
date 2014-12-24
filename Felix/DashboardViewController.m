@@ -18,7 +18,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
+    if (self.section==NULL) {
+        self.section = @"Home";
+    }
+    self.navItem.title = self.section;
     // Change button color
     _sidebarButton.tintColor = [UIColor colorWithWhite:0.96f alpha:0.2f];
     

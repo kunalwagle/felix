@@ -12,5 +12,7 @@
 
 @property (weak, nonatomic) IBOutlet UIView *container;
 @property (weak, nonatomic) IBOutlet UIButton *sidebarButton;
+@property (weak, nonatomic) IBOutlet UINavigationItem *navItem;
+@property NSString *section;
 
 @end
