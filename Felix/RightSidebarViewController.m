@@ -19,6 +19,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.section = [[NSMutableArray alloc] initWithObjects:@"Kunal Wagle", nil];
+    self.author = [[NSMutableArray alloc] initWithObjects:@"Philippa Skett", @"Kunal Wagle", nil];
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -28,9 +31,11 @@
     
 }
 
--(void)reloadAllData:(UIViewController*)current section:(Section*)section author:(NSMutableArray*)author {
+-(void)reloadAllData:(UIViewController*)current section:(NSString*)section author:(NSMutableArray*)author {
     self.currentViewController = current;
-    
+    self.section = [[NSMutableArray alloc] initWithObjects:@"Philippa Skett", @"Kunal Wagle", nil];
+    self.author = nil;
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -41,26 +46,123 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1 + ([self.section count]>0) + ([self.author count]>0);
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
+    switch (section) {
+        case 0:
+            if ([self.section count]>0) {
+                return [self.section count];
+            } else {
+                if ([self.author count]>0) {
+                    return [self.author count];
+                } else {
+                    return 2;
+                }
+            }
+        case 1:
+            if ([self.section count] > 0) {
+                if ([self.author count]>0) {
+                    return [self.author count];
+                } else {
+                    return 2;
+                }
+            } else {
+                return 2;
+            }
+        case 2:
+            return 2;
+                
+        default:
+            break;
+    }
     return 0;
 }
 
-/*
+- (NSString*)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    switch (section) {
+        case 0:
+            if ([self.section count]>0) {
+                return @"Section Editors";
+            } else {
+                if ([self.author count]>0) {
+                    return @"Authors";
+                } else {
+                    return @"Find a PDF";
+                }
+            }
+        case 1:
+            if ([self.section count] > 0) {
+                if ([self.author count]>0) {
+                    return @"Authors";
+                } else {
+                    return @"Find a PDF";
+                }
+            } else {
+                return @"Find a PDF";
+            }
+        case 2:
+            return @"Find a PDF";
+    }
+}
+
+-(BOOL)prefersStatusBarHidden {
+    return YES;
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    [self.tableView setFrame:CGRectMake(self.tableView.frame.origin.x+60, self.tableView.frame.origin.y, self.tableView.frame.size.width, self.tableView.frame.size.height)];
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
+    NSString *CellIdentifier;
+    switch ([indexPath section]) {
+        case 0:
+            if ([self.section count]>0 || [self.author count]>0) {
+                CellIdentifier = @"user";
+            } else {
+                CellIdentifier = @"issue";
+            }
+            break;
+        case 1:
+            if ([self.section count]>0 && [self.author count]>0) {
+                CellIdentifier = @"user";
+            } else {
+                CellIdentifier = @"issue";
+            }
+            break;
+        case 2:
+            CellIdentifier = @"issue";
+            break;
+        default:
+            break;
+    }
+    if ([CellIdentifier isEqualToString:@"issue"]) {
+        if ([indexPath row]==0) {
+            CellIdentifier = @"latest";
+        } else {
+            CellIdentifier = @"archive";
+        }
+    }
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    if ([CellIdentifier isEqualToString:@"user"]) {
+        if ([self.section count]>0 && [indexPath section]==0) {
+            cell.textLabel.text = [self.section objectAtIndex:[indexPath row]];
+        } else {
+            cell.textLabel.text = [self.author objectAtIndex:[indexPath row]];
+        }
+    }
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
