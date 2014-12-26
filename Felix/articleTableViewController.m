@@ -17,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setUpArticles];
     
     _articleTitles = @[@"Over 200 Tips and Tricks", @"Discover Hidden Features", @"Bookmark Favorite Tip", @"Over 200 Tips and Tricks", @"Discover Hidden Features", @"Bookmark Favorite Tip"];
     _articleImages = @[@"FelixLogo.png", @"felix_cat-small.png", @"Final Felix Logo HQ with line.png",@"FelixLogo.png", @"felix_cat-small.png", @"Final Felix Logo HQ with line.png"];
@@ -26,6 +27,10 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+- (void)setUpArticles {
+
 }
 
 - (void)didReceiveMemoryWarning {
