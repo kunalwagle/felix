@@ -10,12 +10,13 @@
 
 @interface Section : NSObject <NSCoding>
 
--(Section *)initFull: (int)sid label:(NSString*)label cat:(NSString*)cat email:(NSString*)email twitter:(NSString*)twitter;
+-(Section *)initFull: (int)sid label:(NSString*)label cat:(NSString*)cat email:(NSString*)email twitter:(NSString*)twitter users:(NSMutableArray*)users;
 -(int)getId;
 -(NSString*)getLabel;
 -(NSString*)getCat;
 -(NSString*)getEmail;
 -(NSString*)getTwitter;
+-(NSMutableArray*)getUser;
 
 
 @end

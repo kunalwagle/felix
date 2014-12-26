@@ -15,17 +15,19 @@
 @property NSString *cat;
 @property NSString *email;
 @property NSString *twitter;
+@property NSMutableArray *users;
 
 @end
 
 @implementation Section
 
--(Section *)initFull: (int)sid label:(NSString*)label cat:(NSString*)cat email:(NSString*)email twitter:(NSString*)twitter {
+-(Section *)initFull: (int)sid label:(NSString*)label cat:(NSString*)cat email:(NSString*)email twitter:(NSString*)twitter users:(NSMutableArray *)users {
     self.sid = sid;
     self.label = label;
     self.cat = cat;
     self.email = email;
     self.twitter = twitter;
+    self.users = users;
     return self;
 }
 
@@ -47,6 +49,10 @@
 
 -(NSString*)getTwitter {
     return self.twitter;
+}
+
+-(NSMutableArray*)getUser{
+    return self.users;
 }
 
 - (void)encodeWithCoder:(NSCoder *)coder {
