@@ -12,6 +12,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *image;
 @property (weak, nonatomic) IBOutlet UITextView *headline;
 @property NSUInteger pageIndex;
-@property NSString *imageName;
+@property UIImage *imageName;
 @property NSString *contentTitle;
 @end

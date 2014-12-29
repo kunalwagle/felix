@@ -7,6 +7,10 @@
 //
 
 #import "PageContainerViewController.h"
+#import "UtilityMethods.h"
+#import "Article.h"
+#import "FLXAppDelegate.h"
+#import "RightSidebarViewController.h"
 
 @interface PageContainerViewController ()
 
@@ -16,23 +20,95 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    _articleTitles = @[@"Over 200 Tips and Tricks", @"Discover Hidden Features", @"Bookmark Favorite Tip"];
-    _articleImages = @[@"FelixLogo.png", @"felix_cat-small.png", @"Final Felix Logo HQ with line.png"];
+    FLXAppDelegate *appDel = (FLXAppDelegate*) [UIApplication sharedApplication].delegate;
+    appDel.pageContainerViewController = self;
+    NSString* sect = appDel.section;
+    //_articleTitles = @[@"Over 200 Tips and Tricks", @"Discover Hidden Features", @"Bookmark Favorite Tip"];
+    NSArray *articles = [UtilityMethods getArticles:sect];
+    self.articleTitles = [[NSMutableArray alloc] initWithObjects: nil];
+    self.articleImages = [[NSMutableArray alloc] initWithObjects: nil];
+    for (int i=0; i<[articles count] && i<3; i++) {
+        Article *a = [articles objectAtIndex:i];
+        NSString *title = a.getTitle;
+        UIImage *image = a.getImage.getImage;
+        [self.articleTitles addObject:title];
+        if (image != NULL) {
+            [self.articleImages addObject:image];
+        } else {
+            [self.articleImages addObject:[UIImage imageNamed:@"FelixLogo.png"]];
+        }
+    }
+    Article* article = [articles objectAtIndex:0];
+    Section *section = article.getSection;
+    RightSidebarViewController *r = appDel.rightSidebar;
+    [r reloadAllData:section author:NULL];
+    appDel.article = article;
+    //_articleImages = @[@"FelixLogo.png", @"felix_cat-small.png", @"Final Felix Logo HQ with line.png"];
     
     self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"topStoriesPageView"];
     self.pageViewController.dataSource = self;
     
     TopStoriesPageContentViewController *startingViewController = [self viewControllerAtIndex:0];
-    NSArray *viewControllers = @[startingViewController];
-    [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
-    // Change the size of page view controller
-    self.pageViewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+    NSArray *viewControllers;
+    if (startingViewController!=NULL) {
+        viewControllers = @[startingViewController];
+        [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
+        // Change the size of page view controller
+        self.pageViewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+        
+        [self addChildViewController:_pageViewController];
+        [self.view addSubview:_pageViewController.view];
+        [self.pageViewController didMoveToParentViewController:self];
+    } else {
+        viewControllers = [[NSArray alloc] initWithObjects: nil];
+    }
     
-    [self addChildViewController:_pageViewController];
-    [self.view addSubview:_pageViewController.view];
-    [self.pageViewController didMoveToParentViewController:self];
-    
+}
+
+-(void)reloadData:(NSString*)sect {
+//    FLXAppDelegate *appDel = (FLXAppDelegate*) [UIApplication sharedApplication].delegate;
+//    NSArray *articles = [UtilityMethods getArticles:sect];
+//    self.articleTitles = [[NSMutableArray alloc] initWithObjects: nil];
+//    self.articleImages = [[NSMutableArray alloc] initWithObjects: nil];
+//    for (int i=0; i<[articles count] && i<3; i++) {
+//        Article *a = [articles objectAtIndex:i];
+//        NSString *title = a.getTitle;
+//        UIImage *image = a.getImage.getImage;
+//        [self.articleTitles addObject:title];
+//        if (image != NULL) {
+//            [self.articleImages addObject:image];
+//        } else {
+//            [self.articleImages addObject:[UIImage imageNamed:@"FelixLogo.png"]];
+//        }
+//    }
+//    Article* article = [articles objectAtIndex:0];
+//    Section *section = article.getSection;
+//    RightSidebarViewController *r = appDel.rightSidebar;
+//    [r reloadAllData:section author:NULL];
+//    appDel.article = article;
+//    //_articleImages = @[@"FelixLogo.png", @"felix_cat-small.png", @"Final Felix Logo HQ with line.png"];
+//    for (int i=0; i<[[self childViewControllers] count]; i++) {
+//        UIViewController *vc = [[self childViewControllers] objectAtIndex:i];
+//        [vc removeFromParentViewController];
+//    }
+//    self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"topStoriesPageView"];
+//    self.pageViewController.dataSource = self;
+//    
+//    TopStoriesPageContentViewController *startingViewController = [self viewControllerAtIndex:0];
+//    NSArray *viewControllers;
+//    if (startingViewController!=NULL) {
+//        viewControllers = @[startingViewController];
+//        [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
+//        // Change the size of page view controller
+//        self.pageViewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+//        
+//        [self addChildViewController:_pageViewController];
+//        [self.view addSubview:_pageViewController.view];
+//        [self.pageViewController didMoveToParentViewController:self];
+//    } else {
+//        viewControllers = [[NSArray alloc] initWithObjects: nil];
+//    }
+   // self.section = sect;
 }
 
 - (void)didReceiveMemoryWarning {

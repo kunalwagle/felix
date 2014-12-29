@@ -8,8 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
+#import "RightSidebarViewController.h"
+#import "PageContainerViewController.h"
+#import "articleTableViewController.h"
+#import "Article.h"
+
 @interface FLXAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+
+@property RightSidebarViewController *rightSidebar;
+@property PageContainerViewController *pageContainerViewController;
+@property articleTableViewController *articleTableVC;
+@property UIViewController *previousViewController;
+@property Article* article;
+@property NSString* section;
 
 @end

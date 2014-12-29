@@ -10,7 +10,8 @@
 
 @interface articleTableViewController : UITableViewController
 
-@property NSArray *articleTitles;
-@property NSArray *articleImages;
+@property NSMutableArray *articleTitles;
+@property NSMutableArray *articleImages;
+-(void)reloadData:(NSString*)section;
 
 @end

@@ -7,8 +7,8 @@
 //
 
 #import "RightSidebarViewController.h"
-#import "Section.h"
 #import "User.h"
+#import "FLXAppDelegate.h"
 
 @interface RightSidebarViewController ()
 
@@ -19,9 +19,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.section = [[NSMutableArray alloc] initWithObjects:@"Kunal Wagle", nil];
-    self.author = [[NSMutableArray alloc] initWithObjects:@"Philippa Skett", @"Kunal Wagle", nil];
-    
+    FLXAppDelegate *appDel = (FLXAppDelegate*) [UIApplication sharedApplication].delegate;
+    appDel.rightSidebar = self;
+    Article* article = appDel.article;
+    Section *section = article.getSection;
+    [self reloadAllData:section author:NULL];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -31,10 +33,8 @@
     
 }
 
--(void)reloadAllData:(UIViewController*)current section:(NSString*)section author:(NSMutableArray*)author {
-    self.currentViewController = current;
-    self.section = [[NSMutableArray alloc] initWithObjects:@"Philippa Skett", @"Kunal Wagle", nil];
-    self.author = nil;
+-(void)reloadAllData:(Section*)section author:(NSMutableArray*)author {
+    self.section = section.getUser;
     [self.tableView reloadData];
 }
 
@@ -155,9 +155,9 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     if ([CellIdentifier isEqualToString:@"user"]) {
         if ([self.section count]>0 && [indexPath section]==0) {
-            cell.textLabel.text = [self.section objectAtIndex:[indexPath row]];
+            cell.textLabel.text = [[self.section objectAtIndex:[indexPath row]] getName];
         } else {
-            cell.textLabel.text = [self.author objectAtIndex:[indexPath row]];
+            cell.textLabel.text = [[self.author objectAtIndex:[indexPath row]] getName];
         }
     }
     return cell;

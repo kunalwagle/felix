@@ -8,6 +8,9 @@
 
 #import "articleTableViewController.h"
 #import "ArticleViewCell.h"
+#import "UtilityMethods.h"
+#import "Article.h"
+#import "FLXAppDelegate.h"
 
 @interface articleTableViewController ()
 
@@ -18,15 +21,48 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setUpArticles];
-    
-    _articleTitles = @[@"Over 200 Tips and Tricks", @"Discover Hidden Features", @"Bookmark Favorite Tip", @"Over 200 Tips and Tricks", @"Discover Hidden Features", @"Bookmark Favorite Tip"];
-    _articleImages = @[@"FelixLogo.png", @"felix_cat-small.png", @"Final Felix Logo HQ with line.png",@"FelixLogo.png", @"felix_cat-small.png", @"Final Felix Logo HQ with line.png"];
-    
+    FLXAppDelegate *appDel = (FLXAppDelegate*) [UIApplication sharedApplication].delegate;
+    appDel.articleTableVC = self;
+    NSString* section = appDel.section;
+    NSArray *articles = [UtilityMethods getArticles:section];
+    self.articleTitles = [[NSMutableArray alloc] initWithObjects: nil];
+    self.articleImages = [[NSMutableArray alloc] initWithObjects: nil];
+    for (int i=3; i<[articles count]; i++) {
+        Article *a = [articles objectAtIndex:i];
+        NSString *title = a.getTitle;
+        UIImage *image = a.getImage.getImage;
+        [self.articleTitles addObject:title];
+        if (image != NULL) {
+            [self.articleImages addObject:image];
+        } else {
+            [self.articleImages addObject:[UIImage imageNamed:@"FelixLogo.png"]];
+        }
+    }
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+-(void)reloadData:(NSString*) section {
+//    NSArray *articles = [UtilityMethods getArticles:section];
+//    self.articleTitles = [[NSMutableArray alloc] initWithObjects: nil];
+//    self.articleImages = [[NSMutableArray alloc] initWithObjects: nil];
+//    for (int i=3; i<[articles count]; i++) {
+//        Article *a = [articles objectAtIndex:i];
+//        NSString *title = a.getTitle;
+//        UIImage *image = a.getImage.getImage;
+//        [self.articleTitles addObject:title];
+//        if (image != NULL) {
+//            [self.articleImages addObject:image];
+//        } else {
+//            [self.articleImages addObject:[UIImage imageNamed:@"FelixLogo.png"]];
+//        }
+//        
+//    }
+//    [self.tableView reloadData];
+    //self.section = section;
 }
 
 - (void)setUpArticles {
@@ -58,7 +94,7 @@
         cell = [[ArticleViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
     cell.articleHeadline.text = [self.articleTitles objectAtIndex:[indexPath row]];
-    cell.articleImage.image = [UIImage imageNamed:[self.articleImages objectAtIndex:[indexPath row]]];
+    cell.articleImage.image = [self.articleImages objectAtIndex:[indexPath row]];
     return cell;
     
 }

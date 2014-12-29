@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.image.image = [UIImage imageNamed:self.imageName];
+    self.image.image = self.imageName;
     self.headline.text = self.contentTitle;
     [self.headline.layoutManager ensureLayoutForTextContainer:self.headline.textContainer];
     self.headline.textColor = [UIColor whiteColor];

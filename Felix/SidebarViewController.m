@@ -10,6 +10,9 @@
 
 #import "SWRevealViewController.h"
 #import "DashboardViewController.h"
+#import "FLXAppDelegate.h"
+#import "PageContainerViewController.h"
+#import "articleTableViewController.h"
 
 @interface SidebarViewController ()
 
@@ -111,6 +114,13 @@
     NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
     DashboardViewController *destViewController = (DashboardViewController*)segue.destinationViewController;
     destViewController.section = [[self.cells objectAtIndex:indexPath.row] capitalizedString];
+    FLXAppDelegate *appDel = (FLXAppDelegate*) [UIApplication sharedApplication].delegate;
+    appDel.section = [self.cells objectAtIndex:indexPath.row];
+//    PageContainerViewController *pcvc = appDel.pageContainerViewController;
+//    articleTableViewController *atvc = appDel.articleTableVC;
+//    [pcvc reloadData:[self.cells objectAtIndex:indexPath.row]];
+//    [atvc reloadData:[self.cells objectAtIndex:indexPath.row]];
+//    
     //destViewController.title = [[self.cells objectAtIndex:indexPath.row] capitalizedString];
 
     if ( [segue isKindOfClass: [SWRevealViewControllerSeguePushController class]] ) {

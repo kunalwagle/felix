@@ -61,7 +61,7 @@
     [coder encodeObject:self.cat forKey:@"cat"];
     [coder encodeObject:self.twitter forKey:@"twitter"];
     [coder encodeObject:self.email forKey:@"email"];
-
+    [coder encodeObject:self.users forKey:@"users"];
 }
 
 - (id)initWithCoder:(NSCoder *)coder {
@@ -71,6 +71,7 @@
     self.twitter = [coder decodeObjectForKey:@"twitter"];
     self.label = [coder decodeObjectForKey:@"label"];
     self.cat = [coder decodeObjectForKey:@"cat"];
+    self.users = [coder decodeObjectForKey:@"users"];
     return self;
 }
 

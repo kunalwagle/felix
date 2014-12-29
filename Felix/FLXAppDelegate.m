@@ -8,6 +8,7 @@
 
 #import "FLXAppDelegate.h"
 #import "FLXViewController.h"
+#import "UtilityMethods.h"
 //#import <Scringo/Scringo.h>
 
 @implementation FLXAppDelegate
@@ -53,6 +54,15 @@
     return YES;
 }
 
+-(BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions  {
+    NSUserDefaults* userDefaults = [NSUserDefaults standardUserDefaults];
+    if ([userDefaults objectForKey:@"firstRun"]==YES) {
+        [UtilityMethods loadArticles:@"Home"];
+        [userDefaults setObject:@"NO" forKey:@"firstRun"];
+    }
+    self.section = @"news";
+    return YES;
+}
 
 							
 - (void)applicationWillResignActive:(UIApplication *)application

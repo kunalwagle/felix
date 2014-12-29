@@ -8,11 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+#import "Section.h"
+
 @interface RightSidebarViewController : UITableViewController
 
-@property UIViewController *currentViewController;
 @property NSMutableArray *section;
 @property NSMutableArray *author;
 @property NSMutableArray *issues;
+
+-(void)reloadAllData:(Section*)section author:(NSMutableArray*)author;
 
 @end

@@ -12,7 +12,8 @@
 @interface PageContainerViewController : UIViewController <UIPageViewControllerDataSource>
 
 @property (strong, nonatomic) UIPageViewController *pageViewController;
-@property (strong, nonatomic) NSArray *articleTitles;
-@property (strong, nonatomic) NSArray *articleImages;
+@property (strong, nonatomic) NSMutableArray *articleTitles;
+@property (strong, nonatomic) NSMutableArray *articleImages;
+-(void)reloadData:(NSString*)sect;
 
 @end
