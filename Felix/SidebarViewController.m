@@ -13,6 +13,7 @@
 #import "FLXAppDelegate.h"
 #import "PageContainerViewController.h"
 #import "articleTableViewController.h"
+#import "SearchViewController.h"
 
 @interface SidebarViewController ()
 
@@ -33,7 +34,7 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 
-    self.cells = [[NSMutableArray alloc] initWithObjects:@"title", @"home", @"news", @"features", @"comment", @"science", @"politics", @"business", @"arts", @"music", @"film", @"fashion", @"games", @"tech", @"travel", @"food", @"television", @"books", @"welfare", @"clubs and socs", @"sport", nil];
+    self.cells = [[NSMutableArray alloc] initWithObjects:@"title", @"home", @"news", @"features", @"comment", @"science", @"politics", @"arts", @"music", @"film", @"fashion", @"games", @"tech", @"travel", @"food", @"television", @"books", @"welfare", @"clubs and socs", @"sport", nil];
 }
 
 -(BOOL)prefersStatusBarHidden {
@@ -62,6 +63,9 @@
     
     NSString *CellIdentifier = [self.cells objectAtIndex:indexPath.row];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    if ([CellIdentifier isEqualToString:@"title"]) {
+        cell.textLabel.font = [UIFont fontWithName:@"SortsMillGoudy-Regular" size:29];
+    }
     return cell;
     
 }
@@ -112,10 +116,23 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
     NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    if ([indexPath row] != 1) {
     DashboardViewController *destViewController = (DashboardViewController*)segue.destinationViewController;
     destViewController.section = [[self.cells objectAtIndex:indexPath.row] capitalizedString];
     FLXAppDelegate *appDel = (FLXAppDelegate*) [UIApplication sharedApplication].delegate;
     appDel.section = [self.cells objectAtIndex:indexPath.row];
+    if ([appDel.section isEqualToString:@"home"]) {
+        appDel.section = @"news";
+    }
+    if ([appDel.section isEqualToString:@"television"]) {
+        appDel.section = @"tv";
+    }
+    if ([appDel.section isEqualToString:@"clubs and socs"]) {
+        appDel.section = @"cands";
+    }
+    [appDel.loadedTop removeAllObjects];
+    [appDel.loadedBottom removeAllObjects];
+    }
 //    PageContainerViewController *pcvc = appDel.pageContainerViewController;
 //    articleTableViewController *atvc = appDel.articleTableVC;
 //    [pcvc reloadData:[self.cells objectAtIndex:indexPath.row]];

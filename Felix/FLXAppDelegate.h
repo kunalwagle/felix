@@ -23,5 +23,8 @@
 @property UIViewController *previousViewController;
 @property Article* article;
 @property NSString* section;
+@property NSMutableArray* loadedTop;
+@property NSMutableDictionary* loadedBottom;
+@property NSMutableDictionary* colours;
 
 @end

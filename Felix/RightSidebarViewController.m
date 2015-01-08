@@ -9,6 +9,7 @@
 #import "RightSidebarViewController.h"
 #import "User.h"
 #import "FLXAppDelegate.h"
+#import "ViewUserViewController.h"
 
 @interface RightSidebarViewController ()
 
@@ -113,12 +114,21 @@
     return YES;
 }
 
+-(void)complete {
+   [self.tableView setFrame:CGRectMake(self.tableView.frame.origin.x-60, self.tableView.frame.origin.y, self.tableView.frame.size.width, self.tableView.frame.size.height)];
+}
+
 -(void)viewWillAppear:(BOOL)animated {
     [self.tableView setFrame:CGRectMake(self.tableView.frame.origin.x+60, self.tableView.frame.origin.y, self.tableView.frame.size.width, self.tableView.frame.size.height)];
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+    UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
+    if ([cell.reuseIdentifier isEqualToString:@"archive"] || [cell.reuseIdentifier isEqualToString:@"latest"]) {
+        NSString* url = @"http://felixonline.co.uk/issuearchive/";
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+    }
 }
 
 
@@ -198,14 +208,25 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    if ([[segue identifier] isEqualToString:@"viewUser"]) {
+        ViewUserViewController *vc = [segue destinationViewController];
+        vc.sidebar = YES;
+        vc.vc = self;
+        int section = [[self.tableView indexPathForSelectedRow] section];
+        if (section==0 && [self.section count]>0) {
+            vc.user = [self.section objectAtIndex:[[self.tableView indexPathForSelectedRow] row]];
+        } else {
+            vc.user = [self.author objectAtIndex:[[self.tableView indexPathForSelectedRow] row]];
+        }
+    }
 }
-*/
+
 
 @end

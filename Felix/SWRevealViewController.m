@@ -27,6 +27,7 @@
 #import <QuartzCore/QuartzCore.h>
 
 #import "SWRevealViewController.h"
+#import "LoadingViewController.h"
 
 
 #pragma mark - StatusBar Helper Function
@@ -738,8 +739,28 @@ const int FrontViewPositionNone = 0xff;
     // and resume it back to the previous state, it is possible to override this behaviour by
     // intercepting it on the panGestureBegan and panGestureEnded delegates
     _userInteractionStore = _contentView.userInteractionEnabled;
+    //NSUserDefaults* userDefaults = [NSUserDefaults standardUserDefaults];
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"HasLaunchedOnce"])
+    {
+        // app already launched
+    }
+    else
+    {
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"HasLaunchedOnce"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        [self performSegueWithIdentifier:@"loading" sender:self];
+        // This is the first launch ever
+    }
+        //[self presentViewController: controller animated:YES completion:nil];
+        //[UtilityMethods loadArticles:@"Home"];
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([[segue identifier] isEqualToString:@"loading"]) {
+        LoadingViewController *destViewController = (LoadingViewController*)[segue destinationViewController];
+        destViewController.loaded = NO;
+    }
+}
 
 - (NSUInteger)supportedInterfaceOrientations
 {
@@ -1858,7 +1879,7 @@ NSString * const SWSegueRightIdentifier = @"sw_right";
 //
 //@implementation SWRevealViewController(deprecated)
 //
-//- (void)prepareForSegue:(SWRevealViewControllerSegue *)segue sender:(id)sender   // TO REMOVE: DEPRECATED IMPLEMENTATION
+//- (void)prepareForSegue:( *)segue sender:(id)sender   // TO REMOVE: DEPRECATED IMPLEMENTATION
 //{
 //    // This method is required for compatibility with SWRevealViewControllerSegue, now deprecated.
 //    // It can be simply removed when using SWRevealViewControllerSegueSetController and SWRevealViewControlerSeguePushController

@@ -72,7 +72,7 @@
     return self.comments;
 }
 
--(NSString*)getSection {
+-(Section*)getSection {
     return self.section;
 }
 
@@ -94,7 +94,8 @@
 -(NSString *) stringByStrippingHTML {
     NSRange r;
     NSString *finalContent = self.content.copy;
-    
+    finalContent = [finalContent stringByReplacingOccurrencesOfString:@"\n" withString:@" "];
+    finalContent = [finalContent stringByReplacingOccurrencesOfString:@"</p>" withString:@"\n\n"];
     while ((r = [finalContent rangeOfString:@"<[^>]+>" options:NSRegularExpressionSearch]).location != NSNotFound)
         finalContent = [finalContent stringByReplacingCharactersInRange:r withString:@""];
     finalContent = [finalContent stringByReplacingOccurrencesOfString:@"&quot;" withString:@"\""];
@@ -110,6 +111,7 @@
     finalContent = [finalContent stringByReplacingOccurrencesOfString:@"&nbsp;" withString:@""];
     finalContent = [finalContent stringByReplacingOccurrencesOfString:@"&rdquo;" withString:@"\""];
     finalContent = [finalContent stringByReplacingOccurrencesOfString:@"&ldquo;" withString:@"\""];
+    finalContent = [finalContent stringByReplacingOccurrencesOfString:@"&euml" withString:@"e"];
     
     return finalContent;
 }
@@ -130,19 +132,19 @@
 }
 
 - (id)initWithCoder:(NSCoder *)coder {
-    self = [self init];
-    self.title = [coder decodeObjectForKey:@"title"];
-    self.teaser = [coder decodeObjectForKey:@"teaser"];
+    self = [super init];
+    self.title = [[coder decodeObjectForKey:@"title"] copy];
+    self.teaser = [[coder decodeObjectForKey:@"teaser"] copy];
     self.aid = [coder decodeIntForKey:@"aid"];
     self.date = [coder decodeIntForKey:@"date"];
     self.published = [coder decodeIntForKey:@"published"];
     self.comment_count = [coder decodeIntForKey:@"comment_count"];
     self.section = [coder decodeObjectForKey:@"section"];
-    self.authors = [coder decodeObjectForKey:@"authors"];
-    self.comments = [coder decodeObjectForKey:@"comments"];
+    self.authors = [[coder decodeObjectForKey:@"authors"] copy];
+    self.comments = [[coder decodeObjectForKey:@"comments"] copy];
     self.image = [coder decodeObjectForKey:@"image"];
-    self.url = [coder decodeObjectForKey:@"url"];
-    self.content = [coder decodeObjectForKey:@"content"];
+    self.url = [[coder decodeObjectForKey:@"url"] copy];
+    self.content = [[coder decodeObjectForKey:@"content"] copy];
     return self;
 }
 

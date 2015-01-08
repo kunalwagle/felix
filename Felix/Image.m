@@ -21,13 +21,12 @@
 @property NSString *attr_link;
 @property int width;
 @property int height;
-@property UIImage *image;
 
 @end
 
 @implementation Image
 
--(Image *)initFull: (int)iid title:(NSString*)title url:(NSString*)url fileName:(NSString*)fileName desc:(NSString*)desc timeStamp:(int)timeStamp caption:(NSString*)caption attribution:(NSString*)attribution attr_link:(NSString*)attr_link width:(int)width height:(int)height image:(UIImage*)image {
+-(Image *)initFull: (int)iid title:(NSString*)title url:(NSString*)url fileName:(NSString*)fileName desc:(NSString*)desc timeStamp:(int)timeStamp caption:(NSString*)caption attribution:(NSString*)attribution attr_link:(NSString*)attr_link width:(int)width height:(int)height {
     self.iid = iid;
     self.title = title;
     self.url = url;
@@ -39,7 +38,6 @@
     self.attr_link = attr_link;
     self.width = width;
     self.height = height;
-    self.image = image;
     return self;
 }
 
@@ -86,10 +84,6 @@
     return self.height;
 }
 
--(UIImage*)getImage {
-    return self.image;
-}
-
 - (void)encodeWithCoder:(NSCoder *)coder {
     [coder encodeObject:self.title forKey:@"title"];
     [coder encodeObject:self.fileName forKey:@"fileName"];
@@ -102,23 +96,21 @@
     [coder encodeObject:self.attribution forKey:@"attribution"];
     [coder encodeObject:self.attr_link forKey:@"attr_link"];
     [coder encodeObject:self.url forKey:@"url"];
-    [coder encodeObject:self.image forKey:@"image"];
 }
 
 - (id)initWithCoder:(NSCoder *)coder {
-    self = [self init];
-    self.title = [coder decodeObjectForKey:@"title"];
-    self.fileName = [coder decodeObjectForKey:@"fileName"];
+    self = [super init];
+    self.title = [[coder decodeObjectForKey:@"title"] copy];
+    self.fileName = [[coder decodeObjectForKey:@"fileName"] copy];
     self.iid = [coder decodeIntForKey:@"iid"];
     self.width = [coder decodeIntForKey:@"width"];
     self.height = [coder decodeIntForKey:@"height"];
     self.timeStamp = [coder decodeIntForKey:@"timeStamp"];
-    self.desc = [coder decodeObjectForKey:@"desc"];
-    self.caption = [coder decodeObjectForKey:@"caption"];
-    self.attribution = [coder decodeObjectForKey:@"attribution"];
-    self.attr_link = [coder decodeObjectForKey:@"attr_link"];
-    self.url = [coder decodeObjectForKey:@"url"];
-    self.image = [coder decodeObjectForKey:@"image"];
+    self.desc = [[coder decodeObjectForKey:@"desc"] copy];
+    self.caption = [[coder decodeObjectForKey:@"caption"] copy];
+    self.attribution = [[coder decodeObjectForKey:@"attribution"] copy];
+    self.attr_link = [[coder decodeObjectForKey:@"attr_link"] copy];
+    self.url = [[coder decodeObjectForKey:@"url"] copy];
     return self;
 }
 

@@ -19,6 +19,9 @@
 +(NSMutableArray*)createUser:(NSArray*)u;
 +(NSMutableArray*)getArticles:(NSString*)section;
 +(void)loadArticles:(NSString*)section;
++(NSMutableDictionary*)setColours:(NSMutableDictionary*)dict;
++(BOOL)testInternetConnection;
++(NSMutableArray*)getArticlesWithoutRefreshing:(NSString*)section;
 
 
 @end

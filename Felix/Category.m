@@ -37,9 +37,9 @@
 }
 
 - (id)initWithCoder:(NSCoder *)coder {
-    self = [self init];
-    self.section = [coder decodeObjectForKey:@"section"];
-    self.articles = [coder decodeObjectForKey:@"articles"];
+    self = [super init];
+    self.section = [[coder decodeObjectForKey:@"section"] copy];
+    self.articles = [[coder decodeObjectForKey:@"articles"] copy];
     return self;
 }
 

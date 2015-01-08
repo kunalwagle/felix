@@ -17,5 +17,6 @@
 @property NSMutableArray *issues;
 
 -(void)reloadAllData:(Section*)section author:(NSMutableArray*)author;
+-(void)complete;
 
 @end

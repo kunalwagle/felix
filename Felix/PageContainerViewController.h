@@ -14,6 +14,7 @@
 @property (strong, nonatomic) UIPageViewController *pageViewController;
 @property (strong, nonatomic) NSMutableArray *articleTitles;
 @property (strong, nonatomic) NSMutableArray *articleImages;
+@property NSMutableArray *articles;
 -(void)reloadData:(NSString*)sect;
 
 @end

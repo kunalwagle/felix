@@ -9,6 +9,7 @@
 #import "FLXAppDelegate.h"
 #import "FLXViewController.h"
 #import "UtilityMethods.h"
+#import "LoadingViewController.h"
 //#import <Scringo/Scringo.h>
 
 @implementation FLXAppDelegate
@@ -47,19 +48,27 @@
     //}];
         // Add test users to show some dummy traffic
         // Add test users to show some dummy traffic
+    for (NSString* family in [UIFont familyNames])
+    {
+        NSLog(@"%@", family);
+        
+        for (NSString* name in [UIFont fontNamesForFamilyName: family])
+        {
+            NSLog(@"  %@", name);
+        }
+    }
     UIPageControl *pageControl = [UIPageControl appearance];
     pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
     pageControl.currentPageIndicatorTintColor = [UIColor whiteColor];
     pageControl.backgroundColor = [UIColor clearColor];
+    self.loadedTop = [[NSMutableArray alloc] initWithObjects: nil];
+    self.loadedBottom = [[NSMutableDictionary alloc] initWithObjectsAndKeys: nil];
+    self.colours = [[NSMutableDictionary alloc] initWithObjectsAndKeys: nil];
+    self.colours = [UtilityMethods setColours:self.colours];
     return YES;
 }
 
 -(BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions  {
-    NSUserDefaults* userDefaults = [NSUserDefaults standardUserDefaults];
-    if ([userDefaults objectForKey:@"firstRun"]==YES) {
-        [UtilityMethods loadArticles:@"Home"];
-        [userDefaults setObject:@"NO" forKey:@"firstRun"];
-    }
     self.section = @"news";
     return YES;
 }

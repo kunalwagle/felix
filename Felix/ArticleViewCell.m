@@ -19,4 +19,14 @@
     // Configure the view for the selected state
 }
 
+- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+{
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    if (self) {
+        self.articleHeadline = [[UITextView alloc] init];
+        self.articleImage = [[UIImageView alloc] init];
+    }
+    return self;
+}
+
 @end

@@ -65,12 +65,12 @@
 }
 
 - (id)initWithCoder:(NSCoder *)coder {
-    self = [self init];
-    self.email = [coder decodeObjectForKey:@"email"];
+    self = [super init];
+    self.email = [[coder decodeObjectForKey:@"email"] copy];
     self.sid = [coder decodeIntForKey:@"sid"];
-    self.twitter = [coder decodeObjectForKey:@"twitter"];
-    self.label = [coder decodeObjectForKey:@"label"];
-    self.cat = [coder decodeObjectForKey:@"cat"];
+    self.twitter = [[coder decodeObjectForKey:@"twitter"] copy];
+    self.label = [[coder decodeObjectForKey:@"label"] copy];
+    self.cat = [[coder decodeObjectForKey:@"cat"] copy];
     self.users = [coder decodeObjectForKey:@"users"];
     return self;
 }

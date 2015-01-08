@@ -93,16 +93,16 @@
 }
 
 - (id)initWithCoder:(NSCoder *)coder {
-    self = [self init];
-    self.user = [coder decodeObjectForKey:@"user"];
-    self.name = [coder decodeObjectForKey:@"name"];
-    self.desc = [coder decodeObjectForKey:@"desc"];
-    self.info = [coder decodeObjectForKey:@"info"];
-    self.email = [coder decodeObjectForKey:@"email"];
-    self.facebook = [coder decodeObjectForKey:@"facebook"];
-    self.twitter = [coder decodeObjectForKey:@"twitter"];
-    self.websitename = [coder decodeObjectForKey:@"websitename"];
-    self.websiteurl = [coder decodeObjectForKey:@"websiteurl"];
+    self = [super init];
+    self.user = [[coder decodeObjectForKey:@"user"] copy];
+    self.name = [[coder decodeObjectForKey:@"name"] copy];
+    self.desc = [[coder decodeObjectForKey:@"desc"] copy];
+    self.info = [[coder decodeObjectForKey:@"info"] copy];
+    self.email = [[coder decodeObjectForKey:@"email"] copy];
+    self.facebook = [[coder decodeObjectForKey:@"facebook"] copy];
+    self.twitter = [[coder decodeObjectForKey:@"twitter"] copy];
+    self.websitename = [[coder decodeObjectForKey:@"websitename"] copy];
+    self.websiteurl = [[coder decodeObjectForKey:@"websiteurl"] copy];
     self.img = [coder decodeObjectForKey:@"image"];
     return self;
 }

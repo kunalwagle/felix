@@ -13,6 +13,8 @@
 @property (weak, nonatomic) IBOutlet UIView *container;
 @property (weak, nonatomic) IBOutlet UIButton *sidebarButton;
 @property (weak, nonatomic) IBOutlet UINavigationItem *navItem;
+@property UIRefreshControl *refreshControl;
 @property NSString *section;
+@property (weak, nonatomic) IBOutlet UIButton *rightSidebarButton;
 
 @end

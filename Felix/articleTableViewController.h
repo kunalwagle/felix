@@ -12,6 +12,11 @@
 
 @property NSMutableArray *articleTitles;
 @property NSMutableArray *articleImages;
+@property NSMutableArray *articleUrl;
+@property UIRefreshControl *refreshControl;
+@property NSArray *articles;
+@property NSString *section;
 -(void)reloadData:(NSString*)section;
+-(void)reload;
 
 @end

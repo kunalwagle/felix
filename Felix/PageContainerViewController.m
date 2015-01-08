@@ -27,27 +27,39 @@
     NSArray *articles = [UtilityMethods getArticles:sect];
     self.articleTitles = [[NSMutableArray alloc] initWithObjects: nil];
     self.articleImages = [[NSMutableArray alloc] initWithObjects: nil];
+    self.articles = [[NSMutableArray alloc] initWithObjects:nil];
     for (int i=0; i<[articles count] && i<3; i++) {
+        @try {
         Article *a = [articles objectAtIndex:i];
         NSString *title = a.getTitle;
-        UIImage *image = a.getImage.getImage;
-        [self.articleTitles addObject:title];
-        if (image != NULL) {
-            [self.articleImages addObject:image];
+        NSString* image = a.getImage.getUrl;
+        if (!image || [image isEqualToString:@""]) {
+            [self.articleImages addObject:@"FelixLogo.png"];
         } else {
-            [self.articleImages addObject:[UIImage imageNamed:@"FelixLogo.png"]];
+            [self.articleImages addObject:image];
+        }
+        [self.articleTitles addObject:title];
+        [self.articles addObject:articles[i]];
+        }
+        @catch (NSException *e) {
+        }
+        @finally{
         }
     }
+    if ([articles count]>0) {
     Article* article = [articles objectAtIndex:0];
     Section *section = article.getSection;
     RightSidebarViewController *r = appDel.rightSidebar;
     [r reloadAllData:section author:NULL];
     appDel.article = article;
+    }
     //_articleImages = @[@"FelixLogo.png", @"felix_cat-small.png", @"Final Felix Logo HQ with line.png"];
     
     self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"topStoriesPageView"];
     self.pageViewController.dataSource = self;
-    
+    for (UIViewController *vc in [self childViewControllers]) {
+        [vc removeFromParentViewController];
+    }
     TopStoriesPageContentViewController *startingViewController = [self viewControllerAtIndex:0];
     NSArray *viewControllers;
     if (startingViewController!=NULL) {
@@ -64,6 +76,7 @@
     }
     
 }
+
 
 -(void)reloadData:(NSString*)sect {
 //    FLXAppDelegate *appDel = (FLXAppDelegate*) [UIApplication sharedApplication].delegate;
@@ -109,6 +122,52 @@
 //        viewControllers = [[NSArray alloc] initWithObjects: nil];
 //    }
    // self.section = sect;
+    FLXAppDelegate *appDel = (FLXAppDelegate*) [UIApplication sharedApplication].delegate;
+    appDel.pageContainerViewController = self;
+    //_articleTitles = @[@"Over 200 Tips and Tricks", @"Discover Hidden Features", @"Bookmark Favorite Tip"];
+    NSArray *articles = [UtilityMethods getArticles:sect];
+    self.articleTitles = [[NSMutableArray alloc] initWithObjects: nil];
+    self.articleImages = [[NSMutableArray alloc] initWithObjects: nil];
+    self.articles = [[NSMutableArray alloc] initWithObjects:nil];
+    for (int i=0; i<[articles count] && i<3; i++) {
+        @try {
+            Article *a = [articles objectAtIndex:i];
+            NSString *title = a.getTitle;
+            NSString* image = a.getImage.getUrl;
+            if (!image || [image isEqualToString:@""]) {
+                [self.articleImages addObject:@"FelixLogo.png"];
+            } else {
+                [self.articleImages addObject:image];
+            }
+            [self.articleTitles addObject:title];
+            [self.articles addObject:articles[i]];
+        }
+        @catch (NSException *e) {
+        }
+        @finally{
+        }
+    }
+    Article* article = [articles objectAtIndex:0];
+    Section *section = article.getSection;
+    RightSidebarViewController *r = appDel.rightSidebar;
+    [r reloadAllData:section author:NULL];
+    appDel.article = article;
+    TopStoriesPageContentViewController *startingViewController = [self viewControllerAtIndex:0];
+    NSArray *viewControllers;
+    if (startingViewController!=NULL) {
+        viewControllers = @[startingViewController];
+        [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
+        // Change the size of page view controller
+        self.pageViewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+        
+        [self addChildViewController:_pageViewController];
+        [self.view addSubview:_pageViewController.view];
+        [self.pageViewController didMoveToParentViewController:self];
+    } else {
+        viewControllers = [[NSArray alloc] initWithObjects: nil];
+    }
+
+    [self.view setNeedsDisplay];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -166,6 +225,7 @@
     contentViewController.imageName = self.articleImages[index];
     contentViewController.contentTitle = self.articleTitles[index];
     contentViewController.pageIndex = index;
+    contentViewController.article = self.articles[index];
     
     return contentViewController;
 }

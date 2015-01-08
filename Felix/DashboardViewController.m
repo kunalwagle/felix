@@ -11,6 +11,7 @@
 #import "SWRevealViewController.h"
 #import "UtilityMethods.h"
 #import "PageContainerViewController.h"
+#import "FLXAppDelegate.h"
 
 @interface DashboardViewController ()
 
@@ -24,17 +25,37 @@
     [super viewDidLoad];
     
     if (self.section==NULL) {
-        self.section = @"Home";
+        self.section = @"News";
     }
     self.navItem.title = self.section;
+    if ([self.section isEqualToString:@"Cands"]) {
+        self.navItem.title = @"Clubs and Societies";
+    }
+    if ([self.section isEqualToString:@"tv"]) {
+        self.navItem.title = @"Television";
+    }
+    
+
+    
+    FLXAppDelegate *appDel = (FLXAppDelegate*)[[UIApplication sharedApplication] delegate];
+    NSMutableDictionary* dictionary = appDel.colours;
+    UIColor *colour = [dictionary objectForKey:appDel.section];
+    self.view.backgroundColor = colour;
+    
     // Change button color
     _sidebarButton.tintColor = [UIColor colorWithWhite:0.96f alpha:0.2f];
     
     // Set the side bar button action. When it's tapped, it'll show up the sidebar.
     [_sidebarButton addTarget:self.revealViewController action:@selector(revealToggle:) forControlEvents:UIControlEventTouchUpInside];
+    [_rightSidebarButton addTarget:self.revealViewController action:@selector(rightRevealToggle:) forControlEvents:UIControlEventTouchUpInside];
     
     // Set the gesture
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    
+}
+
+-(void)setColour{
+    
 }
 
 - (void)didReceiveMemoryWarning {

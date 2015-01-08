@@ -10,7 +10,7 @@
 
 @interface ArticleViewCell : UITableViewCell
 
-@property (weak, nonatomic) IBOutlet UIImageView *articleImage;
-@property (weak, nonatomic) IBOutlet UITextView *articleHeadline;
+@property (strong, nonatomic) IBOutlet UIImageView *articleImage;
+@property (strong, nonatomic) IBOutlet UITextView *articleHeadline;
 
 @end
