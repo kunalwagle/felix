@@ -38,9 +38,12 @@
             int height = self.image.bounds.size.height;
             NSString *string2 = [NSString stringWithFormat:@".co.uk/%d/%d/", width, height];
             string = [string stringByReplacingOccurrencesOfString:@".co.uk/upload" withString:string2];
+            UIImage *image;
             NSURL *url = [NSURL URLWithString:string];
+            if (url) {
             NSData *imageData = [NSData dataWithContentsOfURL:url options:NSDataReadingUncached error:&error];
-            UIImage *image = [UIImage imageWithData:imageData];
+            image = [UIImage imageWithData:imageData];
+            }
             NSLog(@"Finished asynchrously attempting download");
             if (error)
                 NSLog(@"Download error: %@", error);

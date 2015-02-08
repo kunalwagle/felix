@@ -34,10 +34,12 @@ NSString *string2 = @".co.uk/325/212/";
     self.teaser.font = [UIFont fontWithName:@"NotoSerif" size:13];
     self.text.editable = YES;
     self.text.font = [UIFont fontWithName:@"Neuton-Regular" size:14];
+    self.textTrial.font = [UIFont fontWithName:@"Neuton-Regular" size:14];
     self.text.editable = NO;
     self.header.text = a.getTitle;
     self.teaser.text = a.getTeaser;
     self.text.text = a.getContent;
+    self.textTrial.text = a.getContent;
     NSString *byline = @"";
     for (User* user in a.getAuthors) {
         byline = [byline stringByAppendingString:user.getName];
@@ -105,6 +107,7 @@ NSString *string2 = @".co.uk/325/212/";
     //[self.text setContentOffset:UIEdgeInsetsMake(150, 0, 0, 0)];
     self.loaded = NO;
     self.loading = NO;
+    self.scrollView.contentSize = CGSizeMake(self.view.bounds.size.width, self.view.bounds.size.height+500);
 }
 
 -(BOOL)automaticallyAdjustsScrollViewInsets {
@@ -126,33 +129,33 @@ NSString *string2 = @".co.uk/325/212/";
 }
 */
 
--(void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    
-    if (self.loading == NO) {
-    if (self.loaded == NO) {
-        int currentOffset = scrollView.contentOffset.y;
-    if (self.lastContentOffset < currentOffset) {
-        if (self.stillLoading == NO) {
-        [self.image setHidden:YES];
-        [self.hideImageButton setTitle:@"V" forState:UIControlStateNormal];
-        self.loaded = YES;
-        } else {
-            self.stillLoading = NO;
-        }
-    }
-    }
-    }
-    if (self.image.hidden && !self.adjustedOffsets) {
-        int offset = scrollView.contentOffset.y;
-        if (offset>0) {
-            //[self.text setContentOffset:CGPointMake(0, 0)];
-            self.adjustedOffsets = YES;
-            [self.text setContentInset:UIEdgeInsetsMake(0, 0, 0,0)];
-        }
-    }
-    
-    
-}
+//-(void)scrollViewDidScroll:(UIScrollView *)scrollView {
+//    
+//    if (self.loading == NO) {
+//    if (self.loaded == NO) {
+//        int currentOffset = scrollView.contentOffset.y;
+//    if (self.lastContentOffset < currentOffset) {
+//        if (self.stillLoading == NO) {
+//        [self.image setHidden:YES];
+//        [self.hideImageButton setTitle:@"V" forState:UIControlStateNormal];
+//        self.loaded = YES;
+//        } else {
+//            self.stillLoading = NO;
+//        }
+//    }
+//    }
+//    }
+//    if (self.image.hidden && !self.adjustedOffsets) {
+//        int offset = scrollView.contentOffset.y;
+//        if (offset>0) {
+//            //[self.text setContentOffset:CGPointMake(0, 0)];
+//            self.adjustedOffsets = YES;
+//            [self.text setContentInset:UIEdgeInsetsMake(0, 0, 0,0)];
+//        }
+//    }
+//    
+//    
+//}
 
 - (IBAction)hideImage:(id)sender {
     if (self.image.hidden) {
