@@ -810,7 +810,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="2" id="yeE-Os-ApQ"/>
                                 </constraints>
-                                <color key="trackTintColor" patternImage="4E06E1EF-D932-4E0E-956A-E99E6EC40381" colorSpace="pattern"/>
+                                <color key="trackTintColor" patternImage="9BB11F53-B503-461E-A35D-5B40A636DD3F" colorSpace="pattern"/>
                             </progressView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMR-br-GRv">
                                 <rect key="frame" x="259" y="266" width="83" height="84"/>
@@ -1629,9 +1629,9 @@
                                             <constraint firstItem="QY2-vc-SKv" firstAttribute="top" secondItem="nRO-yT-trp" secondAttribute="bottom" constant="13" id="PVN-fT-Cpc"/>
                                             <constraint firstItem="zIv-QL-9gN" firstAttribute="leading" secondItem="QWh-Qs-hqW" secondAttribute="leadingMargin" constant="5" id="VY4-vP-HaR"/>
                                             <constraint firstAttribute="bottom" secondItem="yWw-NV-u1C" secondAttribute="bottom" id="VuZ-Ta-rkD"/>
-                                            <constraint firstItem="b7t-SF-7u9" firstAttribute="leading" secondItem="yWw-NV-u1C" secondAttribute="leading" id="dsq-AD-lr0"/>
+                                            <constraint firstItem="b7t-SF-7u9" firstAttribute="leading" secondItem="yWw-NV-u1C" secondAttribute="leading" constant="-5" id="dsq-AD-lr0"/>
                                             <constraint firstItem="nRO-yT-trp" firstAttribute="top" secondItem="EQo-3L-T8K" secondAttribute="bottom" constant="74" id="fRV-pu-7P7"/>
-                                            <constraint firstItem="EQo-3L-T8K" firstAttribute="leading" secondItem="zIv-QL-9gN" secondAttribute="leading" constant="5" id="hfS-RN-wMG"/>
+                                            <constraint firstItem="EQo-3L-T8K" firstAttribute="leading" secondItem="zIv-QL-9gN" secondAttribute="leading" id="hfS-RN-wMG"/>
                                             <constraint firstItem="yWw-NV-u1C" firstAttribute="top" secondItem="QWh-Qs-hqW" secondAttribute="top" constant="185" id="jFX-y1-vb0"/>
                                             <constraint firstItem="b7t-SF-7u9" firstAttribute="bottom" secondItem="QY2-vc-SKv" secondAttribute="bottom" id="lFV-0D-7wu"/>
                                             <constraint firstItem="3Ps-1b-MOx" firstAttribute="top" secondItem="QWh-Qs-hqW" secondAttribute="topMargin" constant="166" id="lSI-2j-rje"/>
@@ -1639,7 +1639,7 @@
                                             <constraint firstAttribute="trailingMargin" secondItem="3Ps-1b-MOx" secondAttribute="trailing" id="sqX-Y2-KJJ"/>
                                             <constraint firstItem="b7t-SF-7u9" firstAttribute="trailing" secondItem="yWw-NV-u1C" secondAttribute="trailing" id="tkU-gk-oBV"/>
                                             <constraint firstAttribute="trailing" secondItem="b7t-SF-7u9" secondAttribute="trailing" constant="-10" id="xlt-6A-2yw"/>
-                                            <constraint firstItem="zIv-QL-9gN" firstAttribute="leading" secondItem="nRO-yT-trp" secondAttribute="leading" constant="5" id="zV5-IK-HLS"/>
+                                            <constraint firstItem="zIv-QL-9gN" firstAttribute="leading" secondItem="nRO-yT-trp" secondAttribute="leading" constant="-5" id="zV5-IK-HLS"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -2348,7 +2348,7 @@
     <resources>
         <image name="201102092131-jk708-FelixPro.jpg" width="350" height="350"/>
         <image name="256px-Email_Shiny_Icon.svg-2.png" width="256" height="256"/>
-        <image name="4E06E1EF-D932-4E0E-956A-E99E6EC40381" width="320" height="460">
+        <image name="9BB11F53-B503-461E-A35D-5B40A636DD3F" width="320" height="460">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
