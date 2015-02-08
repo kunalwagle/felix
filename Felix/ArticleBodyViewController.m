@@ -37,7 +37,12 @@ NSString *string2 = @".co.uk/325/212/";
     self.text.editable = NO;
     self.header.text = a.getTitle;
     self.teaser.text = a.getTeaser;
+    self.text.scrollEnabled = YES;
     self.text.text = a.getContent;
+    [self.text setClipsToBounds:NO];
+   // [self.text sizeToFit];
+    self.text.scrollEnabled = NO;
+    NSLog(self.text.text);
     NSString *byline = @"";
     for (User* user in a.getAuthors) {
         byline = [byline stringByAppendingString:user.getName];
@@ -103,6 +108,17 @@ NSString *string2 = @".co.uk/325/212/";
     }
    //[self.text scrollRectToVisible:rect animated:NO];
     //[self.text setContentOffset:UIEdgeInsetsMake(150, 0, 0, 0)];
+    [self.text setFrame:CGRectMake(self.view.bounds.origin.x+145, self.text.frame.origin.y, self.view.bounds.size.width-160, self.text.frame.size.height)];
+//    CGFloat fixedWidth = self.text.frame.size.width;
+//    CGSize newSize = [self.text sizeThatFits:CGSizeMake(fixedWidth, MAXFLOAT)];
+//    CGRect newFrame = self.text.frame;
+//    newFrame.size = CGSizeMake(fmaxf(newSize.width, fixedWidth), newSize.height);
+//    self.text.frame = newFrame;
+    //[self.text sizeToFit];
+    [self.scrollView setContentSize:CGSizeMake(self.view.bounds.size.width, self.view.bounds.size.height+100)];
+//    [self.scrollView setContentSize:CGSizeMake(self.view.bounds.size.width, self.view.bounds.size.height+(self.text.frame.size.height-self.view.bounds.size.height)+530)];
+    NSLog([NSString stringWithFormat:@"Scroll View height: %f, Text View height: %f", self.scrollView.contentSize.height, self.text.frame.size.height]);
+
     self.loaded = NO;
     self.loading = NO;
 }
@@ -127,46 +143,51 @@ NSString *string2 = @".co.uk/325/212/";
 */
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    
-    if (self.loading == NO) {
-    if (self.loaded == NO) {
-        int currentOffset = scrollView.contentOffset.y;
-    if (self.lastContentOffset < currentOffset) {
-        if (self.stillLoading == NO) {
-        [self.image setHidden:YES];
-        [self.hideImageButton setTitle:@"V" forState:UIControlStateNormal];
-        self.loaded = YES;
-        } else {
-            self.stillLoading = NO;
-        }
-    }
-    }
-    }
-    if (self.image.hidden && !self.adjustedOffsets) {
-        int offset = scrollView.contentOffset.y;
-        if (offset>0) {
-            //[self.text setContentOffset:CGPointMake(0, 0)];
-            self.adjustedOffsets = YES;
-            [self.text setContentInset:UIEdgeInsetsMake(0, 0, 0,0)];
-        }
-    }
-    
-    
+    [self.text setScrollEnabled:YES];
+    [self.text sizeToFit];
+    [self.text setClipsToBounds:NO];
+    [self.text setScrollEnabled:NO];
+    [self.scrollView setContentSize:CGSizeMake(self.view.bounds.size.width, self.text.frame.size.height + self.text.frame.origin.y + 180)];
+//    
+//    if (self.loading == NO) {
+//    if (self.loaded == NO) {
+//        int currentOffset = scrollView.contentOffset.y;
+//    if (self.lastContentOffset < currentOffset) {
+//        if (self.stillLoading == NO) {
+//        [self.image setHidden:YES];
+//        [self.hideImageButton setTitle:@"V" forState:UIControlStateNormal];
+//        self.loaded = YES;
+//        } else {
+//            self.stillLoading = NO;
+//        }
+//    }
+//    }
+//    }
+//    if (self.image.hidden && !self.adjustedOffsets) {
+//        int offset = scrollView.contentOffset.y;
+//        if (offset>0) {
+//            //[self.text setContentOffset:CGPointMake(0, 0)];
+//            self.adjustedOffsets = YES;
+//            [self.text setContentInset:UIEdgeInsetsMake(0, 0, 0,0)];
+//        }
+//    }
+//    
+//    
 }
 
 - (IBAction)hideImage:(id)sender {
-    if (self.image.hidden) {
-        [self.image setHidden:NO];
-        [self.hideImageButton setTitle:@"X" forState:UIControlStateNormal];
-        if (self.adjustedOffsets) {
-            self.adjustedOffsets = NO;
-            int offset = self.text.contentOffset.y;
-            [self.text setContentInset:UIEdgeInsetsMake(150, 0, 0,0)];
-            [self.text setContentOffset:CGPointMake(0, -158+offset)];
-        }
-    } else {
-        [self.image setHidden:YES];
-        [self.hideImageButton setTitle:@"V" forState:UIControlStateNormal];
-    }
+//    if (self.image.hidden) {
+//        [self.image setHidden:NO];
+//        [self.hideImageButton setTitle:@"X" forState:UIControlStateNormal];
+//        if (self.adjustedOffsets) {
+//            self.adjustedOffsets = NO;
+//            int offset = self.text.contentOffset.y;
+//            [self.text setContentInset:UIEdgeInsetsMake(150, 0, 0,0)];
+//            [self.text setContentOffset:CGPointMake(0, -158+offset)];
+//        }
+//    } else {
+//        [self.image setHidden:YES];
+//        [self.hideImageButton setTitle:@"V" forState:UIControlStateNormal];
+//    }
 }
 @end

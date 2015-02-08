@@ -67,15 +67,44 @@ NSString *string2 = @".co.uk/112/74/";
 }
 
 - (void)refreshAll {
-    LoadingViewController *loadingViewController = [[self storyboard] instantiateViewControllerWithIdentifier:@"loadingPage"];
-    loadingViewController.loaded = YES;
-    loadingViewController.vc = self;
-    //[self addChildViewController:loadingViewController];
-    [self presentViewController:loadingViewController animated:YES completion:nil];
+//    LoadingViewController *loadingViewController = [[self storyboard] instantiateViewControllerWithIdentifier:@"loadingPage"];
+//    loadingViewController.loaded = YES;
+//    loadingViewController.vc = self;
+//    //[self addChildViewController:loadingViewController];
+//    [self presentViewController:loadingViewController animated:YES completion:nil];
+    if (self.refreshControl) {
+        NSString *title = @"Refreshing";
+        NSDictionary *attrsDictionary = [NSDictionary dictionaryWithObject:[UIColor blackColor]
+                                                                    forKey:NSForegroundColorAttributeName];
+        NSAttributedString *attributedTitle = [[NSAttributedString alloc] initWithString:title attributes:attrsDictionary];
+        self.refreshControl.attributedTitle = attributedTitle;
+    }
+    if ([UtilityMethods testInternetConnection]) {
+        FLXAppDelegate *appDel = (FLXAppDelegate*)[[UIApplication sharedApplication] delegate];
+        NSString *section = [appDel section];
+        dispatch_queue_t imageQueue = dispatch_queue_create("Image Queue",NULL);
+        dispatch_async(imageQueue, ^{
+            [UtilityMethods loadArticles:section];
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                // Update the UI
+                [self performSelectorOnMainThread:@selector(reload) withObject:nil waitUntilDone:YES];
+            });
+            
+        });
+        
+    } else {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No Internet Connection" message:@"You don't seem to be connected to the internet. Please connect to the internet and try again" delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
+        [alert setTag:100];
+        [alert show];
+    }
 }
 
 -(void)reload{
     FLXAppDelegate *appDel = (FLXAppDelegate*)[[UIApplication sharedApplication] delegate];
+    NSMutableDictionary *loadedBottom = [appDel loadedBottom];
+    [loadedBottom removeAllObjects];
+    [[appDel loadedTop] removeAllObjects];
     NSLog(@"NOW");
     [self.refreshControl endRefreshing];
     [appDel.pageContainerViewController reloadData:appDel.section];

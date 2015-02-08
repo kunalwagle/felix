@@ -22,6 +22,7 @@
 @property BOOL stillLoading;
 @property (nonatomic, assign) CGFloat lastContentOffset;
 @property BOOL adjustedOffsets;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 
 @end
