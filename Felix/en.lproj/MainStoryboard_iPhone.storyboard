@@ -701,91 +701,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z6T-oa-sok">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="546"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z6T-oa-sok">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="554"/>
                                 <connections>
                                     <segue destination="Fmn-uN-H78" kind="embed" id="JBR-Nd-a2E"/>
                                 </connections>
                             </containerView>
-                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPF-XG-Ela">
-                                <rect key="frame" x="24" y="554" width="40" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="4rr-B6-0Go"/>
-                                    <constraint firstAttribute="width" constant="40" id="gpY-mv-PtR"/>
-                                </constraints>
-                                <state key="normal" image="emailIcon-3faec2e96f9b15bcd8e689c92784501d.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="email:" destination="1X5-Bx-WH7" eventType="touchUpInside" id="4M6-BU-hGz"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9li-fw-h9z">
-                                <rect key="frame" x="72" y="554" width="40" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="7pl-Ts-4cJ"/>
-                                </constraints>
-                                <state key="normal" image="Comment.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="comment:" destination="1X5-Bx-WH7" eventType="touchUpInside" id="eJZ-bD-7d6"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2D-eC-3gd">
-                                <rect key="frame" x="120" y="554" width="40" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="0ka-8Y-6Bl"/>
-                                </constraints>
-                                <state key="normal" image="UserIcon.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="author:" destination="1X5-Bx-WH7" eventType="touchUpInside" id="7hs-VG-G9t"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="He1-ph-OYE">
-                                <rect key="frame" x="535" y="554" width="40" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="WQK-11-jI2"/>
-                                </constraints>
-                                <state key="normal" image="go-back-icon.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="back:" destination="1X5-Bx-WH7" eventType="touchUpInside" id="Mtl-C9-04H"/>
-                                </connections>
-                            </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UvP-8I-6pD">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem title="Back" id="Puv-Zz-MIZ">
+                                        <connections>
+                                            <action selector="back:" destination="1X5-Bx-WH7" id="dss-hx-hb8"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Author(s)" id="Que-sW-Blu">
+                                        <connections>
+                                            <action selector="author:" destination="1X5-Bx-WH7" id="cqh-vz-oSy"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="lXo-8g-gUs"/>
+                                    <barButtonItem title="Comments" id="Uzk-ao-Jk4">
+                                        <connections>
+                                            <action selector="comment:" destination="1X5-Bx-WH7" id="DJB-3i-R64"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="action" id="g34-Ld-ptc">
+                                        <connections>
+                                            <action selector="shareButton:" destination="1X5-Bx-WH7" id="zdx-Nh-eVe"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="V2D-eC-3gd" firstAttribute="top" secondItem="He1-ph-OYE" secondAttribute="top" id="FSa-Qu-sM9"/>
-                            <constraint firstItem="V2D-eC-3gd" firstAttribute="top" secondItem="9li-fw-h9z" secondAttribute="top" id="GnE-ar-Yog"/>
-                            <constraint firstItem="9li-fw-h9z" firstAttribute="top" secondItem="WPF-XG-Ela" secondAttribute="top" id="N72-QZ-jy9"/>
-                            <constraint firstItem="9li-fw-h9z" firstAttribute="bottom" secondItem="WPF-XG-Ela" secondAttribute="bottom" id="Rm2-sw-CWN"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="He1-ph-OYE" secondAttribute="trailing" constant="-9" id="RsL-bc-aLr"/>
-                            <constraint firstItem="9li-fw-h9z" firstAttribute="leading" secondItem="WPF-XG-Ela" secondAttribute="trailing" constant="8" symbolic="YES" id="be5-r8-3oE"/>
+                            <constraint firstItem="Dig-WK-vH8" firstAttribute="top" secondItem="UvP-8I-6pD" secondAttribute="bottom" constant="1" id="ECA-jw-h3J"/>
+                            <constraint firstItem="UvP-8I-6pD" firstAttribute="leading" secondItem="Z6T-oa-sok" secondAttribute="leading" id="HoV-nD-Zgr"/>
                             <constraint firstItem="Z6T-oa-sok" firstAttribute="top" secondItem="J2Y-eL-nvm" secondAttribute="bottom" id="cLw-h9-KAi"/>
-                            <constraint firstItem="WPF-XG-Ela" firstAttribute="leading" secondItem="mRm-hT-YdN" secondAttribute="leadingMargin" constant="-9" id="fCV-k8-uXV"/>
-                            <constraint firstItem="V2D-eC-3gd" firstAttribute="leading" secondItem="9li-fw-h9z" secondAttribute="trailing" constant="8" symbolic="YES" id="fbW-WA-f1h"/>
-                            <constraint firstItem="9li-fw-h9z" firstAttribute="bottom" secondItem="V2D-eC-3gd" secondAttribute="bottom" id="kLK-Ji-S8j"/>
-                            <constraint firstItem="V2D-eC-3gd" firstAttribute="top" secondItem="WPF-XG-Ela" secondAttribute="top" id="kez-0C-C9g"/>
                             <constraint firstAttribute="trailing" secondItem="Z6T-oa-sok" secondAttribute="trailing" id="kx3-zC-PhE"/>
-                            <constraint firstItem="Dig-WK-vH8" firstAttribute="top" secondItem="WPF-XG-Ela" secondAttribute="bottom" constant="6" id="oFu-On-PaX"/>
-                            <constraint firstItem="WPF-XG-Ela" firstAttribute="top" secondItem="Z6T-oa-sok" secondAttribute="bottom" constant="8" symbolic="YES" id="oWo-9s-X4s"/>
-                            <constraint firstItem="V2D-eC-3gd" firstAttribute="top" secondItem="9li-fw-h9z" secondAttribute="top" id="pXk-na-FgQ"/>
+                            <constraint firstItem="UvP-8I-6pD" firstAttribute="trailing" secondItem="Z6T-oa-sok" secondAttribute="trailing" id="pJJ-OV-Wif"/>
                             <constraint firstItem="Z6T-oa-sok" firstAttribute="leading" secondItem="mRm-hT-YdN" secondAttribute="leading" id="rJ6-YY-YNJ"/>
-                            <constraint firstItem="He1-ph-OYE" firstAttribute="bottom" secondItem="V2D-eC-3gd" secondAttribute="bottom" id="x9t-OY-xXW"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="comments" destination="9li-fw-h9z" id="3Mk-zr-Dc2"/>
                         <segue destination="8XX-WJ-2oH" kind="presentation" identifier="user" id="0NV-vv-OCz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gG8-MO-VOu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1644.375" y="1335.2112676056338"/>
+            <point key="canvasLocation" x="-1645" y="1335"/>
         </scene>
         <!--Splash Screen View Controller-->
         <scene sceneID="wNH-lM-srI">
@@ -810,7 +775,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="2" id="yeE-Os-ApQ"/>
                                 </constraints>
-                                <color key="trackTintColor" patternImage="9BB11F53-B503-461E-A35D-5B40A636DD3F" colorSpace="pattern"/>
+                                <color key="trackTintColor" patternImage="8236C9F0-38DB-4A70-A901-D57B69F0EA5B" colorSpace="pattern"/>
                             </progressView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMR-br-GRv">
                                 <rect key="frame" x="259" y="266" width="83" height="84"/>
@@ -1539,7 +1504,7 @@
                         <viewControllerLayoutGuide type="bottom" id="w52-cc-uEa"/>
                     </layoutGuides>
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="LJS-Jh-PUm">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="546"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LdU-fz-94C">
@@ -2348,7 +2313,7 @@
     <resources>
         <image name="201102092131-jk708-FelixPro.jpg" width="350" height="350"/>
         <image name="256px-Email_Shiny_Icon.svg-2.png" width="256" height="256"/>
-        <image name="9BB11F53-B503-461E-A35D-5B40A636DD3F" width="320" height="460">
+        <image name="8236C9F0-38DB-4A70-A901-D57B69F0EA5B" width="320" height="460">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw

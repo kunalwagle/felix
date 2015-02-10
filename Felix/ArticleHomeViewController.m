@@ -20,11 +20,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    FLXAppDelegate* appDel = (FLXAppDelegate*)[[UIApplication sharedApplication] delegate];
-    NSString *section = appDel.section;
-    NSMutableDictionary *dict = appDel.colours;
-    UIColor *colour = [dict objectForKey:section];
-    self.view.backgroundColor = colour;
+//    FLXAppDelegate* appDel = (FLXAppDelegate*)[[UIApplication sharedApplication] delegate];
+//    NSString *section = appDel.section;
+//    NSMutableDictionary *dict = appDel.colours;
+//    UIColor *colour = [dict objectForKey:section];
+//    self.view.backgroundColor = colour;
     //[self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
 }
 
@@ -115,5 +115,25 @@
     NSString *url = appDel.article.getUrl;
     url = [url stringByAppendingString:@"/#commentHeader"];
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+}
+
+- (IBAction)shareButton:(id)sender {
+    FLXAppDelegate* appDel = (FLXAppDelegate*)[[UIApplication sharedApplication] delegate];
+    NSString *url = appDel.article.getUrl;
+    NSURL *myWebsite = [NSURL URLWithString:url];
+    
+    NSArray *objectsToShare = @[myWebsite];
+    
+    UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:objectsToShare applicationActivities:nil];
+    
+    NSArray *excludeActivities = @[UIActivityTypePrint,
+                                   UIActivityTypeAssignToContact,
+                                   UIActivityTypeSaveToCameraRoll,
+                                   UIActivityTypePostToFlickr,
+                                   UIActivityTypePostToVimeo];
+    
+    activityVC.excludedActivityTypes = excludeActivities;
+    
+    [self presentViewController:activityVC animated:YES completion:nil];
 }
 @end

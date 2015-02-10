@@ -16,5 +16,6 @@
 - (IBAction)author:(id)sender;
 @property (weak, nonatomic) IBOutlet UIButton *comments;
 - (IBAction)comment:(id)sender;
+- (IBAction)shareButton:(id)sender;
 @property int index;
 @end

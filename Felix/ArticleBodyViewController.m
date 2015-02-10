@@ -136,7 +136,7 @@ NSString *string2 = @".co.uk/325/212/";
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+- (void)prepareForSegue:(UIStory boardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
@@ -147,7 +147,11 @@ NSString *string2 = @".co.uk/325/212/";
     [self.text sizeToFit];
     [self.text setClipsToBounds:NO];
     [self.text setScrollEnabled:NO];
+    if (!self.image.hidden) {
     [self.scrollView setContentSize:CGSizeMake(self.view.bounds.size.width, self.text.frame.size.height + self.text.frame.origin.y + 180)];
+    } else {
+     [self.scrollView setContentSize:CGSizeMake(self.view.bounds.size.width, self.text.frame.size.height + self.text.frame.origin.y)];   
+    }
 //    
 //    if (self.loading == NO) {
 //    if (self.loaded == NO) {
