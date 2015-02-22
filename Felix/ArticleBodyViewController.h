@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UtilityMethods.h"
 
 @interface ArticleBodyViewController : UIViewController<UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *header;

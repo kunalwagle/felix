@@ -10,10 +10,11 @@
 
 #import "Article.h"
 #import "Section.h"
+#import "FelixKit.h"
 
-@interface Category : NSObject <NSCoding>
+@interface ArticleCategory : NSObject <NSCoding>
 
--(Category *)initFull: (Section*)section articles:(NSMutableArray*)articles;
+-(ArticleCategory *)initFull: (Section*)section articles:(NSMutableArray*)articles;
 -(NSMutableArray*) getArticles;
 -(Section*) getSection;
 

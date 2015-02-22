@@ -26,5 +26,6 @@
 @property NSMutableArray* loadedTop;
 @property NSMutableDictionary* loadedBottom;
 @property NSMutableDictionary* colours;
+@property Article* todayArticle;
 
 @end

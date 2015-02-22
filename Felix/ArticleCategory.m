@@ -6,18 +6,18 @@
 //  Copyright (c) 2014 Felix. All rights reserved.
 //
 
-#import "Category.h"
+#import "ArticleCategory.h"
 
-@interface Category ()
+@interface ArticleCategory ()
 
 @property Section *section;
 @property NSMutableArray *articles;
 
 @end
 
-@implementation Category
+@implementation ArticleCategory : NSObject
 
--(Category *)initFull: (Section*)section articles:(NSMutableArray*)articles {
+-(ArticleCategory *)initFull: (Section*)section articles:(NSMutableArray*)articles {
     self.section = section;
     self.articles = articles;
     return self;

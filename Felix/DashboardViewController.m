@@ -9,7 +9,7 @@
 #import "DashboardViewController.h"
 
 #import "SWRevealViewController.h"
-#import "UtilityMethods.h"
+#import "FelixUtilityMethods.h"
 #import "PageContainerViewController.h"
 #import "FLXAppDelegate.h"
 

@@ -7,7 +7,7 @@
 //
 
 #import "SearchViewController.h"
-#import "UtilityMethods.h"
+#import "FelixUtilityMethods.h"
 #import "ArticleViewCell.h"
 #import "Article.h"
 #import "FLXAppDelegate.h"
@@ -30,7 +30,7 @@
     self.searchResults = [[NSMutableArray alloc] initWithObjects: nil];
     NSArray *sections = @[@"news", @"comment", @"features", @"science", @"politics", @"arts", @"music", @"film", @"fashion", @"games", @"technology", @"travel", @"food", @"tv", @"books", @"welfare", @"cands",@"sport"];
     for (NSString* section in sections) {
-        [self.articles addObjectsFromArray:[UtilityMethods getArticlesWithoutRefreshing:section]];
+        [self.articles addObjectsFromArray:[FelixUtilityMethods getArticlesWithoutRefreshing:section]];
     }
     
 }

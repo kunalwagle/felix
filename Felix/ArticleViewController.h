@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <Scringo/ScringoLikeButton.h>
-#import <Scringo/ScringoCommentButton.h>
+//#import <Scringo/ScringoLikeButton.h>
+//#import <Scringo/ScringoCommentButton.h>
 
 @interface ArticleViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UINavigationBar *NavigationBar;
@@ -19,8 +19,8 @@
 @property int ArticleNumber;
 @property (weak, nonatomic) IBOutlet UIButton *SidebarButton;
 - (IBAction)ShowSidebar:(id)sender;
-@property (weak, nonatomic) IBOutlet ScringoLikeButton *aLikeButton;
-@property (weak, nonatomic) IBOutlet ScringoCommentButton *aCommentButton;
+//@property (weak, nonatomic) IBOutlet ScringoLikeButton *aLikeButton;
+//@property (weak, nonatomic) IBOutlet ScringoCommentButton *aCommentButton;
 @property NSMutableArray *Articles;
 @property NSMutableArray *Teasers;
 @property (weak, nonatomic) IBOutlet UIImageView *articleImage;

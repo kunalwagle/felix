@@ -10,11 +10,11 @@
 
 #import "SplashScreenViewController.h"
 #import "FLXViewController.h"
-#import "Reachability.h"
+//#import "Reachability.h"
 //#import "Scringo/Scringo.h"
 
 @interface SplashScreenViewController () {
-    Reachability *internetReachableFoo;
+ //   Reachability *internetReachableFoo;
 }
 
 @end
@@ -33,15 +33,11 @@ int Limit;
 
 - (BOOL)testInternetConnection
 {
-    Reachability *networkReachability = [Reachability reachabilityForInternetConnection];
-    NetworkStatus networkStatus = [networkReachability currentReachabilityStatus];
-    if (networkStatus == NotReachable) {
+  //  Reachability *networkReachability = [Reachability reachabilityForInternetConnection];
+ //   NetworkStatus networkStatus = [networkReachability currentReachabilityStatus];
+  //  if (networkStatus == NotReachable) {
         return NO;
-    } else {
-        NSLog(@"We have the internet");
-        return YES;
-        
-    }
+
 }
 
 -(void)myCommandClicked:(NSNotification *)aNotification {

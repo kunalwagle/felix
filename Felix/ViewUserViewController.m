@@ -8,7 +8,7 @@
 
 #import "ViewUserViewController.h"
 #import "RightSidebarViewController.h"
-#import "UtilityMethods.h";
+#import "FelixUtilityMethods.h"
 
 @interface ViewUserViewController ()
 
@@ -37,7 +37,7 @@
     if ([self.email.text isEqualToString:@""]) {
         self.email.text = @"N/A";
     }
-    if ([UtilityMethods testInternetConnection]) {
+    if ([FelixUtilityMethods testInternetConnection]) {
     NSString* imageUrl = self.user.getImage.getUrl;
     dispatch_queue_t imageQueue = dispatch_queue_create("Image Queue",NULL);
     NSLog(@"Fetching user pic");

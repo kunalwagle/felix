@@ -9,10 +9,10 @@
 #import "FLXViewController.h"
 #import "ArticleViewController.h"
 //#import <Scringo/Scringo.h>
-#import "Reachability.h"
+//#import "Reachability.h"
 
 @interface FLXViewController () {
-    Reachability *internetReachableFoo;
+ //   Reachability *internetReachableFoo;
 }
 
 @end
@@ -40,16 +40,7 @@ NSString *monday;
 
 - (BOOL)testInternetConnection
 {
-    Reachability *networkReachability = [Reachability reachabilityForInternetConnection];
-    NetworkStatus networkStatus = [networkReachability currentReachabilityStatus];
-    if (networkStatus == NotReachable) {
-        return NO;
-    } else {
-        NSLog(@"We have the internet");
-        return YES;
-        
-        
-    }        
+    return YES;
 }
 
 

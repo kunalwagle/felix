@@ -7,7 +7,7 @@
 //
 
 #import "LoadingViewController.h"
-#import "UtilityMethods.h"
+#import "FelixUtilityMethods.h"
 #import "articleTableViewController.h"
 
 @interface LoadingViewController ()
@@ -40,7 +40,7 @@
 }
 
 -(void)update{
-    if ([UtilityMethods testInternetConnection]) {
+    if ([FelixUtilityMethods testInternetConnection]) {
     if (!self.loaded) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Welcome to Felix" message:@"Welcome to the Felix app! The most recent articles will be downloaded now, and then you will be taken to the Felix Dashboard. To refresh your collection of articles pull down on the table of articles in the dashboard. Great news! You can now read all articles offline, but without images!" delegate:self cancelButtonTitle:@"TL;DR" otherButtonTitles: nil];
         [alert setTag:200];
@@ -50,7 +50,7 @@
     for (NSString *current in self.sections) {
         dispatch_queue_t imageQueue = dispatch_queue_create("Image Queue",NULL);
         dispatch_async(imageQueue, ^{
-            [UtilityMethods loadArticles:current];
+            [FelixUtilityMethods loadArticles:current];
             
             dispatch_async(dispatch_get_main_queue(), ^{
                 // Update the UI

@@ -8,7 +8,7 @@
 
 #import "TopStoriesPageContentViewController.h"
 #import "FLXAppDelegate.h"
-#import "UtilityMethods.h"
+#import "FelixUtilityMethods.h"
 
 @interface TopStoriesPageContentViewController ()
 
@@ -28,7 +28,7 @@
         self.image.image = [loaded objectAtIndex:self.pageIndex];
     } else {
         self.image.image = [UIImage imageNamed:self.imageName];
-        if ([UtilityMethods testInternetConnection]) {
+        if ([FelixUtilityMethods testInternetConnection]) {
         dispatch_queue_t imageQueue = dispatch_queue_create("Image Queue",NULL);
         NSLog(@"Started asynchrously attempting download");
         dispatch_async(imageQueue, ^{

@@ -7,7 +7,7 @@
 //
 
 #import "PageContainerViewController.h"
-#import "UtilityMethods.h"
+#import "FelixUtilityMethods.h"
 #import "Article.h"
 #import "FLXAppDelegate.h"
 #import "RightSidebarViewController.h"
@@ -24,7 +24,7 @@
     appDel.pageContainerViewController = self;
     NSString* sect = appDel.section;
     //_articleTitles = @[@"Over 200 Tips and Tricks", @"Discover Hidden Features", @"Bookmark Favorite Tip"];
-    NSArray *articles = [UtilityMethods getArticles:sect];
+    NSArray *articles = [FelixUtilityMethods getArticles:sect];
     self.articleTitles = [[NSMutableArray alloc] initWithObjects: nil];
     self.articleImages = [[NSMutableArray alloc] initWithObjects: nil];
     self.articles = [[NSMutableArray alloc] initWithObjects:nil];
@@ -80,7 +80,7 @@
 
 -(void)reloadData:(NSString*)sect {
 //    FLXAppDelegate *appDel = (FLXAppDelegate*) [UIApplication sharedApplication].delegate;
-//    NSArray *articles = [UtilityMethods getArticles:sect];
+//    NSArray *articles = [FelixUtilityMethods getArticles:sect];
 //    self.articleTitles = [[NSMutableArray alloc] initWithObjects: nil];
 //    self.articleImages = [[NSMutableArray alloc] initWithObjects: nil];
 //    for (int i=0; i<[articles count] && i<3; i++) {
@@ -125,7 +125,7 @@
     FLXAppDelegate *appDel = (FLXAppDelegate*) [UIApplication sharedApplication].delegate;
     appDel.pageContainerViewController = self;
     //_articleTitles = @[@"Over 200 Tips and Tricks", @"Discover Hidden Features", @"Bookmark Favorite Tip"];
-    NSArray *articles = [UtilityMethods getArticles:sect];
+    NSArray *articles = [FelixUtilityMethods getArticles:sect];
     self.articleTitles = [[NSMutableArray alloc] initWithObjects: nil];
     self.articleImages = [[NSMutableArray alloc] initWithObjects: nil];
     self.articles = [[NSMutableArray alloc] initWithObjects:nil];

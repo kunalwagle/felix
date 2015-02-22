@@ -9,10 +9,10 @@
 #import "ArticleViewController.h"
 #import "FLXViewController.h"
 //#import <Scringo/Scringo.h>
-#import "Reachability.h"
+//#import "Reachability.h"
 
 @interface ArticleViewController () {
-    Reachability *internetReachableFoo;
+    //Reachability *internetReachableFoo;
 }
 
 @end
@@ -25,8 +25,8 @@
 @synthesize Content;
 @synthesize ArticleNumber;
 @synthesize Author;
-@synthesize aLikeButton;
-@synthesize aCommentButton;
+//@synthesize aLikeButton;
+//@synthesize aCommentButton;
 @synthesize Articles;
 @synthesize Teasers;
 @synthesize articleImage;
@@ -51,16 +51,16 @@ BOOL initialiseApp = NO;
 
 - (BOOL)testInternetConnection
 {
-    Reachability *networkReachability = [Reachability reachabilityForInternetConnection];
-    NetworkStatus networkStatus = [networkReachability currentReachabilityStatus];
-    if (networkStatus == NotReachable) {
-        return NO;
-    } else {
-        NSLog(@"We have the internet");
+//    Reachability *networkReachability = [Reachability reachabilityForInternetConnection];
+//    NetworkStatus networkStatus = [networkReachability currentReachabilityStatus];
+//    if (networkStatus == NotReachable) {
+//        return NO;
+//    } else {
+//        NSLog(@"We have the internet");
         return YES;
-        
-        
-    }
+//        
+//        
+//    }
 }
 
 -(NSString *) stringByStrippingHTML {
@@ -123,7 +123,7 @@ BOOL initialiseApp = NO;
     monday = allCourses[@"article_title"];
     [self stringByStrippingHTML];
     Title.text = monday;
-    [aLikeButton updateLikeObject:restCallString type:SCRINGO_APP_LIKE_IMAGE description:monday];
+   // [aLikeButton updateLikeObject:restCallString type:SCRINGO_APP_LIKE_IMAGE description:monday];
     monday = allCourses[@"article_teaser"];
     [self stringByStrippingHTML];
     Teaser.text = monday;

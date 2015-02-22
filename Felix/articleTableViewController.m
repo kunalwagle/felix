@@ -8,7 +8,7 @@
 
 #import "articleTableViewController.h"
 #import "ArticleViewCell.h"
-#import "UtilityMethods.h"
+#import "FelixUtilityMethods.h"
 #import "Article.h"
 #import "FLXAppDelegate.h"
 #import "LoadingViewController.h"
@@ -28,7 +28,7 @@ NSString *string2 = @".co.uk/112/74/";
     appDel.articleTableVC = self;
     NSString* section = appDel.section;
     self.section = appDel.section;
-    self.articles = [UtilityMethods getArticles:section];
+    self.articles = [FelixUtilityMethods getArticles:section];
     self.articleTitles = [[NSMutableArray alloc] initWithObjects: nil];
     self.articleImages = [[NSMutableArray alloc] initWithObjects: nil];
     self.articleUrl = [[NSMutableArray alloc] initWithObjects: nil];
@@ -79,12 +79,12 @@ NSString *string2 = @".co.uk/112/74/";
         NSAttributedString *attributedTitle = [[NSAttributedString alloc] initWithString:title attributes:attrsDictionary];
         self.refreshControl.attributedTitle = attributedTitle;
     }
-    if ([UtilityMethods testInternetConnection]) {
+    if ([FelixUtilityMethods testInternetConnection]) {
         FLXAppDelegate *appDel = (FLXAppDelegate*)[[UIApplication sharedApplication] delegate];
         NSString *section = [appDel section];
         dispatch_queue_t imageQueue = dispatch_queue_create("Image Queue",NULL);
         dispatch_async(imageQueue, ^{
-            [UtilityMethods loadArticles:section];
+            [FelixUtilityMethods loadArticles:section];
             
             dispatch_async(dispatch_get_main_queue(), ^{
                 // Update the UI
@@ -125,7 +125,7 @@ NSString *string2 = @".co.uk/112/74/";
 }
 
 -(void)reloadData:(NSString*) section {
-//    NSArray *articles = [UtilityMethods getArticles:section];
+//    NSArray *articles = [FelixUtilityMethods getArticles:section];
 //    self.articleTitles = [[NSMutableArray alloc] initWithObjects: nil];
 //    self.articleImages = [[NSMutableArray alloc] initWithObjects: nil];
 //    for (int i=3; i<[articles count]; i++) {
@@ -183,7 +183,7 @@ NSString *string2 = @".co.uk/112/74/";
         return cell;
     }
     if (![[self.articleUrl objectAtIndex:[indexPath row]] isEqualToString:@""]) {
-        if ([UtilityMethods testInternetConnection]) {
+        if ([FelixUtilityMethods testInternetConnection]) {
         dispatch_queue_t imageQueue = dispatch_queue_create("Image Queue",NULL);
         NSLog(@"Hello");
         dispatch_async(imageQueue, ^{
