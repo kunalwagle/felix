@@ -11,9 +11,9 @@
 #import "Article.h"
 #import "Section.h"
 
-@interface Category : NSObject <NSCoding>
+@interface FelixCategory : NSObject <NSCoding>
 
--(Category *)initFull: (Section*)section articles:(NSMutableArray*)articles;
+-(FelixCategory *)initFull: (Section*)section articles:(NSMutableArray*)articles;
 -(NSMutableArray*) getArticles;
 -(Section*) getSection;
 

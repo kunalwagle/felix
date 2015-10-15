@@ -8,6 +8,8 @@
 
 #import "UtilityMethods.h"
 
+#import <UIKit/UIKit.h>
+
 #import "Article.h"
 #import "User.h"
 #import "Reachability.h"

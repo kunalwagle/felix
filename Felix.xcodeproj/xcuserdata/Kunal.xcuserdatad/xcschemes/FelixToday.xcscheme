@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0460"
-   version = "1.3">
+   LastUpgradeVersion = "0610"
+   wasCreatedForAppExtension = "YES"
+   version = "1.8">
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
@@ -14,9 +15,37 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0C245AE01A9A676F00018265"
+               BuildableName = "FelixToday.appex"
+               BlueprintName = "FelixToday"
+               ReferencedContainer = "container:Felix.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "0C4F617918442815000726EA"
                BuildableName = "Felix.app"
                BlueprintName = "Felix"
+               ReferencedContainer = "container:Felix.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0CA86D3E1A9A771300D005D0"
+               BuildableName = "FelixKitTests.xctest"
+               BlueprintName = "FelixKitTests"
                ReferencedContainer = "container:Felix.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,6 +75,16 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0CA86D3E1A9A771300D005D0"
+               BuildableName = "FelixKitTests.xctest"
+               BlueprintName = "FelixKitTests"
+               ReferencedContainer = "container:Felix.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "0C1E3B221AA46D47009DE409"
                BuildableName = "FelixDataKitTests.xctest"
                BlueprintName = "FelixDataKitTests"
@@ -64,15 +103,16 @@
       </MacroExpansion>
    </TestAction>
    <LaunchAction
-      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
-      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      selectedDebuggerIdentifier = ""
+      selectedLauncherIdentifier = "Xcode.IDEFoundation.Launcher.PosixSpawn"
       launchStyle = "0"
+      askForAppToLaunch = "Yes"
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Debug"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0C4F617918442815000726EA"
@@ -80,16 +120,21 @@
             BlueprintName = "Felix"
             ReferencedContainer = "container:Felix.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
+      <IDERemoteRunnable
+         RemotePath = "/var/mobile/Containers/Bundle/Application/F85BBE32-FDCA-402D-8EB1-265700201A59/Felix.app"
+         BundleIdentifier = "/var/mobile/Containers/Bundle/Application/F85BBE32-FDCA-402D-8EB1-265700201A59/Felix.app">
+      </IDERemoteRunnable>
    </LaunchAction>
    <ProfileAction
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
-      debugDocumentVersioning = "YES">
+      debugDocumentVersioning = "YES"
+      askForAppToLaunch = "Yes">
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0460"
+   LastUpgradeVersion = "0610"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,23 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0C4F617918442815000726EA"
-               BuildableName = "Felix.app"
-               BlueprintName = "Felix"
-               ReferencedContainer = "container:Felix.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0C1E3B221AA46D47009DE409"
-               BuildableName = "FelixDataKitTests.xctest"
-               BlueprintName = "FelixDataKitTests"
+               BlueprintIdentifier = "0C1E3B181AA46D46009DE409"
+               BuildableName = "FelixDataKit.framework"
+               BlueprintName = "FelixDataKit"
                ReferencedContainer = "container:Felix.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -42,26 +28,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0C1E3B221AA46D47009DE409"
-               BuildableName = "FelixDataKitTests.xctest"
-               BlueprintName = "FelixDataKitTests"
-               ReferencedContainer = "container:Felix.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0C4F617918442815000726EA"
-            BuildableName = "Felix.app"
-            BlueprintName = "Felix"
-            ReferencedContainer = "container:Felix.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -72,15 +39,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0C4F617918442815000726EA"
-            BuildableName = "Felix.app"
-            BlueprintName = "Felix"
+            BlueprintIdentifier = "0C1E3B181AA46D46009DE409"
+            BuildableName = "FelixDataKit.framework"
+            BlueprintName = "FelixDataKit"
             ReferencedContainer = "container:Felix.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -90,15 +57,15 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0C4F617918442815000726EA"
-            BuildableName = "Felix.app"
-            BlueprintName = "Felix"
+            BlueprintIdentifier = "0C1E3B181AA46D46009DE409"
+            BuildableName = "FelixDataKit.framework"
+            BlueprintName = "FelixDataKit"
             ReferencedContainer = "container:Felix.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

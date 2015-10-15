@@ -9,9 +9,39 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>FelixDataKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>FelixKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>FelixToday.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0C1E3B181AA46D46009DE409</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0C1E3B221AA46D47009DE409</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0C1E3B551AA4716F009DE409</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>0C4F617918442815000726EA</key>
 		<dict>
 			<key>primary</key>

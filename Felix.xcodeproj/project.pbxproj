@@ -45,9 +45,33 @@
 		0C185A831A4C9187004BDB8E /* go-back-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C185A821A4C9187004BDB8E /* go-back-icon.png */; };
 		0C185A851A4C92DC004BDB8E /* UserIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C185A841A4C92DC004BDB8E /* UserIcon.png */; };
 		0C185A881A4C93D5004BDB8E /* RightSidebarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C185A871A4C93D5004BDB8E /* RightSidebarViewController.m */; };
-		0C185A8B1A4E69B0004BDB8E /* UtilityMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C185A8A1A4E69B0004BDB8E /* UtilityMethods.m */; };
 		0C185A8E1A515B22004BDB8E /* ViewUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C185A8D1A515B22004BDB8E /* ViewUserViewController.m */; };
 		0C185A901A516533004BDB8E /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C185A8F1A516533004BDB8E /* MessageUI.framework */; };
+		0C1E3B1E1AA46D46009DE409 /* FelixDataKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C1E3B1D1AA46D46009DE409 /* FelixDataKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C1E3B241AA46D47009DE409 /* FelixDataKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1E3B191AA46D46009DE409 /* FelixDataKit.framework */; };
+		0C1E3B2D1AA46D47009DE409 /* FelixDataKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1E3B2C1AA46D47009DE409 /* FelixDataKitTests.m */; };
+		0C1E3B391AA46E76009DE409 /* Article.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C7206071A45B80A00B2A968 /* Article.h */; };
+		0C1E3B3A1AA46E76009DE409 /* UtilityMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C185A891A4E69B0004BDB8E /* UtilityMethods.h */; };
+		0C1E3B3B1AA46E76009DE409 /* UtilityMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C185A8A1A4E69B0004BDB8E /* UtilityMethods.m */; };
+		0C1E3B3C1AA46E76009DE409 /* Article.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7206081A45B80A00B2A968 /* Article.m */; };
+		0C1E3B3D1AA46E76009DE409 /* Image.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C5352471A45EFA500A6C68B /* Image.h */; };
+		0C1E3B3E1AA46E76009DE409 /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5352481A45EFA500A6C68B /* Image.m */; };
+		0C1E3B3F1AA46E76009DE409 /* FelixCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C5352441A45ED3B00A6C68B /* FelixCategory.h */; };
+		0C1E3B401AA46E76009DE409 /* FelixCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5352451A45ED3B00A6C68B /* FelixCategory.m */; };
+		0C1E3B411AA46E76009DE409 /* User.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C53524D1A45F83C00A6C68B /* User.h */; };
+		0C1E3B421AA46E76009DE409 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C53524E1A45F83C00A6C68B /* User.m */; };
+		0C1E3B431AA46E76009DE409 /* Section.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C53524A1A45F4F700A6C68B /* Section.h */; };
+		0C1E3B441AA46E76009DE409 /* Section.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C53524B1A45F4F700A6C68B /* Section.m */; };
+		0C1E3B451AA46E76009DE409 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CF4CF9F184663CF00C789BE /* Reachability.h */; };
+		0C1E3B461AA46E76009DE409 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF4CFA0184663CF00C789BE /* Reachability.m */; };
+		0C1E3B4C1AA470E4009DE409 /* FelixDataKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1E3B191AA46D46009DE409 /* FelixDataKit.framework */; };
+		0C1E3B4D1AA47127009DE409 /* FelixDataKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1E3B191AA46D46009DE409 /* FelixDataKit.framework */; };
+		0C1E3B4E1AA47127009DE409 /* FelixDataKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1E3B191AA46D46009DE409 /* FelixDataKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0C1E3B581AA4716F009DE409 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1E3B571AA4716F009DE409 /* NotificationCenter.framework */; };
+		0C1E3B5E1AA47170009DE409 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1E3B5D1AA47170009DE409 /* TodayViewController.m */; };
+		0C1E3B601AA47170009DE409 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C1E3B5F1AA47170009DE409 /* MainInterface.storyboard */; };
+		0C1E3B631AA47170009DE409 /* FelixToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0C1E3B561AA4716F009DE409 /* FelixToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0C1E3B681AA471C3009DE409 /* FelixDataKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1E3B191AA46D46009DE409 /* FelixDataKit.framework */; };
 		0C4F617E18442815000726EA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4F617D18442815000726EA /* UIKit.framework */; };
 		0C4F618018442815000726EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4F617F18442815000726EA /* Foundation.framework */; };
 		0C4F618218442815000726EA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4F618118442815000726EA /* CoreGraphics.framework */; };
@@ -281,21 +305,15 @@
 		0C4F636618442867000726EA /* temp_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F628818442867000726EA /* temp_btn.png */; };
 		0C4F636718442867000726EA /* wrongSound.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F628918442867000726EA /* wrongSound.aif */; };
 		0C4F636818442867000726EA /* Scringo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F628A18442867000726EA /* Scringo.bundle */; };
-		0C4F636918442867000726EA /* Scringo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4F628B18442867000726EA /* Scringo.framework */; };
 		0C4F636B18442899000726EA /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4F636A18442899000726EA /* FacebookSDK.framework */; };
 		0C4F636D184428CA000726EA /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4F636C184428CA000726EA /* CoreText.framework */; };
 		0C4F636F184428D4000726EA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4F636E184428D4000726EA /* MapKit.framework */; };
-		0C5352461A45ED3B00A6C68B /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5352451A45ED3B00A6C68B /* Category.m */; };
-		0C5352491A45EFA500A6C68B /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5352481A45EFA500A6C68B /* Image.m */; };
-		0C53524C1A45F4F700A6C68B /* Section.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C53524B1A45F4F700A6C68B /* Section.m */; };
-		0C53524F1A45F83C00A6C68B /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C53524E1A45F83C00A6C68B /* User.m */; };
 		0C5352511A46DD8300A6C68B /* FelixLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C5352501A46DD8300A6C68B /* FelixLogo.png */; };
 		0C5352541A46E46700A6C68B /* TopStoriesPageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5352531A46E46700A6C68B /* TopStoriesPageContentViewController.m */; };
 		0C5352571A46E9FB00A6C68B /* DashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5352561A46E9FB00A6C68B /* DashboardViewController.m */; };
 		0C53525A1A46F09600A6C68B /* PageContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5352591A46F09600A6C68B /* PageContainerViewController.m */; };
 		0C6D727F1844CF8400BFF89C /* felix_cat-small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C6D727E1844CF8400BFF89C /* felix_cat-small.jpg */; };
 		0C6D7282184555BA00BFF89C /* ArticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6D7281184555BA00BFF89C /* ArticleViewController.m */; };
-		0C7206091A45B80A00B2A968 /* Article.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7206081A45B80A00B2A968 /* Article.m */; };
 		0C774BDB19C8C3CB00A265A4 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C774BDA19C8C3CB00A265A4 /* WebViewController.m */; };
 		0C774BDD19C8F37000A265A4 /* home-5-2561.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0C774BDC19C8F37000A265A4 /* home-5-2561.gif */; };
 		0C774BDF19C8F59100A265A4 /* bigimage copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C774BDE19C8F59100A265A4 /* bigimage copy.png */; };
@@ -326,8 +344,63 @@
 		0CF4CF931846600A00C789BE /* 57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CF4CF911846600A00C789BE /* 57x57.png */; };
 		0CF4CF941846600A00C789BE /* 114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CF4CF921846600A00C789BE /* 114x114.png */; };
 		0CF4CF9E184663BA00C789BE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF4CF9D184663BA00C789BE /* SystemConfiguration.framework */; };
-		0CF4CFA1184663CF00C789BE /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF4CFA0184663CF00C789BE /* Reachability.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0C1E3B251AA46D47009DE409 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C4F617218442815000726EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C1E3B181AA46D46009DE409;
+			remoteInfo = FelixDataKit;
+		};
+		0C1E3B271AA46D47009DE409 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C4F617218442815000726EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C4F617918442815000726EA;
+			remoteInfo = Felix;
+		};
+		0C1E3B4F1AA47127009DE409 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C4F617218442815000726EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C1E3B181AA46D46009DE409;
+			remoteInfo = FelixDataKit;
+		};
+		0C1E3B611AA47170009DE409 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C4F617218442815000726EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C1E3B551AA4716F009DE409;
+			remoteInfo = FelixToday;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0C1E3B511AA47128009DE409 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0C1E3B4E1AA47127009DE409 /* FelixDataKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C1E3B671AA47170009DE409 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0C1E3B631AA47170009DE409 /* FelixToday.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0C087C2719DA114B00F350BC /* Final Felix Logo HQ with line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Final Felix Logo HQ with line.png"; sourceTree = "<group>"; };
@@ -373,11 +446,23 @@
 		0C185A841A4C92DC004BDB8E /* UserIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UserIcon.png; sourceTree = "<group>"; };
 		0C185A861A4C93D5004BDB8E /* RightSidebarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightSidebarViewController.h; sourceTree = "<group>"; };
 		0C185A871A4C93D5004BDB8E /* RightSidebarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightSidebarViewController.m; sourceTree = "<group>"; };
-		0C185A891A4E69B0004BDB8E /* UtilityMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityMethods.h; sourceTree = "<group>"; };
-		0C185A8A1A4E69B0004BDB8E /* UtilityMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilityMethods.m; sourceTree = "<group>"; };
+		0C185A891A4E69B0004BDB8E /* UtilityMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UtilityMethods.h; path = ../Felix/UtilityMethods.h; sourceTree = "<group>"; };
+		0C185A8A1A4E69B0004BDB8E /* UtilityMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UtilityMethods.m; path = ../Felix/UtilityMethods.m; sourceTree = "<group>"; };
 		0C185A8C1A515B22004BDB8E /* ViewUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewUserViewController.h; sourceTree = "<group>"; };
 		0C185A8D1A515B22004BDB8E /* ViewUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewUserViewController.m; sourceTree = "<group>"; };
 		0C185A8F1A516533004BDB8E /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		0C1E3B191AA46D46009DE409 /* FelixDataKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FelixDataKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C1E3B1C1AA46D46009DE409 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C1E3B1D1AA46D46009DE409 /* FelixDataKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FelixDataKit.h; sourceTree = "<group>"; };
+		0C1E3B231AA46D47009DE409 /* FelixDataKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FelixDataKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C1E3B2B1AA46D47009DE409 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C1E3B2C1AA46D47009DE409 /* FelixDataKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FelixDataKitTests.m; sourceTree = "<group>"; };
+		0C1E3B561AA4716F009DE409 /* FelixToday.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FelixToday.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C1E3B571AA4716F009DE409 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		0C1E3B5B1AA47170009DE409 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C1E3B5C1AA47170009DE409 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		0C1E3B5D1AA47170009DE409 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		0C1E3B5F1AA47170009DE409 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 		0C4F617A18442815000726EA /* Felix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Felix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C4F617D18442815000726EA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0C4F617F18442815000726EA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -627,14 +712,14 @@
 		0C4F636A18442899000726EA /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		0C4F636C184428CA000726EA /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		0C4F636E184428D4000726EA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		0C5352441A45ED3B00A6C68B /* Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Category.h; sourceTree = "<group>"; };
-		0C5352451A45ED3B00A6C68B /* Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Category.m; sourceTree = "<group>"; };
-		0C5352471A45EFA500A6C68B /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
-		0C5352481A45EFA500A6C68B /* Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Image.m; sourceTree = "<group>"; };
-		0C53524A1A45F4F700A6C68B /* Section.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Section.h; sourceTree = "<group>"; };
-		0C53524B1A45F4F700A6C68B /* Section.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Section.m; sourceTree = "<group>"; };
-		0C53524D1A45F83C00A6C68B /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
-		0C53524E1A45F83C00A6C68B /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		0C5352441A45ED3B00A6C68B /* FelixCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FelixCategory.h; path = ../Felix/FelixCategory.h; sourceTree = "<group>"; };
+		0C5352451A45ED3B00A6C68B /* FelixCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FelixCategory.m; path = ../Felix/FelixCategory.m; sourceTree = "<group>"; };
+		0C5352471A45EFA500A6C68B /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Image.h; path = ../Felix/Image.h; sourceTree = "<group>"; };
+		0C5352481A45EFA500A6C68B /* Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Image.m; path = ../Felix/Image.m; sourceTree = "<group>"; };
+		0C53524A1A45F4F700A6C68B /* Section.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Section.h; path = ../Felix/Section.h; sourceTree = "<group>"; };
+		0C53524B1A45F4F700A6C68B /* Section.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Section.m; path = ../Felix/Section.m; sourceTree = "<group>"; };
+		0C53524D1A45F83C00A6C68B /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = ../Felix/User.h; sourceTree = "<group>"; };
+		0C53524E1A45F83C00A6C68B /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = ../Felix/User.m; sourceTree = "<group>"; };
 		0C5352501A46DD8300A6C68B /* FelixLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FelixLogo.png; sourceTree = "<group>"; };
 		0C5352521A46E46700A6C68B /* TopStoriesPageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopStoriesPageContentViewController.h; sourceTree = "<group>"; };
 		0C5352531A46E46700A6C68B /* TopStoriesPageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopStoriesPageContentViewController.m; sourceTree = "<group>"; };
@@ -688,19 +773,44 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0C1E3B151AA46D46009DE409 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C1E3B201AA46D47009DE409 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C1E3B241AA46D47009DE409 /* FelixDataKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C1E3B531AA4716F009DE409 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C1E3B681AA471C3009DE409 /* FelixDataKit.framework in Frameworks */,
+				0C1E3B581AA4716F009DE409 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0C4F617718442815000726EA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C1E3B4C1AA470E4009DE409 /* FelixDataKit.framework in Frameworks */,
 				0C185A901A516533004BDB8E /* MessageUI.framework in Frameworks */,
 				0CF4CF9E184663BA00C789BE /* SystemConfiguration.framework in Frameworks */,
 				0C4F636F184428D4000726EA /* MapKit.framework in Frameworks */,
 				0C4F636D184428CA000726EA /* CoreText.framework in Frameworks */,
 				0C4F636B18442899000726EA /* FacebookSDK.framework in Frameworks */,
+				0C1E3B4D1AA47127009DE409 /* FelixDataKit.framework in Frameworks */,
 				0C4F617E18442815000726EA /* UIKit.framework in Frameworks */,
 				0C4F618018442815000726EA /* Foundation.framework in Frameworks */,
 				0C4F618218442815000726EA /* CoreGraphics.framework in Frameworks */,
-				0C4F636918442867000726EA /* Scringo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -733,6 +843,73 @@
 			name = "Section Icons";
 			sourceTree = "<group>";
 		};
+		0C1E3B1A1AA46D46009DE409 /* FelixDataKit */ = {
+			isa = PBXGroup;
+			children = (
+				0C7206071A45B80A00B2A968 /* Article.h */,
+				0C185A891A4E69B0004BDB8E /* UtilityMethods.h */,
+				0C185A8A1A4E69B0004BDB8E /* UtilityMethods.m */,
+				0C7206081A45B80A00B2A968 /* Article.m */,
+				0C5352471A45EFA500A6C68B /* Image.h */,
+				0C5352481A45EFA500A6C68B /* Image.m */,
+				0C5352441A45ED3B00A6C68B /* FelixCategory.h */,
+				0C5352451A45ED3B00A6C68B /* FelixCategory.m */,
+				0C53524D1A45F83C00A6C68B /* User.h */,
+				0C53524E1A45F83C00A6C68B /* User.m */,
+				0C53524A1A45F4F700A6C68B /* Section.h */,
+				0C53524B1A45F4F700A6C68B /* Section.m */,
+				0CF4CF9F184663CF00C789BE /* Reachability.h */,
+				0CF4CFA0184663CF00C789BE /* Reachability.m */,
+				0C1E3B1D1AA46D46009DE409 /* FelixDataKit.h */,
+				0C1E3B1B1AA46D46009DE409 /* Supporting Files */,
+			);
+			path = FelixDataKit;
+			sourceTree = "<group>";
+		};
+		0C1E3B1B1AA46D46009DE409 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0C1E3B1C1AA46D46009DE409 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0C1E3B291AA46D47009DE409 /* FelixDataKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				0C1E3B2C1AA46D47009DE409 /* FelixDataKitTests.m */,
+				0C1E3B2A1AA46D47009DE409 /* Supporting Files */,
+			);
+			path = FelixDataKitTests;
+			sourceTree = "<group>";
+		};
+		0C1E3B2A1AA46D47009DE409 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0C1E3B2B1AA46D47009DE409 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0C1E3B591AA4716F009DE409 /* FelixToday */ = {
+			isa = PBXGroup;
+			children = (
+				0C1E3B5C1AA47170009DE409 /* TodayViewController.h */,
+				0C1E3B5D1AA47170009DE409 /* TodayViewController.m */,
+				0C1E3B5F1AA47170009DE409 /* MainInterface.storyboard */,
+				0C1E3B5A1AA4716F009DE409 /* Supporting Files */,
+			);
+			path = FelixToday;
+			sourceTree = "<group>";
+		};
+		0C1E3B5A1AA4716F009DE409 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0C1E3B5B1AA47170009DE409 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		0C4F617118442815000726EA = {
 			isa = PBXGroup;
 			children = (
@@ -760,6 +937,9 @@
 				0CD00422184564720032A736 /* title-small.png */,
 				0C4F61A318442866000726EA /* Scringo */,
 				0C4F618318442815000726EA /* Felix */,
+				0C1E3B1A1AA46D46009DE409 /* FelixDataKit */,
+				0C1E3B291AA46D47009DE409 /* FelixDataKitTests */,
+				0C1E3B591AA4716F009DE409 /* FelixToday */,
 				0C4F617C18442815000726EA /* Frameworks */,
 				0C4F617B18442815000726EA /* Products */,
 			);
@@ -769,6 +949,9 @@
 			isa = PBXGroup;
 			children = (
 				0C4F617A18442815000726EA /* Felix.app */,
+				0C1E3B191AA46D46009DE409 /* FelixDataKit.framework */,
+				0C1E3B231AA46D47009DE409 /* FelixDataKitTests.xctest */,
+				0C1E3B561AA4716F009DE409 /* FelixToday.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -785,6 +968,7 @@
 				0C4F617D18442815000726EA /* UIKit.framework */,
 				0C4F617F18442815000726EA /* Foundation.framework */,
 				0C4F618118442815000726EA /* CoreGraphics.framework */,
+				0C1E3B571AA4716F009DE409 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -792,21 +976,7 @@
 		0C4F618318442815000726EA /* Felix */ = {
 			isa = PBXGroup;
 			children = (
-				0C7206071A45B80A00B2A968 /* Article.h */,
-				0C185A891A4E69B0004BDB8E /* UtilityMethods.h */,
-				0C185A8A1A4E69B0004BDB8E /* UtilityMethods.m */,
-				0C7206081A45B80A00B2A968 /* Article.m */,
 				0CD50A001A5DBC3B0001D633 /* emailIcon-3faec2e96f9b15bcd8e689c92784501d.png */,
-				0C5352471A45EFA500A6C68B /* Image.h */,
-				0C5352481A45EFA500A6C68B /* Image.m */,
-				0C5352441A45ED3B00A6C68B /* Category.h */,
-				0C5352451A45ED3B00A6C68B /* Category.m */,
-				0C53524D1A45F83C00A6C68B /* User.h */,
-				0C53524E1A45F83C00A6C68B /* User.m */,
-				0C53524A1A45F4F700A6C68B /* Section.h */,
-				0C53524B1A45F4F700A6C68B /* Section.m */,
-				0CF4CF9F184663CF00C789BE /* Reachability.h */,
-				0CF4CFA0184663CF00C789BE /* Reachability.m */,
 				0C4F618C18442815000726EA /* FLXAppDelegate.h */,
 				0C4F618D18442815000726EA /* FLXAppDelegate.m */,
 				0C4F619518442815000726EA /* MainStoryboard_iPhone.storyboard */,
@@ -1127,7 +1297,79 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		0C1E3B161AA46D46009DE409 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C1E3B3D1AA46E76009DE409 /* Image.h in Headers */,
+				0C1E3B431AA46E76009DE409 /* Section.h in Headers */,
+				0C1E3B411AA46E76009DE409 /* User.h in Headers */,
+				0C1E3B1E1AA46D46009DE409 /* FelixDataKit.h in Headers */,
+				0C1E3B3F1AA46E76009DE409 /* FelixCategory.h in Headers */,
+				0C1E3B451AA46E76009DE409 /* Reachability.h in Headers */,
+				0C1E3B3A1AA46E76009DE409 /* UtilityMethods.h in Headers */,
+				0C1E3B391AA46E76009DE409 /* Article.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		0C1E3B181AA46D46009DE409 /* FelixDataKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C1E3B361AA46D47009DE409 /* Build configuration list for PBXNativeTarget "FelixDataKit" */;
+			buildPhases = (
+				0C1E3B141AA46D46009DE409 /* Sources */,
+				0C1E3B151AA46D46009DE409 /* Frameworks */,
+				0C1E3B161AA46D46009DE409 /* Headers */,
+				0C1E3B171AA46D46009DE409 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FelixDataKit;
+			productName = FelixDataKit;
+			productReference = 0C1E3B191AA46D46009DE409 /* FelixDataKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0C1E3B221AA46D47009DE409 /* FelixDataKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C1E3B381AA46D47009DE409 /* Build configuration list for PBXNativeTarget "FelixDataKitTests" */;
+			buildPhases = (
+				0C1E3B1F1AA46D47009DE409 /* Sources */,
+				0C1E3B201AA46D47009DE409 /* Frameworks */,
+				0C1E3B211AA46D47009DE409 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C1E3B261AA46D47009DE409 /* PBXTargetDependency */,
+				0C1E3B281AA46D47009DE409 /* PBXTargetDependency */,
+			);
+			name = FelixDataKitTests;
+			productName = FelixDataKitTests;
+			productReference = 0C1E3B231AA46D47009DE409 /* FelixDataKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0C1E3B551AA4716F009DE409 /* FelixToday */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C1E3B641AA47170009DE409 /* Build configuration list for PBXNativeTarget "FelixToday" */;
+			buildPhases = (
+				0C1E3B521AA4716F009DE409 /* Sources */,
+				0C1E3B531AA4716F009DE409 /* Frameworks */,
+				0C1E3B541AA4716F009DE409 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FelixToday;
+			productName = FelixToday;
+			productReference = 0C1E3B561AA4716F009DE409 /* FelixToday.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		0C4F617918442815000726EA /* Felix */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C4F61A018442815000726EA /* Build configuration list for PBXNativeTarget "Felix" */;
@@ -1135,10 +1377,14 @@
 				0C4F617618442815000726EA /* Sources */,
 				0C4F617718442815000726EA /* Frameworks */,
 				0C4F617818442815000726EA /* Resources */,
+				0C1E3B511AA47128009DE409 /* Embed Frameworks */,
+				0C1E3B671AA47170009DE409 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0C1E3B501AA47127009DE409 /* PBXTargetDependency */,
+				0C1E3B621AA47170009DE409 /* PBXTargetDependency */,
 			);
 			name = Felix;
 			productName = Felix;
@@ -1155,6 +1401,18 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = Felix;
 				TargetAttributes = {
+					0C1E3B181AA46D46009DE409 = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = VNK5G843Y9;
+					};
+					0C1E3B221AA46D47009DE409 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 0C4F617918442815000726EA;
+					};
+					0C1E3B551AA4716F009DE409 = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = VNK5G843Y9;
+					};
 					0C4F617918442815000726EA = {
 						DevelopmentTeam = VNK5G843Y9;
 					};
@@ -1180,11 +1438,36 @@
 			projectRoot = "";
 			targets = (
 				0C4F617918442815000726EA /* Felix */,
+				0C1E3B181AA46D46009DE409 /* FelixDataKit */,
+				0C1E3B221AA46D47009DE409 /* FelixDataKitTests */,
+				0C1E3B551AA4716F009DE409 /* FelixToday */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0C1E3B171AA46D46009DE409 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C1E3B211AA46D47009DE409 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C1E3B541AA4716F009DE409 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C1E3B601AA47170009DE409 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0C4F617818442815000726EA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1480,14 +1763,42 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0C1E3B141AA46D46009DE409 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C1E3B421AA46E76009DE409 /* User.m in Sources */,
+				0C1E3B3E1AA46E76009DE409 /* Image.m in Sources */,
+				0C1E3B3C1AA46E76009DE409 /* Article.m in Sources */,
+				0C1E3B461AA46E76009DE409 /* Reachability.m in Sources */,
+				0C1E3B3B1AA46E76009DE409 /* UtilityMethods.m in Sources */,
+				0C1E3B401AA46E76009DE409 /* FelixCategory.m in Sources */,
+				0C1E3B441AA46E76009DE409 /* Section.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C1E3B1F1AA46D47009DE409 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C1E3B2D1AA46D47009DE409 /* FelixDataKitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C1E3B521AA4716F009DE409 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C1E3B5E1AA47170009DE409 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0C4F617618442815000726EA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0C185A8E1A515B22004BDB8E /* ViewUserViewController.m in Sources */,
-				0C7206091A45B80A00B2A968 /* Article.m in Sources */,
 				0CE746B51A53C88A00F8D788 /* ArticleHomeViewController.m in Sources */,
-				0C5352461A45ED3B00A6C68B /* Category.m in Sources */,
 				0C4F618A18442815000726EA /* main.m in Sources */,
 				0C5352571A46E9FB00A6C68B /* DashboardViewController.m in Sources */,
 				0C5352541A46E46700A6C68B /* TopStoriesPageContentViewController.m in Sources */,
@@ -1500,20 +1811,38 @@
 				0C53525A1A46F09600A6C68B /* PageContainerViewController.m in Sources */,
 				0CD509FF1A59BB300001D633 /* SearchViewController.m in Sources */,
 				0C4F618E18442815000726EA /* FLXAppDelegate.m in Sources */,
-				0CF4CFA1184663CF00C789BE /* Reachability.m in Sources */,
 				0C185A451A482C53004BDB8E /* ArticleViewCell.m in Sources */,
 				0CE746B21A52BC2200F8D788 /* LoadingViewController.m in Sources */,
-				0C53524F1A45F83C00A6C68B /* User.m in Sources */,
 				0C185A481A482F0C004BDB8E /* articleTableViewController.m in Sources */,
-				0C53524C1A45F4F700A6C68B /* Section.m in Sources */,
-				0C185A8B1A4E69B0004BDB8E /* UtilityMethods.m in Sources */,
 				0C4F619D18442815000726EA /* FLXViewController.m in Sources */,
 				0C185A881A4C93D5004BDB8E /* RightSidebarViewController.m in Sources */,
-				0C5352491A45EFA500A6C68B /* Image.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0C1E3B261AA46D47009DE409 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C1E3B181AA46D46009DE409 /* FelixDataKit */;
+			targetProxy = 0C1E3B251AA46D47009DE409 /* PBXContainerItemProxy */;
+		};
+		0C1E3B281AA46D47009DE409 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C4F617918442815000726EA /* Felix */;
+			targetProxy = 0C1E3B271AA46D47009DE409 /* PBXContainerItemProxy */;
+		};
+		0C1E3B501AA47127009DE409 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C1E3B181AA46D46009DE409 /* FelixDataKit */;
+			targetProxy = 0C1E3B4F1AA47127009DE409 /* PBXContainerItemProxy */;
+		};
+		0C1E3B621AA47170009DE409 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C1E3B551AA4716F009DE409 /* FelixToday */;
+			targetProxy = 0C1E3B611AA47170009DE409 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0C4F618618442815000726EA /* InfoPlist.strings */ = {
@@ -1558,6 +1887,189 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0C1E3B321AA46D47009DE409 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kunal Wagle (D7MVGPSG2W)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kunal Wagle (D7MVGPSG2W)";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = FelixDataKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0C1E3B331AA46D47009DE409 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kunal Wagle (D7MVGPSG2W)";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = FelixDataKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0C1E3B341AA46D47009DE409 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = FelixDataKitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Felix.app/Felix";
+			};
+			name = Debug;
+		};
+		0C1E3B351AA46D47009DE409 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = FelixDataKitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Felix.app/Felix";
+			};
+			name = Release;
+		};
+		0C1E3B651AA47170009DE409 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kunal Wagle (D7MVGPSG2W)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kunal Wagle (D7MVGPSG2W)";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = FelixToday/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0C1E3B661AA47170009DE409 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kunal Wagle (D7MVGPSG2W)";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = FelixToday/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		0C4F619E18442815000726EA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1621,8 +2133,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kunal Wagle (D7MVGPSG2W)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kunal Wagle (D7MVGPSG2W)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Scringo\"",
@@ -1631,8 +2143,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Felix/Felix-Prefix.pch";
 				INFOPLIST_FILE = "Felix/Felix-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "397c12e2-9930-4c45-a60a-b817dd59df75";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1643,7 +2157,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kunal Wagle (D7MVGPSG2W)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Scringo\"",
@@ -1652,8 +2166,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Felix/Felix-Prefix.pch";
 				INFOPLIST_FILE = "Felix/Felix-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "397c12e2-9930-4c45-a60a-b817dd59df75";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1662,6 +2178,30 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0C1E3B361AA46D47009DE409 /* Build configuration list for PBXNativeTarget "FelixDataKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C1E3B321AA46D47009DE409 /* Debug */,
+				0C1E3B331AA46D47009DE409 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0C1E3B381AA46D47009DE409 /* Build configuration list for PBXNativeTarget "FelixDataKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C1E3B341AA46D47009DE409 /* Debug */,
+				0C1E3B351AA46D47009DE409 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0C1E3B641AA47170009DE409 /* Build configuration list for PBXNativeTarget "FelixToday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C1E3B651AA47170009DE409 /* Debug */,
+				0C1E3B661AA47170009DE409 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		0C4F617518442815000726EA /* Build configuration list for PBXProject "Felix" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

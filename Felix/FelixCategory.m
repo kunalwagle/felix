@@ -6,18 +6,18 @@
 //  Copyright (c) 2014 Felix. All rights reserved.
 //
 
-#import "Category.h"
+#import "FelixCategory.h"
 
-@interface Category ()
+@interface FelixCategory ()
 
 @property Section *section;
 @property NSMutableArray *articles;
 
 @end
 
-@implementation Category
+@implementation FelixCategory
 
--(Category *)initFull: (Section*)section articles:(NSMutableArray*)articles {
+-(FelixCategory *)initFull: (Section*)section articles:(NSMutableArray*)articles {
     self.section = section;
     self.articles = articles;
     return self;
